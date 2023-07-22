@@ -1,0 +1,157 @@
+
+/* Main box containing all content */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    --background-color: #d2dfdf;
+    --box-shadow-color: rgba(12, 71, 71, 0.3);
+    --header-color: #d8ecec;
+    --title-color: #0c4747;
+    --secondary-color: #245959;
+    --medium-color: #557e7e;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.content {
+    width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 0 6px 9px 4px var(--box-shadow-color);
+}
+
+/**************** Header ****************/
+.header {
+    padding: 18px 20px 20px 20px;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    align-content: space-evenly;
+    gap: 40px;
+    background-color: var(--header-color);
+}
+
+.title {
+    padding-left: 20px;
+    letter-spacing: -1px;
+}
+
+.title a {
+    font-family: "Paytone One", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--title-color);
+}
+
+.title a:active {
+    color: var(--secondary-color);
+    font-size: 43px;
+}
+
+.title a:hover {
+    color: var(--medium-color);
+}
+
+.navigation {
+    display: flex;
+    align-content: space-evenly;
+    gap: 20px;
+    letter-spacing: 1.5px;
+}
+
+.navigation a {
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding-top: 6px;
+}
+
+.navigation a:hover {
+    color: var(--medium-color);
+}
+
+.navigation a:active {
+    font-size: 25px;
+}
+
+/***************** Body *****************/
+
+.main-content {
+    padding: 0 40px;
+    display: flex;
+    align-items: start;
+    align-content: start;
+    gap: 60px;
+    padding: 40px;
+}
+
+.picture {
+    width: 500px;
+    height: 50%;
+}
+
+.picture img {
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    color: rgb(77, 77, 83);
+}
+
+.description p {
+    padding-bottom: 20px;
+}
+
+/**************** Footer ****************/
+
+.footer-line {
+    width: 91.5%;
+    margin: 0 auto;
+    height: 6px;
+    background-color: var(--header-color);
+    border:none;
+}
+
+footer {
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.contact p {
+    color: var(--medium-color);
+    
+}
+
+.contact p:first-of-type {
+    margin-bottom: 4px;
+}
+
+.links {
+    justify-self: end;
+}
+
+.links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: var(--medium-color);
+}
+
+.links a:active {
+    font-size: 15px;
+}
