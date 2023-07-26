@@ -29,7 +29,10 @@ body {
     box-shadow: 0 6px 9px 4px var(--box-shadow-color);
 }
 
-/**************** Header ****************/
+/****************************************/
+/**************** HEADER ****************/
+/****************************************/
+
 header {
     border-radius: 6px 6px 0 0;
     padding: 1.8rem 2rem 2rem 2rem;
@@ -95,7 +98,9 @@ header {
     font-size: 2.3rem;
 }
 
-/***************** Body *****************/
+/****************************************/
+/***************** BODY *****************/
+/****************************************/
 
 main {
     padding: 0 40px;
@@ -112,26 +117,21 @@ main {
 }
 
 .picture img {
-    width: 25rem;
-    height: 25rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 6px;
     box-shadow: 0 2px 3px 1px var(--box-shadow-color);
     object-fit: cover;
-}
-
-.description {
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    line-height: 1.5;
-    color: rgb(77, 77, 83);
 }
 
 .description p {
     padding-bottom: 20px;
 }
 
-/**************** Footer ****************/
+
+/****************************************/
+/**************** FOOTER ****************/
+/****************************************/
 
 footer {
     margin: 0 4rem;
@@ -154,20 +154,7 @@ footer {
     margin-bottom: 4px;
 }
 
-.links {
+.footer-link {
     justify-self: end;
 }
 
-.links a:link,
-.links a:visited {
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-
-.links a:hover {
-    color: var(--medium-color);
-}
-
-.links a:active {
-    font-size: 1.65rem;
-}
