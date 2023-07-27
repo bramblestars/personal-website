@@ -22,8 +22,8 @@ body {
 }
 
 .content {
-    width: 900px;
-    margin: 30px auto;
+    width: 90rem;
+    margin: 3rem auto;
     background-color: white;
     border-radius: 6px;
     box-shadow: 0 6px 9px 4px var(--box-shadow-color);
@@ -98,35 +98,53 @@ header {
     font-size: 2.3rem;
 }
 
+/* Mobile navigation */
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 6rem;
+    width: 6rem;
+    color: var(--secondary-color);
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+
 /****************************************/
 /***************** BODY *****************/
 /****************************************/
 
 main {
-    padding: 0 40px;
+    padding: 0 4rem;
     display: flex;
     align-items: start;
     align-content: start;
-    gap: 60px;
-    padding: 40px;
+    gap: 6rem;
+    padding: 4rem;
 }
 
 .picture {
-    width: 500px;
-    height: 50%;
+    width: 80rem;
+    height: 80%;
 }
 
 .picture img {
-    width: 20rem;
-    height: 20rem;
+    width: 28rem;
+    height: 24rem;
+    object-position: 0% 75%;
+
     border-radius: 6px;
     box-shadow: 0 2px 3px 1px var(--box-shadow-color);
     object-fit: cover;
 }
 
-.description p {
-    padding-bottom: 20px;
-}
 
 
 /****************************************/
@@ -147,14 +165,11 @@ footer {
 
 .contact p {
     color: var(--medium-color);
-    
 }
 
 .contact p:first-of-type {
     margin-bottom: 4px;
 }
 
-.footer-link {
-    justify-self: end;
-}
+
 

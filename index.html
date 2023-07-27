@@ -5,9 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Tracy Cui</title>
+
+    <!-- Stylesheets -->
     <link href="css/style.css" rel="stylesheet"/>
     <link href="css/general.css" rel="stylesheet"/>
-    <title>Tracy Cui</title>
+    <link href="css/queries.css" rel="stylesheet"/>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +18,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Paytone+One&family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet"> 
 
+    <!-- Scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
 </head>
 <body>
     <article class="content">
@@ -29,13 +41,18 @@
                     <li><a href="#">art</a></li>
                     <li><a href="#">cv</a></li>
                 </ul>
+                <button class="btn-mobile-nav">
+                    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+                    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+                </button>
             </nav>
+           
         </header>
 
         <!-- Main content -->
         <main>
             <div class="picture">
-                <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSkENZXbjSqHmipf-qk7CjfKBTz1ciglcIKMd4FKRp6Khedn8satNMmY3pRMMraNrFFt7vuFznwCYxqU6Q" />
+                <img src="img/me.jpg" />
             </div>
             
             <div class="description">
@@ -68,7 +85,7 @@
                     </a>
                 </p>
             </div>
-            <div class="links footer-link">
+            <div class="links footer-link justify-end">
                 <a href="https://github.com/bramblestars" target="blank">
                     github.com/bramblestars
                 </a>

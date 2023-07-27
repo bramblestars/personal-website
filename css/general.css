@@ -1,10 +1,12 @@
 
 .text {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.8rem;
     letter-spacing: 0.5px;
     line-height: 1.5;
     color: rgb(77, 77, 83);
+
+    padding-bottom: 2rem;
 }
 
 .links a:link,
@@ -19,4 +21,12 @@
 
 .links a:active {
     font-size: 1.65rem;
+}
+
+.end {
+    justify-self: end;
+}
+
+.nodisp {
+    display: none;
 }
