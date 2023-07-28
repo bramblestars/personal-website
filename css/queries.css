@@ -43,6 +43,7 @@
         justify-content: top;
         align-items: center;
         gap: 4rem;
+
         transition: all 0.5s ease-in;
 
         opacity: 0;

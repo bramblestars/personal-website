@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal webpage & portfolio for Tracy Cui">
 
     <title>Tracy Cui</title>
 
@@ -19,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Paytone+One&family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet"> 
 
     <!-- Scripts -->
+    <script defer src="scripts/main.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -35,11 +37,10 @@
             <h2 class="title"><a href="/">Tracy X. Cui</a></h2>
             <nav class="navigation">
                 <ul class="nav-ul">
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">gamedev</a></li>
-                    <li><a href="#">fun</a></li>
-                    <li><a href="#">art</a></li>
-                    <li><a href="#">cv</a></li>
+                    <li><a href="#" id="blog">blog</a></li>
+                    <li><a href="#" id="gamedev">gamedev</a></li>
+                    <li><a href="#" id="fun">fun</a></li>
+                    <li><a href="#" id="cv">cv</a></li>
                 </ul>
                 <button class="btn-mobile-nav">
                     <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
@@ -51,27 +52,39 @@
 
         <!-- Main content -->
         <main>
-            <div class="picture">
-                <img src="img/me.jpg" />
-            </div>
+            <section class="fun">
+                <h2 class="page-title">miscellaneous fun stuff</h2>
+                <ul class="fun-list">
+                    <li class="fun-list-item" id="cat-pic">
+                        <a href="funpages/randomkiwi.html" class="center">
+                            <img src="img/banners/random_kiwi.png"
+                            class="banner-img"
+                            alt="Random Kiwi: view a random picture of my cat, Kiwi"
+                            tabindex="-1"/>
+                        </a>
+                        <p class="text">view a random picture of my cat</p>
+                    </li>
+                    <li class="fun-list-item" id="bad-inspo">
+                        <a href="funpages/uninspirational.html" class="center">
+                            <img src="img/banners/very_uninspirational.png"
+                                class="banner-img"
+                                alt="Very Uninspirational: get a bad inspirational quote" 
+                                tabindex="-1"/>
+                        </a>
+                        <p class="text">get a bad inspirational quote</p>
+                    </li>
+                    <li class="fun-list-item" id="paint-clone">
+                        <a href="funpages/paintclone.html" class="center">
+                            <img src="img/banners/knockoff_paint.png"
+                            class="banner-img"
+                            alt="Knockoff Paint: a knockoff paint clone developed by myself" 
+                            tabindex="-1"/> 
+                        </a>
+                        <p class="text">try my knockoff online paint clone</p>
+                    </li>
+                </ul>
+            </section>
             
-            <div class="description">
-                <p class="text"> 
-                    I am a software developer with a B.S. in 
-                    Discrete Math and Logic from Carnegie 
-                    Mellon University. 
-                </p>
-                <p class="text">
-                    I enjoy web development, 
-                    game development, combinatorics, and graph algorithms.
-                    I also enjoy digital art and animation in my free time.
-                </p>
-            </div>
-            
-            <ul class="fun">
-
-            </ul>
-
         </main>
 
         <footer>

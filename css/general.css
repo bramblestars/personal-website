@@ -1,4 +1,14 @@
+.page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Paytone One", sans-serif;
 
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+}
+
+/**** for regular text ****/
 .text {
     font-weight: 400;
     font-size: 1.8rem;
@@ -23,10 +33,28 @@
     font-size: 1.65rem;
 }
 
-.end {
-    justify-self: end;
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: end;
 }
 
 .nodisp {
     display: none;
+}
+
+/**** image banners***/
+.banner-img {
+    width: 60%;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 1rem -1rem var(--box-shadow-color);
+}
+
+.banner-img:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1.5rem 1rem -0.8rem var(--box-shadow-color);
 }

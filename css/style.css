@@ -57,7 +57,7 @@ header {
     text-decoration: none;
     color: var(--title-color);
 
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 
 .title a:active,
@@ -121,13 +121,14 @@ header {
 /***************** BODY *****************/
 /****************************************/
 
+
+/** Homepage **/
 main {
-    padding: 0 4rem;
+    padding: 2rem 4rem;
     display: flex;
     align-items: start;
     align-content: start;
     gap: 6rem;
-    padding: 4rem;
 }
 
 .picture {
@@ -145,7 +146,20 @@ main {
     object-fit: cover;
 }
 
+/** "Fun" page **/
+.fun {
+    width: 100%;
+}
 
+.fun-list {
+    list-style: none;
+}
+
+.fun-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /****************************************/
 /**************** FOOTER ****************/
@@ -155,7 +169,7 @@ footer {
     margin: 0 4rem;
     padding: 2rem 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
     font-size: 1.6rem;
     font-weight: 500;
     letter-spacing: 1.5px;
