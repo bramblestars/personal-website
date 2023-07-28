@@ -170,12 +170,18 @@ button:active {
 }
 
 /* Media Query */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62.5em) {
     .quote-container {
         margin: auto 10px;
     }
 
     .quote-text {
         font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 25em) {
+    button {
+        font-size: 1.6rem;
     }
 }
