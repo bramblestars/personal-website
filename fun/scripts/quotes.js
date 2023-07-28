@@ -14,7 +14,7 @@ const badQuotes = [
         "text": "You don't have to be faster than the bear, you just have to not be the slowest person running away from the bear."
     }, 
     {
-        "text": "At least you're not illiterate."
+        "text": "If you're reading this, it means you can read."
     }, 
     {
         "text": "I'm never going to give you up, or let you down."
@@ -63,6 +63,66 @@ const badQuotes = [
     }, 
     {
         "text": "Never put off till tomorrow what you can do the day after tomorrow just as well."
+    }, 
+    {
+        "text": "Elder Scrolls online."
+    }, 
+    {
+        "text": "Why are you in my house?"
+    }, 
+    {
+        "text": "Strive for the gentle eyes, funny laugh, and immense bite strength of a hyena."
+    },
+    {
+        "text": "Please go touch grass."
+    }, 
+    {
+        "text": "It's okay to not like someone even if they have done nothing wrong."
+    }, 
+    {
+        "text": "If I had superpowers, I would use them to evade taxes."
+    },
+    {
+        "text": "Yeah I'll buy a dogecoin."
+    }, 
+    {
+        "text": "I will put forth just enough effort to avoid a lawsuit."
+    }, 
+    {
+        "text": "Konnichiwa"
+    }, 
+    {
+        "text": "Shoutout to all the gamer girls out there"
+    }, 
+    {
+        "text": "Beware the ides of March."
+    },
+    {
+        "text": "Don't cry, there are 7556 species of frogs in the world."
+    },
+    {
+        "text": "It looks like you snoozed and you losed."
+    },
+    {
+        "text": "There are in-app purchases."
+    }, 
+    {
+        "text": "Maybe it's time to log off for the day."
+    },
+    {
+        "text": "Cringe"
+    }, 
+    {
+        "text": "Naruto wouldn't want you to be depressed."
+    },
+    {
+        "text": "<コ:彡"
+    },
+    {
+        "text": "You are more than your favorite Power Ranger."
+    },
+    {
+        "text": "Aw man, not you too, Brutus"
     }
 ];
 
@@ -120,6 +180,21 @@ const fakeAuthors = [
     }, 
     {
         "author": "Betty White"
+    },
+    {
+        "author": "Spock"
+    },
+    {
+        "author": "Marge Simpson"
+    }, 
+    {
+        "author": "Beyonce"
+    },
+    {
+        "author": "Batman"
+    },
+    {
+        "author": "Julius Caesar"
     }
 ];
 

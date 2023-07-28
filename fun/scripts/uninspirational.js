@@ -30,15 +30,17 @@ newQuoteBtn.addEventListener('click', changeQuote);
 
 /**** Submit form toggle ****/
 const submitBtn = document.getElementById("submit-btn");
+const quoteTextArea = document.getElementById("quote-text");
 const submissionForm = document.getElementById("submission");
-const cancelBtn = document.getElementById("cancel");
+const backBtn = document.getElementById("back-btn");
 
 function toggleForm () {
     submissionForm.classList.toggle('submission-active');
+    quoteTextArea.classList.toggle('nodisp');
 }
 
 submitBtn.addEventListener('click', toggleForm);
 
-cancelBtn.addEventListener('click', toggleForm);
+backBtn.addEventListener('click', toggleForm);
 
 submissionBtn.addEventListener('click', toggleForm);
