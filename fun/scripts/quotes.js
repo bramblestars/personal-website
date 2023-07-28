@@ -123,6 +123,12 @@ const badQuotes = [
     },
     {
         "text": "Aw man, not you too, Brutus"
+    }, 
+    {
+        "text": "What is a bitcoin?"
+    },
+    {
+        "text": "Um actually, Zelda isn't the player character. He's actually called Frankenstein's Monster."
     }
 ];
 
@@ -195,6 +201,9 @@ const fakeAuthors = [
     },
     {
         "author": "Julius Caesar"
+    },
+    {
+        "author": "Hayao Miyazaki"
     }
 ];
 
