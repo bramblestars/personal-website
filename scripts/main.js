@@ -2,9 +2,8 @@
 
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const navEl = document.querySelector(".navigation");
+const badInspoEl = document.querySelector(".bad-inspo");
 
 btnNavEl.addEventListener('click', function() {
-    console.log("hi");
     navEl.classList.toggle('nav-open');
 });
-

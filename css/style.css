@@ -62,7 +62,7 @@ header {
 
 .title a:active,
 .title a:hover {
-    color: var(--secondary-color);
+    color: var(--medium-color);
 }
 
 .navigation {
