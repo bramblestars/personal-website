@@ -5,7 +5,7 @@ const badQuotes = [
         "text": "Run"
     }, 
     {
-        "text": "Life is short, so might as well spend your life savings on 500 anime figurines."
+        "text": "Life is short, so might as well spend your life savings on anime figurines."
     },
     {
         "text": "#YOLO"
@@ -47,7 +47,7 @@ const badQuotes = [
         "text": "Life is too short to avoid carbs."
     }, 
     {
-        "text": "Putting others down is not very punk rock of you."
+        "text": "Negative self-talk is not very punk rock of you."
     }, 
     {
         "text": "Buying Twitter was a bad idea."
@@ -62,7 +62,7 @@ const badQuotes = [
         "text": "There's nothing wrong with you that an expensive operation can't prolong."
     }, 
     {
-        "text": "Never put off till tomorrow what you can do the day after tomorrow just as well."
+        "text": "Never put off till tomorrow what you can do the day after tomorrow."
     }, 
     {
         "text": "Elder Scrolls online."
@@ -98,7 +98,7 @@ const badQuotes = [
         "text": "Beware the ides of March."
     },
     {
-        "text": "Don't cry, there are 7556 species of frogs in the world."
+        "text": "Don't cry, I got you McDonalds."
     },
     {
         "text": "It looks like you snoozed and you losed."
@@ -128,7 +128,40 @@ const badQuotes = [
         "text": "What is a bitcoin?"
     },
     {
-        "text": "Um actually, Zelda isn't the player character. He's actually called Frankenstein's Monster."
+        "text": "Um actually, Zelda isn't the player character. He's called Frankenstein's Monster."
+    },
+    {
+        "text": "When the moon hits your eye like a big pizza pie, that's amore. When you're swimming in the sea and an eel bites your feet, that's a moray."
+    },
+    {
+        "text": "On Wednesdays we wear pink."
+    }, 
+    {
+        "text": "I don't think I can gaslight gatekeep girlboss my way out of this one, boys."
+    },
+    {
+        "text": "Running from the cops is the ultimate double-or-nothing."
+    }, 
+    {
+        "text": "Did you try turning it off and on again?"
+    },
+    {
+        "text": "The Batmobile is probably uninsured."
+    },
+    {
+        "text": "Wanna go back to my place and look at my NFT collection?"
+    },
+    {
+        "text": "In the name of the moon, I'll punish you!"
+    },
+    {
+        "text": "Seems like a skill issue."
+    },
+    {
+        "text": "You can fix him."
+    },
+    {
+        "text": "That's not very Tumblr Sexyman of you."
     }
 ];
 
@@ -204,6 +237,12 @@ const fakeAuthors = [
     },
     {
         "author": "Hayao Miyazaki"
+    },
+    {
+        "author": "Meryl Streep"
+    },
+    {
+        "author": "Marilyn Monroe"
     }
 ];
 

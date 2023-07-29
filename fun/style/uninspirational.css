@@ -24,6 +24,8 @@ body {
     gap: 0;
 }
 
+/** Quote **/
+
 .quote-container {
     width: 80rem;
     max-width: 90rem;
@@ -88,6 +90,8 @@ button:active {
     box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
 }
 
+/** Submission page **/
+
 .submit-new-btn {
     color: #333;
     font-size: 1.2rem;
@@ -96,7 +100,7 @@ button:active {
     box-shadow: none;
 }
 
-.submit-btn:hover {
+.submit-new-btn:hover {
     color: #555;
 }
 
@@ -119,15 +123,6 @@ button:active {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-}
-
-.cancel {
-    font-size: 1.6rem;
-}
-
-.cancel:hover {
-    color: #333;
-    cursor: pointer;
 }
 
 .fa-solid {
@@ -165,8 +160,19 @@ button:active {
 }
 
 .disclaimer {
+    width: 40rem;
     font-size: 1.2rem;
     color: #444;
+}
+
+.submit-btn {
+    align-self: center;
+    width: 40rem;
+    transform: translateY(-0.5rem);
+}
+
+.submit-btn:active {
+    transform: translateY(-0.2rem)
 }
 
 /* Media Query */
