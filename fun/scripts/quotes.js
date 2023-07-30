@@ -128,9 +128,6 @@ const badQuotes = [
         "text": "What is a bitcoin?"
     },
     {
-        "text": "Um actually, Zelda isn't the player character. He's called Frankenstein's Monster."
-    },
-    {
         "text": "When the moon hits your eye like a big pizza pie, that's amore. When you're swimming in the sea and an eel bites your feet, that's a moray."
     },
     {
@@ -162,6 +159,21 @@ const badQuotes = [
     },
     {
         "text": "That's not very Tumblr Sexyman of you."
+    },
+    {
+        "text": "I may be a Barbie girl, but lately I've been feeling like I don't live in a Barbie world."
+    },
+    {
+        "text": "If you or a loved one was diagnosed with Mesothelioma, you may be entitled to financial compensation."
+    },
+    {
+        "text": "It's Wednesday my dudes."
+    },
+    {
+        "text": "Do it for the Vine"
+    }, 
+    {
+        "text": "I'm sorry, I didn't see you there. I was too busy blocking out the haters."
     }
 ];
 
