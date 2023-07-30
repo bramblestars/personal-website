@@ -47,7 +47,7 @@ const badQuotes = [
         "text": "Life is too short to avoid carbs."
     }, 
     {
-        "text": "Negative self-talk is not very punk rock of you."
+        "text": "Negative self-talk is not very punk rock."
     }, 
     {
         "text": "Buying Twitter was a bad idea."
@@ -255,6 +255,24 @@ const fakeAuthors = [
     },
     {
         "author": "Marilyn Monroe"
+    },
+    {
+        "author": "Sun Tzu"
+    },
+    {
+        "author": "Albert Einstein"
+    },
+    {
+        "author": "John F. Kennedy"
+    },
+    {
+        "author": "Joan of Arc"
+    }, 
+    {
+        "author": "Eleanor Roosevelt"
+    },
+    {
+        "author": "Oprah"
     }
 ];
 
