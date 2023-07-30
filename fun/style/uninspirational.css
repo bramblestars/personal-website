@@ -17,11 +17,12 @@ body {
     color: #000;
     font-family: "Montserrat", san-serif;
     font-weight: 500;
+
+    /* just to center the box in the page */
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0;
 }
 
 /** Quote **/
@@ -29,11 +30,16 @@ body {
 .quote-container {
     width: 80rem;
     max-width: 90rem;
-    padding: 2rem 3rem 0 3rem;
+    padding: 2rem 3rem;
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(2px);
     box-shadow: 0 1rem 0.5rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+.quote-page {
+    width: 100%;
+    display: inline-block;
 }
 
 .quote-text {
@@ -56,7 +62,8 @@ body {
 }
 
 .button-container {
-    margin: 15px auto 0 auto;;
+    margin: 0 auto;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -76,8 +83,6 @@ button {
     padding: 0.5rem 1.8rem;
     box-shadow: 0 0.3rem rgba(121, 121,121, 0.65);
 
-    transform: translateY(2rem);
-
     transition: all 0.5s smooth;
 }
 
@@ -86,7 +91,7 @@ button:hover {
 }
 
 button:active {
-    transform: translateY(2.3rem);
+    transform: translateY(0.3rem);
     box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
 }
 
@@ -106,23 +111,13 @@ button:active {
 
 .back-btn {
     position: absolute;
-    top: 0;
+    top: 2rem;
     left: 2rem;
     background-color: #625d6b;
 }
 
 .bigger-text {
     font-size: 3.5rem;
-}
-
-.submission {
-    margin: 3rem 0;
-}
-
-.submission-form {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
 }
 
 .fa-solid {
@@ -137,6 +132,7 @@ button:active {
 
 .submission-active .submission-form {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
     height: 30rem;
     opacity: 1;

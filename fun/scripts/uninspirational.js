@@ -45,7 +45,7 @@ newQuoteBtn.addEventListener('click', changeQuoteAndAuthor);
 
 /**** Submit form toggle ****/
 const submitBtn = document.getElementById('submit-btn');
-const quoteTextArea = document.getElementById('quote-text');
+const quotePage = document.getElementById('quote-page');
 const submissionForm = document.getElementById('submission');
 const backBtn = document.getElementById('back-btn');
 
@@ -54,7 +54,7 @@ const backBtn = document.getElementById('back-btn');
  */
 function toggleSubmitForm () {
     submissionForm.classList.toggle('submission-active');
-    quoteTextArea.classList.toggle('nodisp');
+    quotePage.classList.toggle('nodisp');
 }
 
 submitBtn.addEventListener('click', toggleSubmitForm);
