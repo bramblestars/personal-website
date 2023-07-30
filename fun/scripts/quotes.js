@@ -194,7 +194,55 @@ const badQuotes = [
         "text": "Call me Ishmael."
     },
     {
-        "text": "Call me Fishmael."
+        "text": "Hey Ferb, I know what we're gonna do today!"
+    }, 
+    {
+        "text": "Is mayonnaise an instrument?"
+    },
+    {
+        "text": "No, this is Patrick."
+    },
+    {
+        "text": "Goodbye, everyone. I'll remember you all in therapy."
+    },
+    {
+        "text": "Anything can be a UFO if you're bad enough at identifying things."
+    },
+    {
+        "text": "I'm Team Edward."
+    },
+    {
+        "text": "I'm Team Jacob."
+    },
+    {
+        "text": "She doesn't even go here!"
+    },
+    {
+        "text": "Oh my god, they were roommates."
+    },
+    {
+        "text": "Anything for you, Beyonce"
+    },
+    {
+        "text": "That's not very poggers of you."
+    },
+    {
+        "text": "Will you be the Naruto to my Sasuke?"
+    },
+    {
+        "text": "Et tu, pogchamp?"
+    },
+    {
+        "text": "Tis but a flesh wound."
+    }, 
+    {
+        "text": "I'm gonna crease your J's, Spider-Man."
+    },
+    {
+        "text": "This is the skin of a killer, Bella."
+    },
+    {
+        "text": "uwu"
     }
 ];
 
@@ -266,9 +314,6 @@ const fakeAuthors = [
         "author": "Julius Caesar"
     },
     {
-        "author": "Hayao Miyazaki"
-    },
-    {
         "author": "Meryl Streep"
     },
     {
@@ -300,6 +345,24 @@ const fakeAuthors = [
     },
     {
         "author": "George R.R. Martin"
+    },
+    {
+        "author": "Helen Keller"
+    },
+    {
+        "author": "Francis Bacon"
+    },
+    {
+        "author": "Karl Marx"
+    },
+    {
+        "author": "Mary Poppins"
+    },
+    {
+        "author": "Regina George"
+    },
+    {
+        "author": "Spider-Man"
     }
 ];
 
