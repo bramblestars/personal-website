@@ -174,6 +174,27 @@ const badQuotes = [
     }, 
     {
         "text": "I'm sorry, I didn't see you there. I was too busy blocking out the haters."
+    },
+    {
+        "text": "We got a number one Victory Royale / Yeah, Fortnite, we 'bout to get down"
+    },
+    {
+        "text": "She was a dancing queen, young and sweet, only seventeen."
+    },
+    {
+        "text": "Are we human, or are we dancer?"
+    },
+    {
+        "text": "I don't like sand. It's coarse and rough and irritating and it gets everywhere."
+    },
+    {
+        "text": "I am your father."
+    },
+    {
+        "text": "Call me Ishmael."
+    },
+    {
+        "text": "Call me Fishmael."
     }
 ];
 
@@ -210,9 +231,6 @@ const fakeAuthors = [
     }, 
     {
         "author": "Gandalf"
-    }, 
-    {
-        "author": "Anonymous"
     }, 
     {
         "author": "David Byrne"
@@ -273,6 +291,15 @@ const fakeAuthors = [
     },
     {
         "author": "Oprah"
+    },
+    {
+        "author": "Marie Curie"
+    },
+    {
+        "author": "Kim Kardashian"
+    },
+    {
+        "author": "George R.R. Martin"
     }
 ];
 
