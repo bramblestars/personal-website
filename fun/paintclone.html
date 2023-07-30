@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Tool Bar -->
-    <div class="top-bar">
+    <div class="top-bar" id="top-bar">
         <!-- Active Tool -->
         <div class="active-tool">
             <span id="active-tool" title="Active Tool">Brush</span>
@@ -20,12 +20,19 @@
             <i class="fas fa-brush" id="brush" title="Brush"></i>
             <input class="jscolor" id="brush-color">
             <span class="size" id="brush-size" title="Brush Size">10</span>
-            <input type="range" min="1" max="50" value="10" class="slider" id="brush-slider">
+            <input 
+                type="range" 
+                min="1" max="50" 
+                value="10" 
+                oninput="changeBrushSize()"
+                onchange="changeBrushSize()"
+                class="slider" 
+                id="brush-slider" />
         </div>
         <!-- Bucket -->
         <div class="bucket tool">
             <i class="fas fa-fill-drip" title="Background Color"></i>
-            <input class="jscolor" value="ffffff" id="brush-color">
+            <input class="jscolor" value="ffffff" id="bucket-color">
         </div>
         <!-- Eraser -->
         <div class="tool">
