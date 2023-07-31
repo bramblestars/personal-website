@@ -46,7 +46,6 @@ brushColor.addEventListener('change', () => {
 
 // Setting Background Color
 bucketColor.addEventListener('change', () => {
-    console.log("eye");
     bgColor=`#${bucketColor.value}`;
     createCanvas();
     restoreCanvas();
@@ -71,7 +70,7 @@ function switchToBrush() {
     currentColor = `#${brushColor.value}`;
     currentSize = 10;
     brushSlider.value = 10;
-    displayBrushSize();
+    changeBrushSize();
 }
 
 // Create Canvas
@@ -81,13 +80,15 @@ function createCanvas() {
     context.fillStyle = bgColor;
     context.fillRect(0, 0, canvas.width, canvas.height);
     body.appendChild(canvas);
-    console.log(bgColor);
 }
 
 // Change canvas size with window 
-canvas.addEventListener('resize', () => {
+window.addEventListener('resize', () => {
+    console.log("??");
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight - toolBar.clientHeight;
+    createCanvas();
+    restoreCanvas();
 })
 
 // Clear Canvas
@@ -125,7 +126,6 @@ function storeDrawn(x, y, size, color, erase) {
       color,
       erase,
     };
-    console.log(line);
     drawnArray.push(line);
 }
 
@@ -142,7 +142,6 @@ function getMousePosition(event) {
 canvas.addEventListener('mousedown', (event) => {
     isMouseDown = true;
     const currentPosition = getMousePosition(event);
-    console.log('mouse is clicked', currentPosition);
     context.moveTo(currentPosition.x, currentPosition.y);
     context.beginPath();
     context.lineWidth = currentSize;
@@ -154,7 +153,6 @@ canvas.addEventListener('mousedown', (event) => {
 canvas.addEventListener('mousemove', (event) => {
     if (isMouseDown) {
         const currentPosition = getMousePosition(event);
-        console.log('mouse is moving', currentPosition);
         context.lineTo(currentPosition.x, currentPosition.y);
         context.stroke();
         storeDrawn(
@@ -172,7 +170,6 @@ canvas.addEventListener('mousemove', (event) => {
 // Mouse Up
 canvas.addEventListener('mouseup', () => {
     isMouseDown = false;
-    console.log('mouse is unclicked');
 });
 
 // // Save to Local Storage
