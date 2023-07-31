@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paint Clone</title>
-    <link rel="icon" type="image/png" href="../img/favicon_kiwi.png">
+    <link rel="icon" type="image/png" href="../img/icons/pencil.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="style/paintclone.css">
 </head>
@@ -16,8 +16,12 @@
             <span id="active-tool" title="Active Tool">Brush</span>
         </div>
         <!-- Brush -->
-        <div class="brush tool">
-            <i class="fas fa-brush" id="brush" title="Brush"></i>
+        <div class="brush border-toolbar">
+            <img 
+                class="tool-icon" 
+                id="brush"
+                title="Pencil" 
+                src="../img/icons/pencil.png">
             <input class="jscolor" id="brush-color">
             <span class="size" id="brush-size" title="Brush Size">10</span>
             <input 
@@ -30,40 +34,63 @@
                 id="brush-slider" />
         </div>
         <!-- Bucket -->
-        <div class="bucket tool">
-            <i class="fas fa-fill-drip" title="Background Color"></i>
+        <div class="bucket border-toolbar">
+            <img 
+                class="tool-icon" 
+                id="paint-bucket" 
+                title="Paint bucket"
+                src="../img/icons/bucket.png" />
             <input class="jscolor" value="ffffff" id="bucket-color">
         </div>
         <!-- Eraser -->
-        <div class="tool">
-            <i class="fas fa-eraser" id="eraser" title="Eraser"></i>
-        </div>
-        <!-- Clear Canvas -->
-        <div class="tool">
-            <i class="fas fa-undo-alt" id="clear-canvas" title="Clear"></i>
-        </div>
-        <!-- Save Local Storage -->
-        <div class="tool">
-            <i class="fas fa-download" id="save-storage" title="Save Local Storage"></i>
-        </div>
-        <!-- Load Local Storage -->
-        <div class="tool">
-            <i class="fas fa-upload" id="load-storage" title="Load Local Storage"></i>
-        </div>
-        <!-- Clear Local Storage -->
-        <div class="tool">
-            <i class="fas fa-trash-alt" id="clear-storage" title="Clear Local Storage"></i>
-        </div>
-        <!-- Download Image -->
-        <div class="tool">
-            <a id="download">
-                <i class="far fa-save" title="Save Image File"></i>
-            </a>
-        </div>
-
-        <!-- Mobile Message -->
-        <div class="mobile-message">
-            <h2>Mobile devices are not yet supported. Please use this application on a larger screen.</h2>
+        <div class="toolbar">
+            <div class="tool">
+                <img 
+                    class="tool-icon" 
+                    id="eraser" 
+                    title="Eraser" 
+                    src="../img/icons/eraser.png"/>
+            </div>
+            <!-- Undo -->
+            <div class="tool">
+                <img 
+                    class="tool-icon" 
+                    id="undo" 
+                    title="Undo" 
+                    src="../img/icons/undo.png"/>
+            </div>
+            <!-- Redo -->
+            <div class="tool">
+                <img 
+                    class="tool-icon" 
+                    id="redo" 
+                    title="Redo" 
+                    src="../img/icons/redo.png"/>
+            </div>
+            <!-- Save Local Storage -->
+            <div class="tool">
+                <img 
+                    class="tool-icon" 
+                    id="download" 
+                    title="Download" 
+                    src="../img/icons/download.png"/>
+            </div>
+            <!-- Load Local Storage -->
+            <div class="tool">
+                <img 
+                    class="tool-icon" 
+                    id="download" 
+                    title="Download" 
+                    src="../img/icons/upload.png"/>
+            </div>
+            <!-- Clear Local Storage -->
+            <div class="tool">
+                <img 
+                    class="tool-icon" 
+                    id="clear-canvas" 
+                    title="Clear canvas" 
+                    src="../img/icons/clear.png"/>
+            </div>
         </div>
     </div>
 
