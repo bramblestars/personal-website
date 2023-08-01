@@ -4,7 +4,8 @@
   box-sizing: border-box;
   --toolbar-color: rgb(239, 254, 255);
   --tool-border: rgb(177, 228, 235);
-  --text: rgb(15, 30, 54)
+  --text: rgb(15, 30, 54);
+  --active-icon-color: rgb(228, 194, 0);
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   background-color: rgb(177, 177, 177);
   font-family: Oswald, sans-serif;
   overflow: hidden;
-}
+} 
 
 .top-bar {
   padding-left: 15px;
@@ -30,12 +31,14 @@ body {
   height: 50px;
   padding: 3px;
   cursor: pointer;
-
-  transition: all 0.5s smooth;
 }
 
 .tool-icon:hover {
   transform: translateY(-2px);
+}
+
+.active-icon { 
+  filter: drop-shadow(0px 2px 3px var(--active-icon-color));
 }
 
 /* Tools */
@@ -143,8 +146,8 @@ body {
 #canvas {
   position: absolute;
   top: 50px;
-  cursor: crosshair;
   z-index: 10;
+  cursor: crosshair;
 }
 
 /* Mobile Message */
