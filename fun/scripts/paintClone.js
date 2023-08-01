@@ -134,7 +134,7 @@ function floodFill(x, y, fillColor) {
     };
 
     // check we are actually filling a different color
-    if (!colorsMatch(targetColor, fillColorRGfB)) {
+    if (!colorsMatch(targetColor, fillColorRGB)) {
         fillPixel(imageData, x, y, targetColor, fillColorRGB);
     }
 }
@@ -201,10 +201,19 @@ function createCanvas() {
 
 // Change canvas size with window 
 window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight - toolBar.clientHeight;
-    createCanvas();
-    restoreCanvas();
+    if (window.innerWidth > canvas.width || window.innerHeight > canvas.height) {
+
+        if (window.innerWidth > canvas.width) {
+            canvas.width = window.innerWidth;
+        }
+        
+        if (window.innerHeight > canvas.height) {
+            canvas.height = window.innerHeight;
+        }
+           
+        createCanvas();
+        restoreCanvas();
+    }
 })
 
 // Clear Canvas
