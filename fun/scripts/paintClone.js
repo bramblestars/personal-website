@@ -66,54 +66,58 @@ bucketIcon.addEventListener('click', () => {
 // Setting Background Color
 bucketColor.addEventListener('change', () => {
     bgColor=`#${bucketColor.value}`;
+    switchActiveToolTo(tools.BUCKET);
 });
 
 // Eraser
-eraserIcon.addEventListener('click', () => {
-    switchActiveToolTo(tools.ERASER);
-    activeToolEl.textContent = 'Eraser';
-    currentColor = bucketColor;
-    currentSize = 50;
-});
+eraserIcon.addEventListener('click', switchToEraser);
 
-undoIcon.addEventListener('click', () => {
-    if (undoStack.length > 0) {
-        let undoneLine = undoStack.pop();
-        redoStack.push(undoneLine);
-        createCanvas();
-        restoreCanvas();
-    }
-});
+// Undo
+undoIcon.addEventListener('click', undo);
 
-redoIcon.addEventListener('click', () => {
-    if (redoStack.length > 0) {
-        let redoLine = redoStack.pop();
-        undoStack.push(redoLine);
-        draw(redoLine);
-    }
-});
+// Redo
+redoIcon.addEventListener('click', redo);
 
 // Download Image
-downloadBtn.addEventListener('click', () => {
-    downloadBtn.href = canvas.toDataURL('image/jpeg');
-    activeToolEl.textContent = 'Image File Saved';
-    setTimeout(switchToBrush, 1500);
-});
+downloadBtn.addEventListener('click', download);
 
-/**
- * Clear the current canvas as well as the draw array. Switch back to the brush
- * tool after 1.5s
- */
-clearCanvasBtn.addEventListener('click', () => {
-    createCanvas();
-    undoStack = [];
-    redoStack = [];
-    // Active Tool
-    activeToolEl.textContent = 'Canvas Cleared';
-    setTimeout(switchToBrush, 1500);
-});
+// Clear Canvas
+clearCanvasBtn.addEventListener('click', clearCanvas);
 
+/*************************************/
+/******** Keyboard Handlers **********/
+/*************************************/
+document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey) {
+        switch(event.key) {
+            case 'z':
+                undo();
+                break;
+            case 'y':
+                redo();
+                break;
+            case 's':
+                download();
+                break;
+        }
+    } else {
+        switch(event.key) {
+            case 'p': 
+                switchToBrush();
+                break;
+            case 'e':
+                switchToEraser();
+                break;
+            case 'b':
+                switchActiveToolTo(tools.BUCKET);
+                break;
+            case 'c':
+                clearCanvas();
+                break;
+        }
+    }
 
+  });
 
 /*************************************/
 /******* Tool Helper Functions********/
@@ -164,6 +168,12 @@ function setPixel(imageData, x, y, color) {
     imageData.data[offset + 2] = color.b;
 }
 
+/**
+ * Compares if two colors are equal
+ * @param {color} a 
+ * @param {color} b 
+ * @returns true if a and b match, false otherwise
+ */
 function colorsMatch(a, b) {
     return a[0] == b[0] && a[1] == b[1] && a[2] == b[2] && a[3] == b[3];
 }
@@ -189,8 +199,10 @@ function floodFill(x, y, fillColor) {
         'b': parseInt(fillRGBArr[3], 16)
     };
 
+    const fillColorClampedArr = [fillColorRGB.r, fillColorRGB.g, fillColorRGB.g, 255];
+
     // check we are actually filling a different color
-    if (!colorsMatch(targetColor, fillColorRGB)) {
+    if (!colorsMatch(targetColor, fillColorClampedArr)) {
         fillPixel(imageData, x, y, targetColor, fillColorRGB);
     }
 }
@@ -238,6 +250,13 @@ function switchToBrush() {
     changeBrushSize();
 }
 
+function switchToEraser() {
+    switchActiveToolTo(tools.ERASER);
+    activeToolEl.textContent = 'Eraser';
+    currentColor = bucketColor;
+    currentSize = 40;
+}
+
 /**
  * @returns the HTML element associated with the current activeTool 
  */
@@ -266,6 +285,51 @@ function switchActiveToolTo(newTool) {
 
     // add drop shadow effect to new tool
     getCurrentTool().classList.add('active-icon');
+}
+
+/**
+ * Undo the previous draw action and puts it onto the "redo" stack
+ */
+function undo() {
+    if (undoStack.length > 0) {
+        let undoneLine = undoStack.pop();
+        redoStack.push(undoneLine);
+        createCanvas();
+        restoreCanvas();
+    }
+}
+
+/**
+ * Redo the previously undone draw action, if it exists
+ */
+function redo() {
+    if (redoStack.length > 0) {
+        let redoLine = redoStack.pop();
+        undoStack.push(redoLine);
+        draw(redoLine);
+    }
+}
+
+/**
+ * Downloads the current image on the canvas to a jpeg file
+ */
+function download() {
+    downloadBtn.href = canvas.toDataURL('image/jpeg');
+    activeToolEl.textContent = 'Image File Saved';
+    setTimeout(switchToBrush, 1500);
+}
+
+/**
+ * Clear the current canvas as well as the draw array. Switch back to the brush
+ * tool after 1.5s
+ */
+function clearCanvas() {
+    createCanvas();
+    undoStack = [];
+    redoStack = [];
+    // Active Tool
+    activeToolEl.textContent = 'Canvas Cleared';
+    setTimeout(switchToBrush, 1500);
 }
 
 /*************************************/

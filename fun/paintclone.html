@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paint Clone</title>
     <link rel="icon" type="image/png" href="../img/icons/pencil.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="style/paintclone.css">
+    
+
 </head>
 <body>
     <!-- Tool Bar -->
@@ -20,7 +21,7 @@
             <img 
                 class="tool-icon active-icon" 
                 id="brush"
-                title="Pencil" 
+                title="Pencil (P)" 
                 src="../img/icons/pencil.png">
             <input class="jscolor" id="brush-color">
             <span class="size" id="brush-size" title="Brush Size">10</span>
@@ -56,7 +57,7 @@
                 <img 
                     class="tool-icon" 
                     id="undo" 
-                    title="Undo" 
+                    title="Undo (Ctrl+Z)" 
                     src="../img/icons/undo.png"/>
             </div>
             <!-- Redo -->
@@ -64,7 +65,7 @@
                 <img 
                     class="tool-icon" 
                     id="redo" 
-                    title="Redo" 
+                    title="Redo (Ctrl+Y)" 
                     src="../img/icons/redo.png"/>
             </div>
             <!-- Download image -->
@@ -73,30 +74,24 @@
                     <img 
                     class="tool-icon" 
                     id="download-icon" 
-                    title="Download this artwork" 
+                    title="Download this artwork (Ctrl+S)" 
                     src="../img/icons/download.png"/>
                 </a>
-            </div>
-            <!-- Load Local Storage -->
-            <div class="tool">
-                <img 
-                    class="tool-icon" 
-                    id="upload" 
-                    title="Upload an existing image" 
-                    src="../img/icons/upload.png"/>
             </div>
             <!-- Clear Local Storage -->
             <div class="tool">
                 <img 
                     class="tool-icon" 
                     id="clear-canvas" 
-                    title="Clear canvas" 
+                    title="Clear Canvas (C)" 
                     src="../img/icons/clear.png"/>
             </div>
         </div>
     </div>
 
-    <!-- Message for smaller screens -->
+
+    <!-- Message for smaller screens before media query & 
+         touch functionality are implemented -->
     <div class="mobile-message">
         <h2>Mobile functionality coming soon!</h2>
     </div>

@@ -155,6 +155,27 @@ body {
 }
 
 /* Media Query: Mobile Devices */
+@media (max-width: 950px) {
+    .top-bar {
+        display: grid;
+        grid-template-columns: 90px 310px auto;
+        height: 100px;
+    }
+
+    #canvas {
+        top: 100px;
+    }
+
+    .brush {
+        grid-column: 2 / 3;
+    }
+    
+    .toolbar {
+        gap: 30px;
+        grid-column: 2 / 4;
+    }
+}
+
 @media screen and (max-width: 600px) {
   .mobile-message {
     position: absolute;
@@ -166,6 +187,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    top: 0;
     z-index: 100;
   }
 
