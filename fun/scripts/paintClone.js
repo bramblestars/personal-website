@@ -8,10 +8,10 @@ const brushSlider = document.getElementById('brush-slider');
 const bucketIcon = document.getElementById('paint-bucket');
 const bucketColor = document.getElementById('bucket-color');
 const eraserIcon = document.getElementById('eraser');
-const clearCanvasBtn = document.getElementById('clear-canvas');
-const saveStorageBtn = document.getElementById('save-storage');
-const clearStorageBtn = document.getElementById('clear-storage');
+const undoIcon = document.getElementById('undo');
+const redoIcon = document.getElementById('redo');
 const downloadBtn = document.getElementById('download');
+const clearCanvasBtn = document.getElementById('clear-canvas');
 const { body } = document;
 
 // Global Variables
@@ -31,11 +31,10 @@ let bgColor = `#${bucketColor.value}`;
 let currentColor = `#${brushColor.value}`;
 let activeTool = tools.BRUSH;
 let isMouseDown = false;
-let drawnArray = [];
-let earliestImage;
-
 let undoStack = [];
 let redoStack = [];
+
+let points = []; // accumulator for a line made up of many points
 
 /*************************************/
 /******** Initialize Canvas **********/
@@ -77,6 +76,23 @@ eraserIcon.addEventListener('click', () => {
     currentSize = 50;
 });
 
+undoIcon.addEventListener('click', () => {
+    if (undoStack.length > 0) {
+        let undoneLine = undoStack.pop();
+        redoStack.push(undoneLine);
+        createCanvas();
+        restoreCanvas();
+    }
+});
+
+redoIcon.addEventListener('click', () => {
+    if (redoStack.length > 0) {
+        let redoLine = redoStack.pop();
+        undoStack.push(redoLine);
+        draw(redoLine);
+    }
+});
+
 // Download Image
 downloadBtn.addEventListener('click', () => {
     downloadBtn.href = canvas.toDataURL('image/jpeg');
@@ -84,10 +100,29 @@ downloadBtn.addEventListener('click', () => {
     setTimeout(switchToBrush, 1500);
 });
 
+/**
+ * Clear the current canvas as well as the draw array. Switch back to the brush
+ * tool after 1.5s
+ */
+clearCanvasBtn.addEventListener('click', () => {
+    createCanvas();
+    undoStack = [];
+    redoStack = [];
+    // Active Tool
+    activeToolEl.textContent = 'Canvas Cleared';
+    setTimeout(switchToBrush, 1500);
+});
+
+
 
 /*************************************/
-/********* Helper Functions **********/
+/******* Tool Helper Functions********/
 /*************************************/
+
+/**
+ * Changes brush size based on slider and displays the correct
+ * number, with a 0 appended to the beginning if the size is <10
+ */
 function changeBrushSize() {
     currentSize = brushSlider.value;
     if (currentSize < 10) {
@@ -98,6 +133,14 @@ function changeBrushSize() {
 }
 
 // Fill algorithm taken from answer to https://stackoverflow.com/questions/53077955/
+
+/**
+ * gets the color at a given pixel at coordinate (x, y) on the canvas
+ * @param {ImageData} imageData Image data
+ * @param {int} x The x coordinate of the pixel to retrieve
+ * @param {int} y The y coordinate of the pixel to retrieve
+ * @returns the color of the specified pixel
+ */
 function getPixel(imageData, x, y) {
     if (x < 0 || y < 0 || x >= imageData.width || y >= imageData.height) {
         return [-1, -1, -1, -1];  // impossible color
@@ -107,6 +150,13 @@ function getPixel(imageData, x, y) {
     }
 }
   
+/**
+ * sets the pixel at coordinate (x, y) to the given color
+ * @param {ImageData} imageData Image data
+ * @param {int} x The x coordinate of the pixel to set
+ * @param {int} y The y coordinate of the pixel to set
+ * @param {any} color The color to set the given pixel to
+ */
 function setPixel(imageData, x, y, color) {
     const offset = (y * imageData.width + x) * 4;
     imageData.data[offset + 0] = color.r;
@@ -117,7 +167,13 @@ function setPixel(imageData, x, y, color) {
 function colorsMatch(a, b) {
     return a[0] == b[0] && a[1] == b[1] && a[2] == b[2] && a[3] == b[3];
 }
-  
+
+/**
+ * Given a coordinate (x, y) and a color, fills the region containing pixel(x, y) with the given color
+ * @param {int} x The x coordinate the user clicked on
+ * @param {int} y The y coordinate the user clicked on
+ * @param {any} fillColor The color to fill the specified region with
+ */
 function floodFill(x, y, fillColor) {
     // read the pixels in the canvas
     const imageData = context.getImageData(0, 0, context.canvas.width, context.canvas.height);
@@ -138,7 +194,15 @@ function floodFill(x, y, fillColor) {
         fillPixel(imageData, x, y, targetColor, fillColorRGB);
     }
 }
-  
+
+/**
+ * DFS algorithm to fill region with a given color
+ * @param {ImageData} imageData Image Data
+ * @param {int} x The x coordinate of the pixel we are currently checking
+ * @param {int} y The y coordinate of the pixel we are currently checking
+ * @param {any} targetColor The original color of the region
+ * @param {any} fillColor The new color of the region
+ */
 function fillPixel(imageData, x, y, targetColor, fillColor) {
   // check we are actually filling a different color
     if (!colorsMatch(targetColor, fillColor)) {
@@ -162,10 +226,11 @@ function fillPixel(imageData, x, y, targetColor, fillColor) {
     context.putImageData(imageData, 0, 0);
   }
 
-// Switch back to Brush
+/**
+ * Switch to the brush tool, setting the color and size
+ */
 function switchToBrush() {
     switchActiveToolTo(tools.BRUSH);
-
     activeToolEl.textContent = 'Brush';
     currentColor = `#${brushColor.value}`;
     currentSize = 10;
@@ -173,6 +238,9 @@ function switchToBrush() {
     changeBrushSize();
 }
 
+/**
+ * @returns the HTML element associated with the current activeTool 
+ */
 function getCurrentTool() {
     switch(activeTool) {
         case tools.BRUSH:
@@ -184,13 +252,29 @@ function getCurrentTool() {
     }
 }
 
+/**
+ * Removes the active-icon class from the current active tool,
+ * sets the activeTool global variable to the new tool, and then
+ * adds the active-icon class to the new tool
+ * @param {int} newTool the tool we are trying to switch to
+ */
 function switchActiveToolTo(newTool) {
+    // remove drop shadow effect from previous tool
     getCurrentTool().classList.remove('active-icon');
+    
     activeTool = newTool;
+
+    // add drop shadow effect to new tool
     getCurrentTool().classList.add('active-icon');
 }
 
-// Create Canvas
+/*************************************/
+/****** Canvas Helper Functions ******/
+/*************************************/
+
+/**
+ * Creates a canvas which fills the window and colors it white
+ */
 function createCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight - toolBar.clientHeight;
@@ -199,7 +283,9 @@ function createCanvas() {
     body.appendChild(canvas);
 }
 
-// Change canvas size with window 
+/** 
+ * Change canvas size with window. Ignores change if the window is getting smaller.
+ * */ 
 window.addEventListener('resize', () => {
     if (window.innerWidth > canvas.width || window.innerHeight > canvas.height) {
 
@@ -216,45 +302,71 @@ window.addEventListener('resize', () => {
     }
 })
 
-// Clear Canvas
-clearCanvasBtn.addEventListener('click', () => {
-    createCanvas();
-    drawnArray = [];
-    // Active Tool
-    activeToolEl.textContent = 'Canvas Cleared';
-    setTimeout(switchToBrush, 1500);
-});
 
-// Draw what is stored in DrawnArray
+/**
+ * Draw what is stored in undoStack
+ */
 function restoreCanvas() {
-    for (let i = 1; i < drawnArray.length; i++) {
+    for (let i = 0; i < undoStack.length; i++) {
+        draw(undoStack[i]);
+    }
+}
+
+/**
+ * Given an array line, draws the action specified by the points in the line.
+ * @param {Array} line 
+ */
+function draw(line) {
+    if (line[0].tool == tools.BUCKET) {
+        floodFill(line[0].x, line[0].y, line[0].color);
+        return; // since bucket action will only have one point
+    }
+
+    for (let i = 1; i < line.length; i++) {
         context.beginPath();
-        context.moveTo(drawnArray[i - 1].x, drawnArray[i - 1].y);
-        context.lineWidth = drawnArray[i].size;
+        context.moveTo(line[i - 1].x, line[i - 1].y);
+        context.lineWidth = line[i].size;
         context.lineCap = 'round';
-        if (drawnArray[i].eraser) {
-            context.strokeStyle = bgColor;
-        } else {
-            context.strokeStyle = drawnArray[i].color;
+        if (line[i].tool == tools.ERASER) {
+            context.strokeStyle = 'white';
+        } else { //
+            context.strokeStyle = line[i].color;
         }
-        context.lineTo(drawnArray[i].x, drawnArray[i].y);
+        context.lineTo(line[i].x, line[i].y);
         context.stroke();
     }
 }
 
-// Store Drawn Lines in DrawnArray
-function storeDrawn(x, y, size, color, erase) {
-    const line = {
+/**
+ * Stores a point in the current "points" accumulator
+ * @param {int} x The x coordinate of the point
+ * @param {int} y The y coordinate of the point
+ * @param {int} size The brush size (if applicable)
+ * @param {any} color The color of the current drawing action
+ * @param {int} tool The tool being used for the current drawing action
+ */
+function storeDrawn(x, y, size, color, tool) {
+    const point = {
       x,
       y,
       size,
       color,
-      eraser,
+      tool
     };
-    drawnArray.push(line);
+    points.push(point);
 }
 
-// Get Mouse Position
+/*************************************/
+/********** Mouse Handlers ***********/
+/*************************************/
+
+/**
+ * Returns an (x, y) coordinate of the current mouse 
+ * position in relation to the canvas.
+ * @param {Event} event 
+ * @returns an object Pos where Pos.x is the x coordinate of the mouse action
+ *          and Pos.y is the y coordinate
+ */
 function getMousePosition(event) {
     const boundaries = canvas.getBoundingClientRect();
     return {
@@ -268,14 +380,22 @@ canvas.addEventListener('mousedown', (event) => {
     isMouseDown = true;
     const currentPosition = getMousePosition(event);
     context.moveTo(currentPosition.x, currentPosition.y);
+    redoStack = [];
 
     if (activeTool == tools.BUCKET) {
         floodFill(currentPosition.x, currentPosition.y, bgColor);
+        storeDrawn(
+            currentPosition.x,
+            currentPosition.y,
+            0,
+            bgColor,
+            tools.BUCKET
+        );
     } else {
         context.beginPath();
         context.lineWidth = currentSize;
         context.lineCap = 'round';
-        context.strokeStyle = activeTool == tools.ERASER ? 'white' : currentColor;
+        context.strokeStyle = (activeTool == tools.ERASER) ? '#FFFFFF' : currentColor;
     }
     
 });
@@ -291,16 +411,16 @@ canvas.addEventListener('mousemove', (event) => {
             currentPosition.y,
             currentSize,
             currentColor,
-            activeTool == tools.ERASER
+            activeTool
         );
-    } else if (activeTool != tools.BUCKET) {
-      storeDrawn(undefined);
-    }
+    } 
 });
 
 // Mouse Up
 canvas.addEventListener('mouseup', () => {
     isMouseDown = false;
+    if (points.length > 0) undoStack.push(points);
+    points = [];
 });
 
 
