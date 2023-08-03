@@ -9,16 +9,18 @@ html {
 
 body {
     height: 100vh;
-    background-color: #fffde9;
+    background-color: rgb(255, 253, 233);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='44' viewBox='0 0 34 44'%3E%3Cg fill='%23cfe5b8' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M1 6.2C.72 5.55.38 4.94 0 4.36v13.28c.38-.58.72-1.2 1-1.84A12.04 12.04 0 0 0 7.2 22 12.04 12.04 0 0 0 1 28.2c-.28-.65-.62-1.26-1-1.84v13.28c.38-.58.72-1.2 1-1.84A12.04 12.04 0 0 0 7.2 44h21.6a12.05 12.05 0 0 0 5.2-4.36V26.36A12.05 12.05 0 0 0 28.8 22a12.05 12.05 0 0 0 5.2-4.36V4.36A12.05 12.05 0 0 0 28.8 0H7.2A12.04 12.04 0 0 0 1 6.2zM17.36 23H12a10 10 0 1 0 0 20h5.36a11.99 11.99 0 0 1 0-20zm1.28-2H24a10 10 0 1 0 0-20h-5.36a11.99 11.99 0 0 1 0 20zM12 1a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 14a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3.46-2a2 2 0 1 0-3.47 2 2 2 0 0 0 3.47-2zm0-4a2 2 0 1 0-3.47-2 2 2 0 0 0 3.47 2zM12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.46 2a2 2 0 1 0 3.47-2 2 2 0 0 0-3.47 2zm0 4a2 2 0 1 0 3.47 2 2 2 0 0 0-3.47-2zM24 43a10 10 0 1 0 0-20 10 10 0 0 0 0 20zm0-14a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.46 2a2 2 0 1 0 3.47-2 2 2 0 0 0-3.47 2zm0 4a2 2 0 1 0 3.47 2 2 2 0 0 0-3.47-2zM24 37a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3.46-2a2 2 0 1 0-3.47 2 2 2 0 0 0 3.47-2zm0-4a2 2 0 1 0-3.47-2 2 2 0 0 0 3.47 2z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .container {
     width: 40rem;
-    height: 44rem;
-    background-color: #feffca;
+    height: auto;
+    margin: 10rem auto;
+    background-color: rgba(254, 255, 202, 0.788);
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
+    padding: 1.6rem;
 
     display: flex;
     flex-direction: column;
@@ -33,7 +35,7 @@ body {
 
 .kiwi-pic-container {
     width: 90%;
-    height: 60%;
+    height: 36rem;
 }
 
 .kiwi-pic {
@@ -47,9 +49,9 @@ body {
     color: #303012;
     font-family: 'Varela Round', sans-serif;
     font-size: 1.8rem;
-    padding: 4px 0;
+    padding: 4px 2.4rem 4px 0;
 
-    background-color: #f0d069;
+    background-color: rgb(240, 208, 105);
     border: none;
     border-radius: 5px;
     margin: 1rem auto 3rem;
@@ -60,16 +62,23 @@ body {
     cursor: pointer;
 
     transform: none;
-    transition: all 0.5s smooth;
+    transition: all 0.2s;
 }
 
 .new-pic-button:hover {
-    transform: translateY(-2px);
-    background-color: #fae399; 
-    box-shadow: 2px 4px 5px rgb(0, 0, 0, 0.2);
+    background-color: rgb(250, 227, 153); 
 }
 
 .new-pic-button:active {
-    transform: none;
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+.kiwi-icon {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    margin-left: 0.6rem;
 }
 
