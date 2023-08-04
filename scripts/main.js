@@ -1,13 +1,12 @@
 // sections on home page
-const homeSection = document.getElementById("home-section");
 const aboutSection = document.getElementById("about-section");
 const blogSection = document.getElementById("blog-section");
 const gamedevSection = document.getElementById("gamedev-section");
+const funSection = document.getElementById("fun-section");
 
-const homeBtn = document.getElementById("home");
-const aboutBtn = document.getElementById("about");
 const blogBtn = document.getElementById("blog");
 const gamedevBtn = document.getElementById("gamedev");
+const funBtn = document.getElementById("fun");
 const cvBtn = document.getElementById("cv");
 
 // mobile navigation button
@@ -20,17 +19,20 @@ btnNavEl.addEventListener('click', function() {
 });
 
 /*************** Switch between pages ***************/
-let currentActivePage = homeSection;
+let currentActivePage = aboutSection;
 
+/**
+ * Adds the nodisp class to the current active page and switches the current
+ * active page to the new section as specified. Also exits the mobile menu if
+ * that was active.
+ * @param {any} section the HTML section element to switch to 
+ */
 function switchToPage(section) {
     currentActivePage.classList.add("nodisp");
     section.classList.remove("nodisp");
     currentActivePage = section;
+    navEl.classList.remove('nav-open');
 }
-
-aboutBtn.addEventListener("click", () => {
-    switchToPage(aboutSection);
-});
 
 blogBtn.addEventListener("click", () => {
     switchToPage(blogSection);
@@ -38,4 +40,8 @@ blogBtn.addEventListener("click", () => {
 
 gamedevBtn.addEventListener("click", () => {
     switchToPage(gamedevSection);
+})
+
+funBtn.addEventListener("click", () => {
+    switchToPage(funSection);
 })
