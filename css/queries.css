@@ -1,133 +1,107 @@
-
 /*********************************************/
 /* BELOW 1000px (Smaller horizontal screens) */
 /*********************************************/
-
 @media (max-width: 62.5em) {
-    html {
-        font-size: 50%; /* = 8px */
-    }
-
-    main {
-        gap: 4rem;
-    }
+  html {
+    font-size: 50%; /* = 8px */
+  }
+  main {
+    gap: 4rem;
+  }
 }
-
 /*********************************************/
 /****** BELOW 780px (Vertical tablets) *******/
 /*********************************************/
-
 @media (max-width: 49em) {
-    
-    .btn-mobile-nav {
-        display: block;
-    }
-
-    .content {
-        width: 90%;
-    }
-
-    .nav-ul {
-        background-color: rgba(255, 255, 255, 0.97);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        padding-top: 10rem;
-
-        transform: translateX(100%);
-
-        display: flex;
-        flex-direction: column;
-        justify-content: top;
-        align-items: center;
-        gap: 4rem;
-
-        transition: all 0.5s ease-in;
-
-        opacity: 0;
-        pointer-events: none;
-        visibility: hidden;
-    }
-
-    .nav-open .nav-ul {
-        opacity: 1;
-        pointer-events: auto;
-        visibility: visible;
-
-        transform: translateX(0);
-    }
-
-    .nav-open .icon-mobile-nav[name="close-outline"] {
-        display: block;
-    }
-
-    .nav-open .icon-mobile-nav[name="menu-outline"] {
-        display: none;
-    }
+  .btn-mobile-nav {
+    display: block;
+  }
+  .content {
+    width: 90%;
+  }
+  .nav-ul {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding-top: 10rem;
+    transform: translateX(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 4rem;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .nav-open .nav-ul {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name=close-outline] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name=menu-outline] {
+    display: none;
+  }
 }
-
-
 /*********************************************/
 /*** BELOW 640px (Smaller vertical tablets) **/
 /*********************************************/
 @media (max-width: 40em) {
-    .picture {
-        width: 50rem;
-        height: 50%;
-    }
-    
-    .picture img {
-        width: 16rem;
-        height: 24rem;
-        object-position: 0% 75%;
-    
-        border-radius: 6px;
-        box-shadow: 0 2px 3px 1px var(--box-shadow-color);
-        object-fit: cover;
-    }
-
-    .banner-img {
-        width: 80%;
-    }
+  .picture {
+    width: 50rem;
+    height: 50%;
+  }
+  .picture img {
+    width: 16rem;
+    height: 24rem;
+    -o-object-position: 0% 75%;
+       object-position: 0% 75%;
+    border-radius: 6px;
+    box-shadow: 0 2px 3px 1px var(--box-shadow-color);
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .banner-img {
+    width: 80%;
+  }
 }
-
 /*********************************************/
 /*********** BELOW 512px (Phones) ************/
 /*********************************************/
 @media (max-width: 32em) {
-    main {
-        flex-direction: column;
-    }
-
-    .picture {
-        width: 100%;
-    }
-
-    .picture img {
-        width: 100%;
-        height: 30rem;
-        object-position: 0 60%;
-    }
-
-
-    footer {
-        grid-template-columns: 1fr;
-    }
-
-    .contact p {
-        margin-bottom: 4px;
-    }
+  main {
+    flex-direction: column;
+  }
+  .picture {
+    width: 100%;
+  }
+  .picture img {
+    width: 100%;
+    height: 30rem;
+    -o-object-position: 0 60%;
+       object-position: 0 60%;
+  }
+  footer {
+    grid-template-columns: 1fr;
+  }
+  .contact p {
+    margin-bottom: 4px;
+  }
 }
-
 /*********************************************/
 /******** BELOW 400px (Small Phones) *********/
 /*********************************************/
-
 @media (max-width: 25em) {
-    .title a:link,
-    .title a:visited {
-        font-size: 3.6rem;
-    }
-}
+  .title a:link,
+  .title a:visited {
+    font-size: 3.6rem;
+  }
+}/*# sourceMappingURL=queries.css.map */

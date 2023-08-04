@@ -1,61 +1,232 @@
-.page-title {
-    font-size: 3rem;
-    font-weight: 700;
-    font-family: "Paytone One", sans-serif;
+/****************************************/
+/*************** GENERAL ****************/
+/****************************************/
+/* Main box containing all content */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
 
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: var(--secondary-color);
+html {
+  /* 10px */
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(120deg, rgb(238, 253, 253) 0%, rgb(224, 255, 255) 100%);
+}
+
+.content {
+  width: 90rem;
+  margin: 3rem auto;
+  background-color: white;
+  border-radius: 6px;
+  -ms-box-shadow: 0 6px 9px 4px rgba(12, 71, 71, 0.3);
+  box-shadow: 0 6px 9px 4px rgba(12, 71, 71, 0.3);
+}
+
+/****************************************/
+/**************** HEADER ****************/
+/****************************************/
+header {
+  border-radius: 6px 6px 0 0;
+  padding: 1.8rem 2rem 2rem 2rem;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  align-content: space-evenly;
+  gap: 4rem;
+  background-color: #e6fafa;
+}
+
+.title {
+  padding-left: 2rem;
+  letter-spacing: -1px;
+}
+.title a:link,
+.title a:visited {
+  font-family: "Paytone One", sans-serif;
+  font-size: 4.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #33477E;
+  transition: all 0.2s;
+}
+.title a:active,
+.title a:hover {
+  color: #557e7e;
+}
+
+.navigation {
+  margin-right: 3rem;
+  margin-left: auto;
+}
+.navigation a:link,
+.navigation a:visited {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: #245959;
+  padding-top: 0.6rem;
+  transition: all 0.5s;
+}
+.navigation a:hover,
+.navigation a:active {
+  color: #557e7e;
+  text-decoration: underline;
+}
+.navigation a:active {
+  font-size: 2.3rem;
+}
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+  align-content: space-evenly;
+  gap: 3rem;
+  letter-spacing: 1.5px;
+}
+
+/* Mobile navigation */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 6rem;
+  width: 6rem;
+  color: #245959;
+}
+
+.icon-mobile-nav[name=close-outline] {
+  display: none;
+}
+
+/****************************************/
+/***************** BODY *****************/
+/****************************************/
+/** Homepage **/
+main {
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: start;
+  align-content: start;
+  gap: 6rem;
+}
+
+.picture {
+  width: 80rem;
+  height: 80%;
+}
+.picture img {
+  width: 28rem;
+  height: 24rem;
+  -o-object-position: 0% 75%;
+     object-position: 0% 75%;
+  border-radius: 6px;
+  -ms-box-shadow: 0 2px 3px 1px rgba(12, 71, 71, 0.3);
+  box-shadow: 0 2px 3px 1px rgba(12, 71, 71, 0.3);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/** "Fun" page **/
+.fun {
+  width: 100%;
+}
+
+.fun-list {
+  list-style: none;
+}
+
+.fun-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/****************************************/
+/**************** FOOTER ****************/
+/****************************************/
+footer {
+  margin: 0 4rem;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  border-top: 0.5rem solid #e6fafa;
+}
+
+.contact p {
+  color: #557e7e;
+}
+
+.contact p:first-of-type {
+  margin-bottom: 4px;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Paytone One", sans-serif;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #245959;
 }
 
 /**** for regular text ****/
 .text {
-    font-weight: 400;
-    font-size: 1.8rem;
-    letter-spacing: 0.5px;
-    line-height: 1.5;
-    color: rgb(77, 77, 83);
-
-    padding-bottom: 2rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  color: rgb(77, 77, 83);
+  padding-bottom: 2rem;
 }
 
 .links a:link,
 .links a:visited {
-    color: var(--secondary-color);
-    text-decoration: none;
+  color: #245959;
+  text-decoration: none;
 }
 
 .links a:hover {
-    color: var(--medium-color);
+  color: #557e7e;
 }
 
 .links a:active {
-    font-size: 1.65rem;
+  font-size: 1.65rem;
 }
 
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .justify-end {
-    justify-content: end;
+  justify-content: end;
 }
 
 .nodisp {
-    display: none;
+  display: none;
 }
 
 /**** image banners***/
 .banner-img {
-    width: 60%;
-    margin-bottom: 1rem;
-    border-radius: 2rem;
-    box-shadow: 0 1rem 1rem -1rem var(--box-shadow-color);
+  width: 60%;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 1rem -1rem rgba(12, 71, 71, 0.3);
+  transition: all 0.2s;
 }
 
 .banner-img:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0 1.5rem 1rem -0.8rem var(--box-shadow-color);
-}
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1.5rem 1rem -0.8rem rgba(12, 71, 71, 0.3);
+}/*# sourceMappingURL=general.css.map */

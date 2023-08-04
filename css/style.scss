@@ -1,0 +1,199 @@
+$background: linear-gradient(120deg, rgb(238, 253, 253) 0%, rgba(224,255,255,1) 100%);
+$boxShadowColor: rgba(12, 71, 71, 0.3);
+$headerColor: #e6fafa;
+$titleColor: #33477E;
+$textColor: #4d4d53;
+$secondaryColor: #245959;
+$mediumColor: #557e7e;
+
+@mixin box-shadow($x, $y, $blur, $spread, $c) {
+    -webkit-box-shadow: $x $y $blur $spread $c;
+    -moz-box-shadow: $x $y $blur $spread $c;
+    -ms-box-shadow: $x $y $blur $spread $c;
+    box-shadow: $x $y $blur $spread $c;
+}
+
+/****************************************/
+/*************** GENERAL ****************/
+/****************************************/
+
+/* Main box containing all content */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    /* 10px */
+    font-size: 62.5%; 
+}
+
+body {
+    background: $background;
+}
+
+.content {
+    width: 90rem;
+    margin: 3rem auto;
+    background-color: white;
+    border-radius: 6px;
+    @include box-shadow(0, 6px, 9px, 4px, $boxShadowColor);
+}
+
+/****************************************/
+/**************** HEADER ****************/
+/****************************************/
+
+header {
+    border-radius: 6px 6px 0 0;
+    padding: 1.8rem 2rem 2rem 2rem;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    align-content: space-evenly;
+    gap: 4rem;
+    background-color: $headerColor;
+}
+
+.title {
+    padding-left: 2rem;
+    letter-spacing: -1px;
+
+    a:link,
+    a:visited {
+        font-family: "Paytone One", sans-serif;
+        font-size: 4.6rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: $titleColor;
+
+        transition: all 0.2s;
+    }
+
+    a:active,
+    a:hover {
+        color: $mediumColor;
+    }
+}
+
+.navigation {
+    margin-right: 3rem;
+    margin-left: auto;
+
+    a:link, 
+    a:visited {
+        font-size: 2.4rem;
+        text-decoration: none;
+        color: $secondaryColor;
+        padding-top: 0.6rem;
+
+        transition: all 0.5s;
+    }
+
+    a:hover,
+    a:active {
+        color: $mediumColor;
+        text-decoration: underline;
+    }
+
+    a:active {
+        font-size: 2.3rem;
+    }
+}
+
+.nav-ul{
+    list-style: none;
+    display: flex;
+    align-content: space-evenly;
+    gap: 3rem;
+    letter-spacing: 1.5px;
+}
+
+
+/* Mobile navigation */
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 6rem;
+    width: 6rem;
+    color: $secondaryColor;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+
+/****************************************/
+/***************** BODY *****************/
+/****************************************/
+
+
+/** Homepage **/
+main {
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: start;
+    align-content: start;
+    gap: 6rem;
+}
+
+.picture {
+    width: 80rem;
+    height: 80%;
+
+    img {
+        width: 28rem;
+        height: 24rem;
+        object-position: 0% 75%;
+
+        border-radius: 6px;
+        @include box-shadow(0, 2px, 3px, 1px, $boxShadowColor);
+        object-fit: cover;
+    }
+}
+
+/** "Fun" page **/
+.fun {
+    width: 100%;
+}
+
+.fun-list {
+    list-style: none;
+}
+
+.fun-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/****************************************/
+/**************** FOOTER ****************/
+/****************************************/
+
+footer {
+    margin: 0 4rem;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+
+    border-top: 0.5rem solid $headerColor;
+}
+
+.contact p {
+    color: $mediumColor;
+}
+
+.contact p:first-of-type {
+    margin-bottom: 4px;
+}
