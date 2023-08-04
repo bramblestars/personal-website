@@ -35,7 +35,7 @@
     <article class="content">
         <!-- Header bar containing links -->
         <header>
-            <h2 class="title"><a href="/">Tracy X. Cui</a></h2>
+            <h2 class="title"><a href="/" id="home">Tracy X. Cui</a></h2>
             <nav class="navigation">
                 <ul class="nav-ul">
                     <li><a href="#" id="about">about</a></li>
@@ -53,27 +53,7 @@
 
         <!-- Main content -->
         <main>
-            <section class="about nodisp" id="about-section">
-                <div class="picture">
-                    <img src="img/me.jpg" />
-                </div>
-        
-                <div class="description">
-                    <p class="text"> 
-                        I am a software developer with a B.S. in 
-                        Discrete Math and Logic from Carnegie 
-                        Mellon University. 
-                    </p>
-                    <p class="text">
-                        I have a broad interest web development, 
-                        game development, combinatorics, and graph algorithms.
-                        I also enjoy digital art and animation in my free time, 
-                        as well as kayaking and video games.
-                    </p>
-                </div>
-            </section>
-
-            <section class="fun nodisp" id="home-section">
+            <section class="fun" id="home-section">
                 <ul class="fun-list">
                     <li class="fun-list-item" id="cat-pic">
                         <a href="fun/randomkiwi.html" class="center">
@@ -108,7 +88,31 @@
                 </ul>
             </section>
 
-            <section class="gamedev" id="gamedev-section">
+            <section class="about nodisp" id="about-section">
+                <div class="picture">
+                    <img src="img/me.jpg" />
+                </div>
+        
+                <div class="description">
+                    <p class="text"> 
+                        I am a software developer with a B.S. in 
+                        Discrete Math and Logic from Carnegie 
+                        Mellon University. 
+                    </p>
+                    <p class="text">
+                        I have a broad interest web development, 
+                        game development, combinatorics, and graph algorithms.
+                        I also enjoy digital art and animation in my free time, 
+                        as well as kayaking and video games.
+                    </p>
+                </div>
+            </section>
+
+            <section class="blog nodisp" id="blog-section">
+                <h2 class="page-title">Blog coming soon!</h2>
+            </section>
+
+            <section class="gamedev nodisp" id="gamedev-section">
                 <h2 class="page-title">Game Development Projects</h2>
                 <ul class="fun-list">
                     <li class="fun-list-item">
@@ -125,7 +129,8 @@
                         </p>
                     </li>
                     <li class="fun-list-item">
-                        <a href="#" class="center">
+                        <a href="https://www.gamecreation.org/games/starlight" 
+                            target="blank" class="center">
                             <img src="img/banners/starlight.png"
                             class="banner-img"
                             alt="Starlight"/>
@@ -134,13 +139,14 @@
                             <a href="https://www.gamecreation.org/games/starlight" target="blank">
                                 Starlight
                             </a>
-                        </h3>
-                        <p class="text">
+                        </h3> 
+                        <p class="text game-description">
                             A 2D platformer where you are a cat trying to collect stars for a fish.
                         </p>
                     </li>
                     <li class="fun-list-item">
-                        <a href="#" class="center">
+                        <a href="https://www.gamecreation.org/games/danger_dancer" 
+                            target="blank" class="center">
                             <img src="img/banners/danger_dancer.png"
                             class="banner-img"
                             alt="Danger Dancer"/>
@@ -150,8 +156,24 @@
                                 Danger Dancer
                             </a>
                         </h3>
-                        <p class="text">
-                            A 2D top-down game where you are competing in a dance-off in the far future.
+                        <p class="text game-description">
+                            A 2D top-down game where you are competing in a dance-off in the far future (character art only).
+                        </p>
+                    </li>
+                    <li class="fun-list-item">
+                        <a href="https://www.gamecreation.org/games/slope_crusher" 
+                            target="blank" class="center">
+                            <img src="img/banners/slope_crusher.png"
+                            class="banner-img"
+                            alt="Slope Crusher"/>
+                        </a>
+                        <h3 class="game-title">
+                            <a href="https://www.gamecreation.org/games/slope_crusher" target="blank">
+                                Slope Crusher
+                            </a>
+                        </h3>
+                        <p class="text game-description">
+                            A 3D snowboard racing game (character modeling only).
                         </p>
                     </li>
                 </ul>

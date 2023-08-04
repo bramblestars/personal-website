@@ -160,7 +160,7 @@ main {
 /** Game Dev list **/
 .game-title a:link,
 .game-title a:visited {
-  color: #75401d;
+  color: #261d75;
   font-size: 2.4rem;
   font-family: "Paytone One", sans-serif;
   text-decoration: none;
@@ -168,7 +168,12 @@ main {
 }
 .game-title a:hover,
 .game-title a:active {
-  color: #97651a;
+  color: #3024a3;
+}
+
+.game-description {
+  text-align: center;
+  max-width: 80%;
 }
 
 /****************************************/
