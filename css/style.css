@@ -120,6 +120,7 @@ main {
 /** About page **/
 .about {
   width: 100%;
+  margin: 2rem 0;
   display: flex;
   justify-content: left;
   gap: 2.4rem;
