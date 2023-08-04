@@ -40,7 +40,6 @@ let points = []; // accumulator for a line made up of many points
 /******** Initialize Canvas **********/
 /*************************************/
 createCanvas();
-earliestImage = canvas
 
 /*************************************/
 /******* Toolbar functionality *******/
@@ -185,9 +184,16 @@ function colorsMatch(a, b) {
  * @param {any} fillColor The color to fill the specified region with
  */
 function floodFill(x, y, fillColor) {
+     
     // read the pixels in the canvas
     const imageData = context.getImageData(0, 0, context.canvas.width, context.canvas.height);
     
+    // check if we're inside the canvas 
+    if (x < 0 || x >= context.canvas.width || y < 0 || y >= context.canvas.height) {
+        return;
+    }
+
+
     // get the color we're filling
     const targetColor = getPixel(imageData, x, y);
 
@@ -216,7 +222,9 @@ function floodFill(x, y, fillColor) {
  * @param {any} fillColor The new color of the region
  */
 function fillPixel(imageData, x, y, targetColor, fillColor) {
-  // check we are actually filling a different color
+   
+
+    // check we are actually filling a different color
     if (!colorsMatch(targetColor, fillColor)) {
         const pixelsToCheck = [x, y];
         while (pixelsToCheck.length > 0) {
