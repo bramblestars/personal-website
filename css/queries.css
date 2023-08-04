@@ -50,20 +50,26 @@
   .nav-open .icon-mobile-nav[name=menu-outline] {
     display: none;
   }
+  .about {
+    gap: 2rem;
+  }
 }
 /*********************************************/
 /*** BELOW 640px (Smaller vertical tablets) **/
 /*********************************************/
 @media (max-width: 40em) {
+  .about {
+    flex-direction: column;
+  }
   .picture {
-    width: 50rem;
+    width: 100%;
     height: 50%;
   }
   .picture img {
-    width: 16rem;
+    width: 100%;
     height: 24rem;
-    -o-object-position: 0% 75%;
-       object-position: 0% 75%;
+    -o-object-position: 0% 60%;
+       object-position: 0% 60%;
     border-radius: 6px;
     box-shadow: 0 2px 3px 1px var(--box-shadow-color);
     -o-object-fit: cover;
