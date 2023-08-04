@@ -171,6 +171,10 @@ button:active {
     transform: translateY(-0.2rem)
 }
 
+.nodisp {
+    display: none;
+}
+
 /* Media Query */
 @media screen and (max-width: 62.5em) {
     .quote-container {
