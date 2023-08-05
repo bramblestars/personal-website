@@ -5,6 +5,8 @@ var progressBarFull = document.querySelector("#unity-progress-bar-full");
 var fullscreenButton = document.querySelector("#unity-fullscreen-button");
 var warningBanner = document.querySelector("#unity-warning");
 
+canvas.focus();
+
 // Shows a temporary message banner/ribbon for a few seconds, or
 // a permanent error message on top of the canvas if type=='error'.
 // If type=='warning', a yellow highlight color is used.
@@ -12,34 +14,34 @@ var warningBanner = document.querySelector("#unity-warning");
 // way that non-critical warnings and error messages are presented to the
 // user.
 function unityShowBanner(msg, type) {
-function updateBannerVisibility() {
-    warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
-}
-var div = document.createElement('div');
-div.innerHTML = msg;
-warningBanner.appendChild(div);
-if (type == 'error') div.style = 'background: red; padding: 10px;';
-else {
-    if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
-    setTimeout(function() {
-    warningBanner.removeChild(div);
+    function updateBannerVisibility() {
+        warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+    }
+    var div = document.createElement('div');
+    div.innerHTML = msg;
+    warningBanner.appendChild(div);
+    if (type == 'error') div.style = 'background: red; padding: 10px;';
+    else {
+        if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+        setTimeout(function() {
+            warningBanner.removeChild(div);
+            updateBannerVisibility();
+        }, 5000);
+    }
     updateBannerVisibility();
-    }, 5000);
-}
-updateBannerVisibility();
 }
 
 var buildUrl = "Build";
-var loaderUrl = buildUrl + "/bee game.loader.js";
+var loaderUrl = buildUrl + "/bee.loader.js";
 var config = {
-dataUrl: buildUrl + "/bee game.data",
-frameworkUrl: buildUrl + "/bee game.framework.js",
-codeUrl: buildUrl + "/bee game.wasm",
-streamingAssetsUrl: "StreamingAssets",
-companyName: "DefaultCompany",
-productName: "Road Rage",
-productVersion: "1.0",
-showBanner: unityShowBanner,
+    dataUrl: buildUrl + "/bee.data",
+    frameworkUrl: buildUrl + "/bee.framework.js",
+    codeUrl: buildUrl + "/bee.wasm",
+    streamingAssetsUrl: "StreamingAssets",
+    companyName: "DefaultCompany",
+    productName: "Road Rage",
+    productVersion: "1.0",
+    showBanner: unityShowBanner,
 };
 
 // By default Unity keeps WebGL canvas render target size matched with
@@ -52,25 +54,25 @@ showBanner: unityShowBanner,
 if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
 // Mobile device style: fill the whole browser client area with the game canvas:
 
-var meta = document.createElement('meta');
-meta.name = 'viewport';
-meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-document.getElementsByTagName('head')[0].appendChild(meta);
-container.className = "unity-mobile";
+    var meta = document.createElement('meta');
+    meta.name = 'viewport';
+    meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+    document.getElementsByTagName('head')[0].appendChild(meta);
+    container.className = "unity-mobile";
 
-// To lower canvas resolution on mobile devices to gain some
-// performance, uncomment the following line:
-// config.devicePixelRatio = 1;
+    // To lower canvas resolution on mobile devices to gain some
+    // performance, uncomment the following line:
+    // config.devicePixelRatio = 1;
 
-canvas.style.width = window.innerWidth + 'px';
-canvas.style.height = window.innerHeight + 'px';
+    canvas.style.width = window.innerWidth + 'px';
+    canvas.style.height = window.innerHeight + 'px';
 
-unityShowBanner('WebGL builds are not supported on mobile devices.');
+    unityShowBanner('WebGL builds are not supported on mobile devices.');
 } else {
 // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-canvas.style.width = "960px";
-canvas.style.height = "600px";
+    canvas.style.width = "900px";
+    canvas.style.height = "510px";
 }
 
 loadingBar.style.display = "block";
