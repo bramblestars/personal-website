@@ -120,6 +120,7 @@ main {
 /** About page **/
 .about {
   width: 100%;
+  margin: 2rem 0;
   display: flex;
   justify-content: left;
   gap: 2.4rem;
@@ -160,7 +161,7 @@ main {
 /** Game Dev list **/
 .game-title a:link,
 .game-title a:visited {
-  color: #75401d;
+  color: #261d75;
   font-size: 2.4rem;
   font-family: "Paytone One", sans-serif;
   text-decoration: none;
@@ -168,7 +169,28 @@ main {
 }
 .game-title a:hover,
 .game-title a:active {
-  color: #97651a;
+  color: #3024a3;
+}
+
+.game-description {
+  text-align: center;
+  max-width: 80%;
+}
+
+/** CV page **/
+.cv {
+  width: 100%;
+}
+
+.cv-part {
+  border-top: 4px dotted rgb(227, 249, 255);
+  padding: 2rem;
+}
+
+.cv-text {
+  margin-top: 0.6rem;
+  font-size: 1.6rem;
+  color: #4d4d53;
 }
 
 /****************************************/
@@ -212,16 +234,14 @@ footer {
   padding-bottom: 2rem;
 }
 
-.center-text .links a:link,
+.links a:link,
 .links a:visited {
   color: #245959;
   text-decoration: none;
 }
-
 .links a:hover {
   color: #557e7e;
 }
-
 .links a:active {
   font-size: 1.65rem;
 }

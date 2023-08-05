@@ -177,6 +177,52 @@ main {
   max-width: 80%;
 }
 
+/** CV page **/
+.cv {
+  width: 100%;
+}
+
+.cv-pdf {
+  color: #245959;
+  font-size: 2.6rem;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.cv-pdf:hover {
+  color: #557e7e;
+}
+
+.cv-download-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  transform: translateY(2px);
+}
+
+.cv-part {
+  border-top: 4px dotted rgb(227, 249, 255);
+  padding: 2rem;
+}
+
+.cv-part-title {
+  color: #33477E;
+  font-size: 2rem;
+}
+
+.cv-item {
+  font-style: italic;
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+  color: #245959;
+}
+
+.cv-text {
+  margin-top: 0.6rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #4d4d53;
+}
+
 /****************************************/
 /**************** FOOTER ****************/
 /****************************************/

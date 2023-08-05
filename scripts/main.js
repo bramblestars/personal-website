@@ -3,6 +3,7 @@ const aboutSection = document.getElementById("about-section");
 const blogSection = document.getElementById("blog-section");
 const gamedevSection = document.getElementById("gamedev-section");
 const funSection = document.getElementById("fun-section");
+const cvSection = document.getElementById("cv-section");
 
 const blogBtn = document.getElementById("blog");
 const gamedevBtn = document.getElementById("gamedev");
@@ -40,8 +41,12 @@ blogBtn.addEventListener("click", () => {
 
 gamedevBtn.addEventListener("click", () => {
     switchToPage(gamedevSection);
-})
+});
 
 funBtn.addEventListener("click", () => {
     switchToPage(funSection);
-})
+});
+
+cvBtn.addEventListener("click", () => {
+    switchToPage(cvSection);
+});

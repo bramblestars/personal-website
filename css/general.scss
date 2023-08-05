@@ -22,21 +22,22 @@
     padding-bottom: 2rem;
 }
 
-.center-text
+.links {
+    a:link,
+    a:visited {
+        color: $secondaryColor;
+        text-decoration: none;
+    }
 
-.links a:link,
-.links a:visited {
-    color: $secondaryColor;
-    text-decoration: none;
+    a:hover {
+        color: $mediumColor;
+    }
+
+    a:active {
+        font-size: 1.65rem;
+    }
 }
 
-.links a:hover {
-    color: $mediumColor;
-}
-
-.links a:active {
-    font-size: 1.65rem;
-}
 
 .center {
     display: flex;
