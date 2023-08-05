@@ -21,6 +21,8 @@
     
     .btn-mobile-nav {
         display: block;
+        position: relative;
+        z-index: 10;
     }
 
     .content {
@@ -63,6 +65,7 @@
 
         .icon-mobile-nav[name="close-outline"] {
             display: block;
+            z-index: 10;
         }
         
         .icon-mobile-nav[name="menu-outline"] {
