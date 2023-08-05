@@ -42,6 +42,7 @@
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+    z-index: 1;
     transform: translateX(0);
   }
   .nav-open .icon-mobile-nav[name=close-outline] {
