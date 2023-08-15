@@ -14,6 +14,9 @@
     <link href="css/general.css" rel="stylesheet"/>
     <link href="css/queries.css" rel="stylesheet"/>
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,8 +33,9 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
 </head>
-<body>
+<body id="body">
     <article class="content">
+
         <!-- Header bar containing links -->
         <header>
             <h2 class="title"><a href="/" id="home">Tracy Cui</a></h2>
@@ -41,13 +45,25 @@
                     <li><a href="#" id="gamedev">gamedev</a></li>
                     <li><a href="#" id="fun">fun</a></li>
                     <li><a href="#" id="cv">cv</a></li>
+                    <!-- Dark mode toggle switch -->
+                    <li>
+                        <div class="theme-switch-wrapper">
+                            <span id="toggle-icon">
+                                <i class="fas fa-sun"></i>
+                                <i class="fas fa-moon"></i>
+                            </span>
+                            <label class="theme-switch">
+                                <input type="checkbox">
+                                <div class="slider round"></div>
+                            </label>
+                        </div>
+                    </li>
                 </ul>
                 <button class="btn-mobile-nav">
                     <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
                     <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
                 </button>
-            </nav>
-           
+            </nav>   
         </header>
 
         <!-- Main content -->

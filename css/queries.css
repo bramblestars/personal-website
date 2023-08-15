@@ -40,6 +40,9 @@
     pointer-events: none;
     visibility: hidden;
   }
+  .dark .nav-ul {
+    background-color: rgba(31, 29, 63, 0.97);
+  }
   .nav-open .nav-ul {
     opacity: 1;
     pointer-events: auto;

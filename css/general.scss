@@ -1,5 +1,13 @@
 @import 'style.scss';
 
+$sunIconColor: rgb(255, 153, 37);
+$moonIconColor: rgba(106, 165, 255, 0.7);
+$sunIconColorNight: rgba(255, 235, 119, 0.7);
+$moonIconColorNight: rgb(30, 42, 82);
+
+$sliderColor: #fff;
+$sliderColorNight: #c4cfff;
+
 .page-title {
     font-size: 3.6rem;
     font-weight: 700;
@@ -23,6 +31,9 @@
 }
 
 .links {
+    color: $secondaryColor;
+    text-decoration: none;
+
     a:link,
     a:visited {
         color: $secondaryColor;
@@ -53,7 +64,7 @@
     display: none;
 }
 
-/**** image banners***/
+/**** image banners ***/
 .banner-img {
     width: 60%;
     margin-bottom: 1rem;
@@ -66,4 +77,116 @@
 .banner-img:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1.5rem 1rem -0.8rem $boxShadowColor;
+}
+
+/**** dark theme switch ****/
+.theme-switch-wrapper {
+    align-items: center;
+    z-index: 100;
+    margin-top: 0.4rem;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 3.4rem;
+    position: relative;
+    width: 5.1rem;
+}
+
+.theme-switch input {
+    z-index: 102;
+    display: none;
+}
+
+.slider {
+    background: rgba(204, 204, 204, 0.6);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    transition: 0.4s;
+}
+
+.slider::before {
+    display: block;
+    background: $sliderColor;
+    bottom: 0.4rem;
+    content: "";
+    height: 2.6rem;
+    left: 0.4rem;
+    transition: 0.4s;
+    width: 2.6rem;
+    
+    box-shadow: 0px 0px 2px $boxShadowColor;
+}
+
+input:checked + .slider {
+    background: rgb(19, 19, 70);
+}
+
+input:checked + .slider::before {
+    background: $sliderColorNight;
+    transform: translateX(2.6rem);
+}
+
+.slider.round {
+    border-radius: 3.4rem;
+}
+
+.slider.round::before {
+    border-radius: 50%;
+}
+
+.fas {
+    position: absolute;
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.fa-sun {
+    color: $sunIconColor;
+    margin-left: 0.5rem;
+}
+
+.fa-moon {
+    font-size: 1.5rem;
+    margin-top: 0.55rem;
+    color: $moonIconColor;
+    margin-left: 3rem;
+}
+
+
+/**** dark theme ***/
+.dark {
+    .page-title {
+        color: $secondaryColorNight;
+    }
+
+    .text {
+        color: $textColorNight;
+    }
+
+    .links {
+        color: $secondaryColorNight;
+    }
+
+    a:link, 
+    a:visited {
+        color: $secondaryColorNight;
+    }
+
+    a:hover {
+        color: $mediumColorNight;
+    }
+
+    .fa-sun {
+        margin-left: 0.55rem;
+        color: $sunIconColorNight;
+    }
+
+    .fa-moon {
+        margin-left: 3.1rem;
+        color: $moonIconColorNight;
+    }
 }

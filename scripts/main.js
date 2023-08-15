@@ -1,3 +1,9 @@
+// body (to add dark theme)
+const body = document.getElementById("body");
+
+//toggle switch for dark theme
+const themeToggle = document.querySelector('input[type="checkbox"]');
+
 // sections on home page
 const aboutSection = document.getElementById("about-section");
 const blogSection = document.getElementById("blog-section");
@@ -14,6 +20,8 @@ const cvBtn = document.getElementById("cv");
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const navEl = document.querySelector(".navigation");
 
+
+
 /************ Mobile menu button handler ************/
 btnNavEl.addEventListener('click', function() {
     navEl.classList.toggle('nav-open');
@@ -21,6 +29,17 @@ btnNavEl.addEventListener('click', function() {
 
 /*************** Switch between pages ***************/
 let currentActivePage = aboutSection;
+
+
+/******************** Dark theme ********************/
+function nightTheme() {
+    body.classList.toggle("dark");
+}
+
+themeToggle.checked = false;
+
+themeToggle.addEventListener('change', nightTheme);
+
 
 /**
  * Adds the nodisp class to the current active page and switches the current

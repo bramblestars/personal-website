@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background: linear-gradient(120deg, rgb(238, 253, 253) 0%, rgb(224, 255, 255) 100%);
+  background: linear-gradient(to bottom right, rgb(238, 253, 253), rgb(224, 255, 255));
   width: 100vw;
   overflow-x: hidden;
 }
@@ -86,6 +86,7 @@ header {
   display: flex;
   align-content: space-evenly;
   gap: 3rem;
+  padding-top: 1rem;
   letter-spacing: 1.5px;
 }
 
@@ -253,4 +254,70 @@ footer {
 
 .contact p:first-of-type {
   margin-bottom: 4px;
+}
+
+/****************************************/
+/************* NIGHT THEME **************/
+/****************************************/
+.dark {
+  background: linear-gradient(to bottom right, rgb(35, 30, 39), rgb(20, 13, 56));
+}
+.dark .content {
+  background-color: rgb(19, 19, 31);
+  -ms-box-shadow: 0 6px 9px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 9px 4px rgba(0, 0, 0, 0.3);
+}
+.dark header {
+  background-color: #2f2c6d;
+}
+.dark .title a:link,
+.dark .title a:visited {
+  color: #aebce2;
+}
+.dark .title a:active,
+.dark .title a:hover {
+  color: #d4cff0;
+}
+.dark .navigation a:link,
+.dark .navigation a:visited {
+  color: #b8b0e4;
+}
+.dark .navigation a:hover,
+.dark .navigation a:active {
+  color: #d4cff0;
+}
+.dark .icon-mobile-nav {
+  color: #b8b0e4;
+}
+.dark .game-title a:link,
+.dark .game-title a:visited {
+  color: #8199da;
+}
+.dark .game-title a:hover,
+.dark .game-title a:active {
+  color: #b2d0e2;
+}
+.dark .cv-pdf {
+  color: #b8b0e4;
+}
+.dark .cv-pdf:hover {
+  color: #d4cff0;
+}
+.dark .cv-part {
+  border-top: 4px dotted rgb(59, 58, 90);
+}
+.dark .cv-part-title {
+  color: #aebce2;
+}
+.dark .cv-item {
+  color: #b8b0e4;
+}
+.dark .cv-text {
+  color: #e1e7f3;
+}
+.dark footer {
+  border-top: 0.5rem solid #2f2c6d;
+}
+.dark .contact p {
+  color: #d4cff0;
 }/*# sourceMappingURL=style.css.map */

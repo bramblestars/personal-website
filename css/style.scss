@@ -1,12 +1,24 @@
-$background: linear-gradient(120deg, rgb(238, 253, 253) 0%, rgba(224,255,255,1) 100%);
+$background: linear-gradient(to bottom right, rgb(238, 253, 253), rgba(224,255,255,1));
 $boxShadowColor: rgba(12, 71, 71, 0.3);
 $headerColor: #e6fafa;
 $titleColor: #33477E;
+$contentBoxColor: white;
 $gameTitleColor: #261d75;
 $gameTitleColorHover: #5347be;
 $textColor: #4d4d53;
 $secondaryColor: #245959;
 $mediumColor: #557e7e;
+
+$backgroundNight: linear-gradient(to bottom right, rgb(35, 30, 39), rgb(20, 13, 56));
+$boxShadowColorNight: rgba(0, 0, 0, 0.3);
+$headerColorNight: #2f2c6d;
+$contentBoxColorNight: rgb(19, 19, 31);
+$gameTitleColorNight: #8199da;
+$gameTitleColorHoverNight: #b2d0e2;
+$titleColorNight: #aebce2;
+$textColorNight: #e1e7f3;
+$secondaryColorNight: #b8b0e4;
+$mediumColorNight: #d4cff0;
 
 @mixin box-shadow($x, $y, $blur, $spread, $c) {
     -webkit-box-shadow: $x $y $blur $spread $c;
@@ -40,7 +52,7 @@ body {
 .content {
     width: 90rem;
     margin: 3rem auto;
-    background-color: white;
+    background-color: $contentBoxColor;
     border-radius: 6px;
     @include box-shadow(0, 6px, 9px, 4px, $boxShadowColor);
 }
@@ -111,6 +123,7 @@ header {
     display: flex;
     align-content: space-evenly;
     gap: 3rem;
+    padding-top: 1rem;
     letter-spacing: 1.5px;
 }
 
@@ -294,4 +307,93 @@ footer {
 
 .contact p:first-of-type {
     margin-bottom: 4px;
+}
+
+/****************************************/
+/************* NIGHT THEME **************/
+/****************************************/
+
+.dark {
+    background: $backgroundNight;
+
+    .content {
+        background-color: $contentBoxColorNight;
+        @include box-shadow(0, 6px, 9px, 4px, $boxShadowColorNight);
+    }
+
+    header {
+        background-color: $headerColorNight;
+    }
+
+    .title {
+        a:link,
+        a:visited {
+            color: $titleColorNight;
+        }
+
+        a:active,
+        a:hover {
+            color: $mediumColorNight;
+        }
+    }
+
+    .navigation {
+        a:link,
+        a:visited {
+            color: $secondaryColorNight;
+        }
+
+        a:hover, 
+        a:active {
+            color: $mediumColorNight;
+        }
+    }
+
+    .icon-mobile-nav {
+        color: $secondaryColorNight;
+    }
+
+    .game-title {
+        a:link,
+        a:visited {
+            color: $gameTitleColorNight;
+        }
+
+        a:hover,
+        a:active {
+            color: $gameTitleColorHoverNight;
+        }
+    }
+
+    .cv-pdf {
+        color: $secondaryColorNight;
+    }
+
+    .cv-pdf:hover {
+        color: $mediumColorNight;
+    }
+
+    .cv-part {
+        border-top: 4px dotted rgb(59, 58, 90);
+    }
+
+    .cv-part-title {
+        color: $titleColorNight;
+    }
+
+    .cv-item {
+        color: $secondaryColorNight;
+    }
+
+    .cv-text {
+        color: $textColorNight;
+    }
+
+    footer {
+        border-top: 0.5rem solid $headerColorNight;
+    }
+
+    .contact p {
+        color: $mediumColorNight;
+    }
 }
