@@ -136,24 +136,26 @@ input:checked + .slider::before {
     border-radius: 50%;
 }
 
-.fas {
-    position: absolute;
-    font-size: 1.6rem;
-    margin-top: 0.5rem;
-    z-index: 100;
-    pointer-events: none;
-}
-
-.fa-sun {
-    color: $sunIconColor;
-    margin-left: 0.5rem;
-}
-
-.fa-moon {
-    font-size: 1.5rem;
-    margin-top: 0.55rem;
-    color: $moonIconColor;
-    margin-left: 3rem;
+.toggle-icon {
+    .fas {
+        position: absolute;
+        font-size: 1.6rem;
+        margin-top: 0.5rem;
+        z-index: 100;
+        pointer-events: none;
+    }
+    
+    .fa-sun {
+        color: $sunIconColor;
+        margin-left: 0.5rem;
+    }
+    
+    .fa-moon {
+        font-size: 1.5rem;
+        margin-top: 0.55rem;
+        color: $moonIconColor;
+        margin-left: 3rem;
+    }
 }
 
 

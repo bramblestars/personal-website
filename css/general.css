@@ -441,20 +441,18 @@ input:checked + .slider::before {
   border-radius: 50%;
 }
 
-.fas {
+.toggle-icon .fas {
   position: absolute;
   font-size: 1.6rem;
   margin-top: 0.5rem;
   z-index: 100;
   pointer-events: none;
 }
-
-.fa-sun {
+.toggle-icon .fa-sun {
   color: rgb(255, 153, 37);
   margin-left: 0.5rem;
 }
-
-.fa-moon {
+.toggle-icon .fa-moon {
   font-size: 1.5rem;
   margin-top: 0.55rem;
   color: rgba(106, 165, 255, 0.7);
