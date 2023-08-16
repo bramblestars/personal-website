@@ -32,11 +32,25 @@ let currentActivePage = aboutSection;
 
 
 /******************** Dark theme ********************/
+
+
 function nightTheme() {
     body.classList.toggle("dark");
+
+    // Save preference to local storage
+    if (body.classList.contains("dark")) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
 }
 
-themeToggle.checked = false;
+if (localStorage.getItem('theme') == 'dark') {
+    themeToggle.checked = true;
+    nightTheme();
+} else {
+    themeToggle.checked = false;
+}
 
 themeToggle.addEventListener('change', nightTheme);
 
