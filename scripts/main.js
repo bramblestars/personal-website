@@ -45,7 +45,7 @@ function nightTheme() {
     }
 }
 
-if (localStorage.getItem('theme') == 'dark') {
+if (localStorage.getItem('theme') && localStorage.getItem('theme') == 'dark') {
     themeToggle.checked = true;
     nightTheme();
 } else {
