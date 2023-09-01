@@ -1,0 +1,622 @@
+{ "scores":
+    [
+    {
+        "name": "[X]", 
+        "ftr": 9732091
+    }, 
+    
+    {
+        "name": "#1f1e33",
+        "ftr": 9588772
+    },
+    {
+        "name": "7thSense",
+        "ftr": 9946791
+    },
+    {
+        "name": "99 Glooms",
+        "ftr": 9900702
+    },
+    {
+        "name": "Abstruse Dilemma",
+        "ftr": 9295557
+    },
+    {
+        "name": "Aegleseeker",
+        "ftr": 9634560
+    },
+    {
+        "name": "Ai Drew",
+        "ftr": 9939981
+    },
+    {
+        "name": "Alexandrite",
+        "ftr": 9972055
+    },
+    {
+        "name": "AlterAle",
+        "ftr": 9993348
+    },
+    {
+        "name": "AMAZING MIGHTYYYY!",
+        "ftr": 9816855
+    },
+    {
+        "name": "Antagonism",
+        "ftr": 9926555
+    },
+    {
+        "name": "Arcahv",
+        "ftr": 9930533
+    },
+    {
+        "name": "Arcana Eden",
+        "ftr": 9803372, 
+        "byd": 9364391
+    },
+    {
+        "name": "Ascent",
+        "ftr": 9981394
+    },
+    {
+        "name": "Astra walkthrough",
+        "ftr": 9719745
+    },
+    {
+        "name": "AttraqtiA",
+        "ftr": 9875664
+    },
+    {
+        "name": "Aurgelmir",
+        "ftr": 9869132
+    },
+    {
+        "name": "Axium Crisis",
+        "ftr": 9813549
+    },
+    {
+        "name": "Bamboo",
+        "ftr": 9962824
+    },
+    {
+        "name": "Black territory",
+        "ftr": 9955075
+    },
+    {
+        "name": "Bookmaker (2D Version)",
+        "byd": 9845721
+    },
+    {
+        "name": "BUCHiGiRE Berserker",
+        "ftr": 9714287
+    },
+    {
+        "name": "Callima Karma",
+        "ftr": 9898852
+    },
+    {
+        "name": "Capella",
+        "ftr": 9957938
+    },
+    {
+        "name": "CHAOS",
+        "ftr": 9288811
+    },
+    {
+        "name": "Chronicle",
+        "ftr": 9439325
+    },
+    {
+        "name": "Climax",
+        "ftr": 9898790
+    },
+    {
+        "name": "conflict",
+        "ftr": 9901481
+    },
+    {
+        "name": "corps-sans-organes",
+        "ftr": 9819798
+    },
+    {
+        "name": "Corruption",
+        "ftr": 9966422
+    },
+    {
+        "name": "Crimson Throne",
+        "ftr": 9848850
+    },
+    {
+        "name": "Cyaegha",
+        "ftr": 9854960
+    },
+    {
+        "name": "cyanine",
+        "ftr": 9706368
+    },
+    {
+        "name": "Dantalion",
+        "ftr": 9675975   
+    },
+    {
+        "name": "Defection",
+        "ftr": 9944091
+    },
+    {
+        "name": "Dement ~after legend~",
+        "byd": 9924002
+    },
+    {
+        "name": "Devillic Sphere",
+        "ftr": 9868154
+    },
+    {
+        "name": "Divine Light of Myriad",
+        "ftr": 9760851
+    },
+    {
+        "name": "dropdead",
+        "byd": 9881617
+    },
+    {
+        "name": "DX Choseinou Full Metal Shojo",
+        "ftr": 9920251
+    },
+    {
+        "name": "Einherjar Joker",
+        "ftr": 9957888
+    },
+    {
+        "name": "Ether Strike",
+        "ftr": 9894196
+    },
+    {
+        "name": "Far Away Light",
+        "ftr": 9974738
+    },
+    {
+        "name": "Felis",
+        "ftr": 9844844
+    },
+    {
+        "name": "FLUFFY FLASH",
+        "ftr": 9956063
+    },
+    {
+        "name": "Fracture Ray",
+        "ftr": 9770403
+    },
+    {
+        "name": "Free Myself",
+        "ftr": 9846403
+    },
+    {
+        "name": "FREEF4LL",
+        "byd": 9690472
+    },
+    {
+        "name": "G e n g a o z o",
+        "ftr": 9942053
+    },
+    {
+        "name": "Galaxy Friends",
+        "ftr": 9882450
+    },
+    {
+        "name": "Garakuta Doll Play",
+        "ftr": 9831796
+    },
+    {
+        "name": "Genesis (Morrigan feat. Lily)",
+        "ftr": 9839241
+    },
+    {
+        "name": "GENOCIDER",
+        "ftr": 9721322
+    },
+    {
+        "name": "GIMME DA BLOOD",
+        "ftr": 9836274
+    },
+    {
+        "name": "GLORY：ROAD",
+        "ftr": 9690226
+    },
+    {
+        "name": "Good bye, Merry-Go-Round.",
+        "ftr": 9751875
+    },
+    {
+        "name": "GOODTEK (Arcaea Edit)",
+        "byd": 9824133
+    },
+    {
+        "name": "Got hive of Ra",
+        "ftr": 9969209
+    },
+    {
+        "name": "Grievous Lady",
+        "ftr": 9732247
+    },
+    {
+        "name": "Halcyon",
+        "ftr": 9882910
+    },
+    {
+        "name": "Haze of Autumn",
+        "ftr": 9991676
+    },
+    {
+        "name": "Heavenly caress",
+        "ftr": 9895693
+    },
+    {
+        "name": "Heavensdoor",
+        "ftr": 9978286,
+        "byd": 9626479
+    },
+    {
+        "name": "Hiiro Gekka, Kyoushou no Zetsu (nayuta 2017 ver.)",
+        "ftr": 9592403
+    },
+    {
+        "name": "HIVEMIND",
+        "ftr": 9881302
+    },
+    {
+        "name": "Hybris (The one who shattered)",
+        "ftr": 9959279
+    },
+    {
+        "name": "Ignotus",
+        "byd": 9861672
+    },
+    {
+        "name": "͟͝͞Ⅱ́̕",
+        "ftr": 9363335
+    },
+    {
+        "name": "Ikazuchi",
+        "ftr": 9871298
+    },
+    {
+        "name": "IMPACT",
+        "byd": 9897069
+    },
+    {
+        "name": "Infinite Strife,",
+        "ftr": 9951728
+    },
+    {
+        "name": "init()",
+        "ftr": 9934621
+    },
+    {
+        "name": "INTERNET YAMERO",
+        "ftr": 0
+    },
+    {
+        "name": "IZANA",
+        "ftr": 9708722
+    },
+    {
+        "name": "Kanagawa Cyber Culvert",
+        "byd": 9880536
+    },
+    {
+        "name": "Kissing Lucifer",
+        "ftr": 9933473
+    },
+    {
+        "name": "La'qryma of the Wasteland",
+        "byd": 9880443
+    },
+    {
+        "name": "LAMIA",
+        "ftr": 9539036
+    },
+    {
+        "name": "Last Celebration",
+        "ftr": 9892855
+    },
+    {
+        "name": "Lightning Screw",
+        "ftr": 9925500
+    },
+    {
+        "name": "Linear Accelerator",
+        "ftr": 9818449
+    },
+    {
+        "name": "Live Fast Die Young",
+        "ftr": 9857989
+    },
+    {
+        "name": "Löschen",
+        "ftr": 9871549
+    },
+    {
+        "name": "Lost Civilization",
+        "byd": 9821867
+    },
+    {
+        "name": "Lost Desire",
+        "ftr": 9888348
+    },
+    {
+        "name": "Lucid Traveler",
+        "ftr": 9609617
+    },
+    {
+        "name": "Macrocosmic Modulation",
+        "ftr": 9965219
+    },
+    {
+        "name": "Magnolia",
+        "ftr": 9749370
+    },
+    {
+        "name": "Malicious Mischance",
+        "ftr": 9912171
+    },
+    {
+        "name": "Manic Jeer",
+        "ftr": 9359418
+    },
+    {
+        "name": "MAXRAGE",
+        "ftr": 9882809
+    },
+    {
+        "name":"Medusa",
+        "ftr": 9898365
+    },
+    {
+        "name":"Memory Forest",
+        "ftr": 9990679
+    },
+    {
+        "name":"Metallic Punisher",
+        "ftr": 9819320
+    },
+    {
+        "name":"Mirzam",
+        "ftr": 9958971
+    },
+    {
+        "name":"Misdeed -la bonté de Dieu et l'origine du mal-",
+        "ftr": 9810785
+    },
+    {
+        "name":"Modelista",
+        "ftr": 9891971
+    },
+    {
+        "name":"NEO WINGS",
+        "ftr": 9884414
+    },
+    {
+        "name":"New York Back Raise",
+        "ftr": 9495734
+    },
+    {
+        "name":"Nhelv",
+        "ftr": 9924316
+    },
+    {
+        "name":"Nirv lucE",
+        "ftr": 9857984
+    },
+    {
+        "name": "NULL APOPHENIA",
+        "ftr": 9693131
+    },
+    {
+        "name": "OMAKENO Stroke",
+        "byd": 9544232
+    },
+    {
+        "name": "Oshama Scramble!",
+        "ftr": 9931083
+    },
+    {
+        "name": "ouroboros -twin stroke of the end-",
+        "ftr": 9844125
+    },
+    {
+        "name": "Overwhelm",
+        "ftr": 9885185
+    },
+    {
+        "name": "Party Vinyl", 
+        "byd": 0
+    },
+    {
+        "name": "Pentiment",
+        "ftr": 9863608, 
+        "byd": 2478833
+    },
+    {
+        "name": "PRAGMATISM",
+        "ftr": 9942447,
+        "byd": 9072333
+    },
+    {
+        "name": "PRIMITIVE LIGHTS",
+        "ftr": 0
+    },
+    {
+        "name": "Protoflicker",
+        "ftr": 9962541
+    },
+    {
+        "name": "PUPA",
+        "ftr": 9909944
+    },
+    {
+        "name": "Quon (DJ Noriken)",
+        "byd": 9914706
+    },
+    {
+        "name": "Red and Blue",
+        "byd": 9879699
+    },
+    {
+        "name": "Redolent Shape",
+        "ftr": 9955034
+    },
+    {
+        "name": "REKKA RESONANCE",
+        "ftr": 9790639
+    },
+    {
+        "name": "Ringed Genesis",
+        "ftr": 9904986
+    },
+    {
+        "name": "Rise of the World",
+        "ftr": 9580020
+    },
+    {
+        "name": "SAIKYO STRONGER",
+        "ftr": 9563936
+    },
+    {
+        "name": "Scarlet Cage",
+        "ftr": 9871333
+    },
+    {
+        "name": "Scarlet Lance",
+        "ftr": 9868224
+    },
+    {
+        "name": "Seclusion",
+        "ftr": 9886159
+    },
+    {
+        "name": "Sheriruth",
+        "ftr": 9961932
+    },
+    {
+        "name": "Sheriruth (Laur Remix)",
+        "ftr": 9604083
+    },
+    {
+        "name": "Singularity",
+        "ftr": 9892380,
+        "byd": 9870814
+    },
+    {
+        "name": "SOUNDWiTCH",
+        "ftr": 9930603
+    },
+    {
+        "name": "Spider's Thread",
+        "ftr": 9639353
+    },
+    {
+        "name": "Stasis",
+        "ftr": 9633060
+    },
+    {
+        "name": "Summer Fireworks of Love",
+        "ftr": 9955020
+    },
+    {
+        "name": "Tempestissimo",
+        "ftr": 9693978, 
+        "byd": 9066021
+    },
+    {
+        "name": "TEmPTaTiON",
+        "ftr": 9177288
+    },
+    {
+        "name": "Testify",
+        "ftr": 9590915, 
+        "byd": 8664259
+    },
+    {
+        "name": "The Survivor (Game Edit)",
+        "ftr": 9855555
+    },
+    {
+        "name": "THE ULTIMACY",
+        "ftr": 9932169
+    },
+    {
+        "name": "Tiferet",
+        "ftr": 9945674
+    },
+    {
+        "name": "To the Milky Way",
+        "ftr": 9803605
+    },
+    {
+        "name": "To: Alice Liddell",
+        "ftr": 9920707
+    },
+    {
+        "name": "Trap Crow",
+        "ftr": 9935807
+    },
+    {
+        "name": "trappola bewitching",
+        "ftr": 9948262, 
+        "byd": 9462225
+    },
+    {
+        "name": "Trrricksters!!",
+        "ftr": 9578270
+    },
+    {
+        "name": "UNKNOWN LEVELS",
+        "ftr": 9583155
+    },
+    {
+        "name": "Valhalla:0",
+        "ftr": 9945638
+    },
+    {
+        "name": "Vicious Heroism",
+        "ftr": 9866187
+    },
+    {
+        "name": "Viyella's Tears",
+        "ftr": 9915692
+    },
+    {
+        "name": "World Ender",
+        "ftr": 9890830, 
+        "byd": 9597964
+    },
+    {
+        "name": "World Fragments III (radio edit)",
+        "ftr": 9871419
+    },
+    {
+        "name": "World Vanquisher",
+        "ftr": 9808415
+    },
+    {
+        "name": "Xanatos",
+        "ftr": 9948371
+    },
+    {
+        "name": "Xeraphinite",
+        "ftr": 9962737
+    },
+    {
+        "name": "αterlβus",
+        "ftr": 9894110
+    },
+    {
+        "name": "γuarδina",
+        "ftr": 9862582
+    },
+    {
+        "name": "ω4",
+        "ftr": 9631383
+    }
+    ]
+}

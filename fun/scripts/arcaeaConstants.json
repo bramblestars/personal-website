@@ -1,0 +1,2440 @@
+{ "songs":
+    [
+    {
+        "name": "[X]", 
+        "artist": "Blacklolita",
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 10.4
+    }, 
+    
+    {
+        "name": "#1f1e33",
+        "artist": "かめりあ(EDP)",
+        "pst": 5.5,
+        "prs": 9.2, 
+        "ftr": 10.9
+    },
+    {
+        "name": "1F√",
+        "artist": "WHITEFISTS",
+        "pst": 2.5,
+        "prs": 6.5,
+        "ftr": 8.2
+    },
+    {
+        "name": "7thSense",
+        "artist": "削除", 
+        "pst": 3.0, 
+        "prs": 7.5, 
+        "ftr": 9.9
+    },
+    {
+        "name": "99 Glooms",
+        "artist": "Sta", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 10.3
+    },
+    {
+        "name": "A Wandering Melody of Love",
+        "artist": "からとP⍺ոchii少年 feat.はるの", 
+        "pst": 3.5,
+        "prs": 7.5,
+        "ftr": 9.6
+    },
+    {
+        "name": "Abstruse Dilemma",
+        "artist": "Ashrount vs. 打打だいず", 
+        "pst": 5.5,
+        "prs": 8.4,
+        "ftr": 11.1
+    },
+    {
+        "name": "Aegleseeker",
+        "artist": "Silentroom vs Frums", 
+        "pst": 5.5,
+        "prs": 9.1,
+        "ftr": 11.1
+    },
+    {
+        "name": "Ai Drew",
+        "artist": "Feryquitous", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.8
+    },
+    {
+        "name": "AI[UE]OON",
+        "artist": "MYUKKE.", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.4
+    },
+    {
+        "name": "Alexandrite",
+        "artist": "WAiKURO", 
+        "pst": 4.5,
+        "prs": 7.0,
+        "ftr": 10.0
+    },
+    {
+        "name": "Alice a la mode",
+        "artist": "Masanori Akita", 
+        "pst": 2.5,
+        "prs": 6.5,
+        "ftr": 9.2
+    },
+    {
+        "name": "Alice's Suitcase",
+        "artist": "Endorfin.", 
+        "pst": 3.5,
+        "prs": 6.0,
+        "ftr": 9.1
+    },
+    {
+        "name": "Altair (feat. *spiLa*)",
+        "artist": "kamome sano & you",
+        "pst": 2.5,
+        "prs": 6.0,
+        "ftr": 8.3
+    },
+    {
+        "name": "Altale",
+        "artist": "Sakuzyo", 
+        "pst": 2.5,
+        "prs": 6.0,
+        "ftr": 8.3
+    },
+    {
+        "name": "AlterAle",
+        "artist": "Arik Kau Delay (アラ & かゆき & でり)", 
+        "pst": 3.0, 
+        "prs": 6.0, 
+        "ftr": 9.7
+    },
+    {
+        "name": "AMAZING MIGHTYYYY!",
+        "artist": "WAiKURO", 
+        "pst": 4.5, 
+        "prs": 7.5, 
+        "ftr": 10.7
+    },
+    {
+        "name": "amygdata",
+        "artist": "nitro", 
+        "pst": 4.0, 
+        "prs": 7.5, 
+        "ftr": 9.7
+    },
+    {
+        "name": "Anökumene",
+        "artist": "Jun Kuroda", 
+        "pst": 2.5, 
+        "prs": 6.5, 
+        "ftr": 9.2
+    },
+    {
+        "name": "Antagonism",
+        "artist": "Yooh vs. siromaru", 
+        "pst": 4.5, 
+        "prs": 7.5, 
+        "ftr": 9.9
+    },
+    {
+        "name": "Antithese",
+        "artist": "Blacklolita", 
+        "pst": 2.0, 
+        "prs": 5.0, 
+        "ftr": 8.8, 
+        "byd": 9.5
+    },
+    {
+        "name": "April showers",
+        "artist": "cubesato", 
+        "pst": 2.0, 
+        "prs": 5.5, 
+        "ftr": 8.3
+    },
+    {
+        "name": "Arcahv",
+        "artist": "Feryquitous", 
+        "pst": 4.5, 
+        "prs": 7.5, 
+        "ftr": 9.9
+    },
+    {
+        "name": "Arcana Eden",
+        "artist": "Team Grimoire vs Sakuzyo vs Laur", 
+        "pst": 5.5, 
+        "prs": 8.7, 
+        "ftr": 10.5, 
+        "byd": 11.4
+    },
+    {
+        "name": "Ascent",
+        "artist": "TANUKI", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 9.8
+    },
+    {
+        "name": "Astra walkthrough",
+        "artist": "paraoka", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 9.9
+    },
+    {
+        "name": "Astral tale",
+        "artist": "Noah", 
+        "pst": 4.5,
+        "prs": 7.0,
+        "ftr": 9.6
+    },
+    {
+        "name": "AttraqtiA",
+        "artist": "かめりあ", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 10.6
+    },
+    {
+        "name": "Aurgelmir",
+        "artist": "溝口ゆうま feat. 大瀬良あい", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 10.5
+    },
+    {
+        "name": "Auxesia",
+        "artist": "ginkiha", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.3
+    },
+    {
+        "name": "Avant Raze",
+        "artist": "Sampling Masters MEGA", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.6
+    },
+    {
+        "name": "Ävril -Flicka i krans-",
+        "artist": "Rigël Theatre", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 8.3
+    },
+    {
+        "name": "Axium Crisis",
+        "artist": "ak+q", 
+        "pst": 5.5,
+        "prs": 8.5,
+        "ftr": 10.7
+    },
+    {
+        "name": "Babaroque",
+        "artist": "cYsmix", 
+        "pst": 3.0,
+        "prs": 6.5,
+        "ftr": 8.5
+    },
+    {
+        "name": "BADTEK",
+        "artist": "EBIMAYO", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 9.7
+    },
+    {
+        "name": "Bamboo",
+        "artist": "立秋 feat.ちょこ", 
+        "pst": 3.0,
+        "prs": 6.5,
+        "ftr": 10.0
+    },
+    {
+        "name": "BATTLE NO.1",
+        "artist": "TANO*C Sound Team", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.7
+    },
+    {
+        "name": "Be There",
+        "artist": "PSYQUI", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 9.4
+    },
+    {
+        "name": "Beside You",
+        "artist": "江口孝宏", 
+        "pst": 2.5,
+        "prs": 6.0,
+        "ftr": 8.7
+    },
+    {
+        "name": "Black Lotus",
+        "artist": "wa.", 
+        "pst": 3.0,
+        "prs": 6.5,
+        "ftr": 9.7
+    },
+    {
+        "name": "Black territory",
+        "artist": "DJ Myosuke", 
+        "pst": 3.0,
+        "prs": 7.5,
+        "ftr": 9.8
+    },
+    {
+        "name": "Blaster",
+        "artist": "Massive New Krew", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 9.3
+    },
+    {
+        "name": "Blocked Library",
+        "artist": "影虎", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.3
+    },
+    {
+        "name": "Blossoms",
+        "artist": "T2Kazuya", 
+        "pst": 1.0,
+        "prs": 4.0,
+        "ftr": 7.0
+    },
+    {
+        "name": "BLRINK",
+        "artist": "Sta", 
+        "pst": 3.5,
+        "prs": 7.5,
+        "ftr": 9.7
+    },
+    {
+        "name": "blue comet",
+        "artist": "ああああ", 
+        "pst": 3.5,
+        "prs": 5.0,
+        "ftr": 8.2
+    },
+    {
+        "name": "Blue Rose",
+        "artist": "Cosmograph", 
+        "pst": 2.0,
+        "prs": 5.5,
+        "ftr": 9.1
+    },
+    {
+        "name": "Bookmaker (2D Version)",
+        "artist": "Kobaryo", 
+        "pst": 4.5,
+        "prs": 6.5,
+        "ftr":8.3, 
+        "byd": 10.0
+    },
+    {
+        "name": "Brand new world",
+        "artist": "U-ske", 
+        "pst": 2.0,
+        "prs": 4.0,
+        "ftr": 7.5
+    },
+    {
+        "name": "BUCHiGiRE Berserker",
+        "artist": "REDALiCE vs MASAKI", 
+        "pst": 5.0,
+        "prs": 8.6,
+        "ftr": 10.9
+    },
+    {
+        "name": "Bullet Waiting for Me (James Landino remix)",
+        "artist": "Nikki Simmons", 
+        "pst": 2.5,
+        "prs": 4.5,
+        "ftr": 8.1
+    },
+    {
+        "name": "Call My Name feat. Yukacco",
+        "artist": "Mameyudoufu", 
+        "pst": 3.5,
+        "prs": 6.0,
+        "ftr": 8.7
+    },
+    {
+        "name": "Callima Karma",
+        "artist": "t+pazolite vs Feryquitous", 
+        "pst": 3.5,
+        "prs": 7.0,
+        "ftr": 9.8
+    },
+    {
+        "name": "Can I Friend You on Bassbook? Lol",
+        "artist": "かめりあ feat. ななひら", 
+        "pst": 3.0,
+        "prs": 6.5,
+        "ftr": 9.3
+    },
+    {
+        "name": "Capella",
+        "artist": "ARForest", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 10.2
+    },
+    {
+        "name": "carmine:scythe",
+        "artist": "かゆき", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 9.6
+    },
+    {
+        "name": "CHAOS",
+        "artist": "Æsir", 
+        "pst": 5.5,
+        "prs": 7.5,
+        "ftr": 10.9
+    },
+    {
+        "name": "Chelsea",
+        "artist": "7mai", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 8.5
+    },
+    {
+        "name": "Chronicle",
+        "artist": "Lime", 
+        "pst": 5.0,
+        "prs": 8.5,
+        "ftr": 10.4
+    },
+    {
+        "name": "Chronostasis",
+        "artist": "黒皇帝", 
+        "pst": 3.5,
+        "prs": 7.5,
+        "ftr": 8.9
+    },
+    {
+        "name": "Climax",
+        "artist": "USAO", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 10.4
+    },
+    {
+        "name": "Clotho and the stargazer",
+        "artist": "しーけー", 
+        "pst": 2.0,
+        "prs": 5.0,
+        "ftr": 7.5
+    },
+    {
+        "name": "Coastal Highway",
+        "artist": "Glitch Droids", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 8.8
+    },
+    {
+        "name": "cocoro*cosmetic",
+        "artist": "KOTONOHOUSE", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 9.2
+    },
+    {
+        "name": "conflict",
+        "artist": "siromaru + cranky", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 10.2
+    },
+    {
+        "name": "corps-sans-organes",
+        "artist": "cybermiso", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 10.6
+    },
+    {
+        "name": "Corruption",
+        "artist": "3R2", 
+        "pst": 3.0,
+        "prs": 6.5,
+        "ftr": 9.8
+    },
+    {
+        "name": "Cosmica",
+        "artist": "Nhato", 
+        "pst": 2.5,
+        "prs": 5.0,
+        "ftr": 8.5
+    },
+    {
+        "name": "Cosmo Pop Funclub",
+        "artist": "ナユタン星人", 
+        "pst": 2.5,
+        "prs": 6.0,
+        "ftr": 8.8
+    },
+    {
+        "name": "Crimson Throne",
+        "artist": "Dimier√Lisb", 
+        "pst": 4.0,
+        "prs": 8.0,
+        "ftr": 10.4
+    },
+    {
+        "name": "CROSS†OVER",
+        "artist": "HyuN feat. LyuU", 
+        "pst": 4.0,
+        "prs": 6.5,
+        "ftr": 9.4
+    },
+    {
+        "name": "CROSS†SOUL",
+        "artist": "HyuN feat. Syepias", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 9.4
+    },
+    {
+        "name": "cry of viyella",
+        "artist": "Laur", 
+        "pst": 3.5,
+        "prs": 6.0,
+        "ftr": 8.5
+    },
+    {
+        "name": "Crystal Gravity",
+        "artist": "Tanchiky vs. siromaru", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.4
+    },
+    {
+        "name": "Cyaegha",
+        "artist": "USAO", 
+        "pst": 5.5,
+        "prs": 8.4,
+        "ftr": 10.7
+    },
+    {
+        "name": "cyanine",
+        "artist": "jioyi", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 10.6
+    },
+    {
+        "name": "Cybernecia Catharsis",
+        "artist": "Tanchiky", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 9.5
+    },
+    {
+        "name": "CYCLES",
+        "artist": "Masayoshi Minoshima feat. 綾倉盟", 
+        "pst": 2.0,
+        "prs": 5.0,
+        "ftr": 8.8
+    },
+    {
+        "name": "Dancin' on a Cat's Paw",
+        "artist": "Ino(chronoize)", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 9.2
+    },
+    {
+        "name": "Dandelion",
+        "artist": "Farhan", 
+        "pst": 2.5,
+        "prs": 6.0,
+        "ftr": 8.5
+    },
+    {
+        "name": "Dantalion",
+        "artist": "Team Grimoire", 
+        "pst": 5.0,
+        "prs": 8.2,
+        "ftr": 10.9    
+    },
+    {
+        "name": "DataErr0r",
+        "artist": "Cosmograph", 
+        "pst": 3.0,
+        "prs": 7.0,
+        "ftr": 9.5
+    },
+    {
+        "name": "Dazzle hop",
+        "artist": "Sampling Masters MEGA", 
+        "pst": 3.5,
+        "prs": 6.0,
+        "ftr": 9.7
+    },
+    {
+        "name": "DDD",
+        "artist": "はがね", 
+        "pst": 2.5,
+        "prs": 6.5,
+        "ftr": 8.5
+    },
+    {
+        "name": "Defection",
+        "artist": "TeddyLoid feat. DELTA", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.8
+    },
+    {
+        "name": "Dement ~after legend~",
+        "artist": "Cosmograph", 
+        "pst": 3.5,
+        "prs": 6.0,
+        "ftr": 7.5,
+        "byd": 9.9
+    },
+    {
+        "name": "Devillic Sphere",
+        "artist": "3R2", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 9.9
+    },
+    {
+        "name": "Dialnote",
+        "artist": "七草クリむ", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 8.1
+    },
+    {
+        "name": "Diode",
+        "artist": "Kolaa", 
+        "pst": 2.5,
+        "prs": 5.5,
+        "ftr": 8.1
+    },
+    {
+        "name": "Divine Light of Myriad",
+        "artist": "yoho", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 10.8
+    },
+    {
+        "name": "Dot to Dot feat. shully",
+        "artist": "Mameyudoufu", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 8.3
+    },
+    {
+        "name": "Dreadnought",
+        "artist": "Mastermind (xi+nora2r)", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 9.7
+    },
+    {
+        "name": "Dream goes on",
+        "artist": "Tiny Minim", 
+        "pst": 1.5,
+        "prs": 5.0,
+        "ftr": 7.5
+    },
+    {
+        "name": "Dreamin' Attraction!!",
+        "artist": "翡乃イスカ", 
+        "pst": 4.5,
+        "prs": 7.0,
+        "ftr": 9.4
+    },
+    {
+        "name": "DRG",
+        "artist": "onoken", 
+        "pst": 3.5,
+        "prs": 7.0,
+        "ftr": 9.5
+    },
+    {
+        "name": "dropdead",
+        "artist": "Frums", 
+        "pst": 1.5,
+        "prs": 9.5,
+        "ftr": 9.1,
+        "byd": 10.5,
+        "bydname": "overdead",
+        "bydartist": "fn"
+    },
+    {
+        "name": "DX Choseinou Full Metal Shojo",
+        "artist": "IOSYS TRAX (uno with.ちよこ)", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 9.8
+    },
+    {
+        "name": "Eccentric Tale",
+        "artist": "Yamajet", 
+        "pst": 2.0,
+        "prs": 5.5,
+        "ftr": 8.4
+    },
+    {
+        "name": "Einherjar Joker",
+        "artist": "DJ Genki vs Gram", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 9.8
+    },
+    {
+        "name": "Empire of Winter",
+        "artist": "Street", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.0
+    },
+    {
+        "name": "enchanted love",
+        "artist": "linear ring", 
+        "pst": 2.0, 
+        "prs": 4.5,
+        "ftr": 8.4
+    },
+    {
+        "name": "ENERGY SYNERGY MATRIX",
+        "artist": "Tanchiky", 
+        "pst": 3.5, 
+        "prs": 7.0,
+        "ftr": 9.6
+    },
+    {
+        "name": "Equilibrium",
+        "artist": "Maozon", 
+        "pst": 3.5, 
+        "prs": 6.5,
+        "ftr": 9.4
+    },
+    {
+        "name": "Essence of Twilight",
+        "artist": "ak+q", 
+        "pst": 4.5, 
+        "prs": 7.0,
+        "ftr": 9.1
+    },
+    {
+        "name": "Ether Strike",
+        "artist": "Akira Complex", 
+        "pst": 5.5, 
+        "prs": 8.3,
+        "ftr": 10.3
+    },
+    {
+        "name": "Evening in Scarlet",
+        "artist": "Freezer feat.妃莓", 
+        "pst": 4.0, 
+        "prs": 7.0,
+        "ftr": 9.5
+    },
+    {
+        "name": "Evoltex (poppi'n mix)",
+        "artist": "Arch vs n3pu", 
+        "pst": 2.0, 
+        "prs": 7.0,
+        "ftr": 8.9
+    },
+    {
+        "name": "Faint Light (Arcaea Edit)",
+        "artist": "Taishi", 
+        "pst": 3.0, 
+        "prs": 6.0,
+        "ftr": 9.1
+    },
+    {
+        "name": "Fairytale",
+        "artist": "chitose", 
+        "pst": 1.0, 
+        "prs": 3.5,
+        "ftr": 7.0,
+        "byd": 9.5
+    },
+    {
+        "name": "Fallensquare",
+        "artist": "Silentroom", 
+        "pst": 3.0, 
+        "prs": 7.0,
+        "ftr": 9.6
+    },
+    {
+        "name": "False Embellishment",
+        "artist": "影虎。& ikaruga_nex", 
+        "pst": 3.5, 
+        "prs": 6.5,
+        "ftr": 9.3
+    },
+    {
+        "name": "Far Away Light",
+        "artist": "technoplanet feat. はるの & 黒沢ダイスケ", 
+        "pst": 4.5, 
+        "prs": 7.5,
+        "ftr": 9.8
+    },
+    {
+        "name": "Feels So Right feat. Renko",
+        "artist": "Mysteka", 
+        "pst": 3.5, 
+        "prs": 6.5,
+        "ftr": 9.3
+    },
+    {
+        "name": "Felis",
+        "artist": "M2U", 
+        "pst": 4.0, 
+        "prs": 7.5,
+        "ftr": 10.4
+    },
+    {
+        "name": "Filament",
+        "artist": "Puru", 
+        "pst": 4.5, 
+        "prs": 7.5,
+        "ftr": 9.7
+    },
+    {
+        "name": "Final Step!",
+        "artist": "Lime", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.4
+    },
+    {
+        "name": "First Snow",
+        "artist": "黒魔", 
+        "pst": 2.5,
+        "prs": 4.5,
+        "ftr": 7.5
+    },
+    {
+        "name": "Flashback",
+        "artist": "ARForest", 
+        "pst": 2.0,
+        "prs": 5.0,
+        "ftr": 8.8
+    },
+    {
+        "name": "FLUFFY FLASH",
+        "artist": "Kobaryo", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.8
+    },
+    {
+        "name": "Flyburg and Endroll",
+        "artist": "アリスシャッハと魔法の楽団", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 9.0
+    },
+    {
+        "name": "Fracture Ray",
+        "artist": "Sakuzyo", 
+        "pst": 6.0,
+        "prs": 9.5,
+        "ftr": 11.3
+    },
+    {
+        "name": "Free Myself",
+        "artist": "lapix feat. mami", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 10.0
+    },
+    {
+        "name": "FREEF4LL",
+        "artist": "YUKIYANAGI", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 8.6, 
+        "byd": 9.8
+    },
+    {
+        "name": "G e n g a o z o",
+        "artist": "-45", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 10.2
+    },
+    {
+        "name": "Galactic Love",
+        "artist": "La prière", 
+        "pst": 3.0,
+        "prs": 6.5,
+        "ftr": 9.0
+    },
+    {
+        "name": "Galaxy Friends",
+        "artist": "Kobaryo", 
+        "pst": 3.5,
+        "prs": 6.0,
+        "ftr": 9.8
+    },
+    {
+        "name": "Garakuta Doll Play",
+        "artist": "t+pazolite", 
+        "pst": 4.5,
+        "prs": 6.5,
+        "ftr": 10.4
+    },
+    {
+        "name": "Gekka (Short Version)",
+        "artist": "Nhato", 
+        "pst": 4.0,
+        "prs": 6.0,
+        "ftr": 8.6
+    },
+    {
+        "name": "Genesis (Iris)",
+        "artist": "Iris", 
+        "pst": 2.0,
+        "prs": 5.5,
+        "ftr": 8.2
+    },
+    {
+        "name": "Genesis (Morrigan feat. Lily)",
+        "artist": "Morrigan feat. Lily", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 9.9
+    },
+    {
+        "name": "GENOCIDER",
+        "artist": "DJ Myosuke", 
+        "pst": 4.5,
+        "prs": 8.5,
+        "ftr": 10.7
+    },
+    {
+        "name": "GIMME DA BLOOD",
+        "artist": "C-Show", 
+        "pst": 3.5,
+        "prs": 7.0,
+        "ftr": 10.4
+    },
+    {
+        "name": "GIMMICK",
+        "artist": "Ms.Sill", 
+        "pst": 2.5,
+        "prs": 6.5,
+        "ftr": 9.5
+    },
+    {
+        "name": "Give Me a Nightmare",
+        "artist": "アリスシャッハと魔法の楽団", 
+        "pst": 3.5,
+        "prs": 5.5,
+        "ftr": 8.9
+    },
+    {
+        "name": "GLORY：ROAD",
+        "artist": "uma vs. モリモリあつし", 
+        "pst": 4.5,
+        "prs": 7.0,
+        "ftr": 10.6
+    },
+    {
+        "name": "Glow",
+        "artist": "SPACELECTRO", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 9.3
+    },
+    {
+        "name": "goldenslaughterer",
+        "artist": "zts", 
+        "pst": 4.0,
+        "prs": 6.5,
+        "ftr": 9.7
+    },
+    {
+        "name": "Good bye, Merry-Go-Round.",
+        "artist": "Yooh", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 10.5
+    },
+    {
+        "name": "GOODTEK (Arcaea Edit)",
+        "artist": "EBIMAYO", 
+        "pst": 4.0,
+        "prs": 6.5,
+        "ftr": 9.3, 
+        "byd": 9.8
+    },
+    {
+        "name": "Got hive of Ra",
+        "artist": "E.G.G.", 
+        "pst": 3.0,
+        "prs": 6.5,
+        "ftr": 9.8
+    },
+    {
+        "name": "Grievous Lady",
+        "artist": "Team Grimoire vs Laur", 
+        "pst": 6.5,
+        "prs": 9.3,
+        "ftr": 11.3
+    },
+    {
+        "name": "Grimheart",
+        "artist": "Puru", 
+        "pst": 2.5,
+        "prs": 5.0,
+        "ftr": 8.6
+    },
+    {
+        "name": "Halcyon",
+        "artist": "xi", 
+        "pst": 5.5,
+        "prs": 8.2,
+        "ftr": 10.7
+    },
+    {
+        "name": "Hall of Mirrors",
+        "artist": "Sta", 
+        "pst": 3.0,
+        "prs": 5.5,
+        "ftr": 8.2
+    },
+    {
+        "name": "Harutopia ~Utopia of Spring~",
+        "artist": "A-zu-ra", 
+        "pst": 1.0,
+        "prs": 4.5,
+        "ftr": 8.5
+    },
+    {
+        "name": "Haze of Autumn",
+        "artist": "karatoPαnchii feat. はるの", 
+        "pst": 3.5,
+        "prs": 7.0,
+        "ftr": 9.8
+    },
+    {
+        "name": "Head BONK ache",
+        "artist": "saaa ft. MC iwata Bros.", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 9.4
+    },
+    {
+        "name": "Heart",
+        "artist": "削除 (Violin : Katali)", 
+        "pst": 1.0,
+        "prs": 5.0,
+        "ftr": 9.3
+    },
+    {
+        "name": "Heart Jackin'",
+        "artist": "Yu_Asahina", 
+        "pst": 3.0,
+        "prs": 5.5,
+        "ftr": 9.7
+    },
+    {
+        "name": "Heavenly caress",
+        "artist": "Noah", 
+        "pst": 3.5,
+        "prs": 7.5,
+        "ftr": 9.8
+    },
+    {
+        "name": "Heavensdoor",
+        "artist": "LeaF", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 9.9, 
+        "byd": 10.8
+    },
+    {
+        "name": "Hiiro Gekka, Kyoushou no Zetsu (nayuta 2017 ver.)",
+        "artist": "nayuta x 黒鳥(EastNewSound)", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 10.3
+    },
+    {
+        "name": "Hikari",
+        "artist": "THB", 
+        "pst": 2.5,
+        "prs": 6.0,
+        "ftr": 8.1
+    },
+    {
+        "name": "HIVEMIND",
+        "artist": "かたぎり", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 10.0
+    },
+    {
+        "name": "Hybris (The one who shattered)",
+        "artist": "qfeileadh feat.のあ", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 9.8
+    },
+    {
+        "name": "I've heard it said",
+        "artist": "Combatplayer", 
+        "pst": 3.5,
+        "prs": 6.0,
+        "ftr": 8.1
+    },
+    {
+        "name": "Iconoclast",
+        "artist": "Yamajet", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 9.1
+    },
+    {
+        "name": "Ignotus",
+        "artist": "ak+q", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.3,
+        "byd": 9.9,
+        "bydname": "Ignotus Afterburn",
+        "bydartist": "ArcaeaSoundTeam"
+    },
+    {
+        "name": "͟͝͞Ⅱ́̕",
+        "artist": "Cytus", 
+        "pst": 5.0,
+        "prs": 8.4,
+        "ftr": 10.8
+    },
+    {
+        "name": "Ikazuchi",
+        "artist": "光吉猛修", 
+        "pst": 3.5,
+        "prs": 7.5,
+        "ftr": 10.4
+    },
+    {
+        "name": "Illegal Paradise",
+        "artist": "gmtn. (witch's slave)", 
+        "pst": 2.0,
+        "prs": 7.0,
+        "ftr": 9.5
+    },
+    {
+        "name": "IMPACT",
+        "artist": "USAO feat. 光吉猛修", 
+        "pst": 3.5,
+        "prs": 7.5,
+        "ftr": 9.6, 
+        "byd": 10.4
+    },
+    {
+        "name": "Impure Bird",
+        "artist": "MIssionary", 
+        "pst": 2.0,
+        "prs": 5.5,
+        "ftr": 9.4
+    },
+    {
+        "name": "Infinite Strife,",
+        "artist": "BlackYooh vs. siromaru", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 9.9
+    },
+    {
+        "name": "Infinity Heaven",
+        "artist": "HyuN", 
+        "pst": 1.5,
+        "prs": 5.5,
+        "ftr": 7.5, 
+        "byd": 9.6
+    },
+    {
+        "name": "init()",
+        "artist": "kamome sano", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 9.8
+    },
+    {
+        "name": "inkar-usi",
+        "artist": "DIA", 
+        "pst": 2.0,
+        "prs": 4.0,
+        "ftr": 7.5
+    },
+    {
+        "name": "INTERNET OVERDOSE",
+        "artist": "Aiobahn feat. KOTOKO", 
+        "pst": 3.0,
+        "prs": 6.5,
+        "ftr": 8.4
+    },
+    {
+        "name": "INTERNET YAMERO",
+        "artist": "Aiobahn feat. KOTOKO", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 9.9
+    },
+    {
+        "name": "IZANA",
+        "artist": "t+pazolite vs P*Light", 
+        "pst": 5.0,
+        "prs": 8.3,
+        "ftr": 10.3
+    },
+    {
+        "name": "Journey",
+        "artist": "ARForest", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 8.8
+    },
+    {
+        "name": "Jump",
+        "artist": "Rasmus Faber", 
+        "pst": 4.0,
+        "prs": 6.0,
+        "ftr": 9.0
+    },
+    {
+        "name": "Kanagawa Cyber Culvert",
+        "artist": "南ゆに", 
+        "pst": 1.0,
+        "prs": 5.5,
+        "ftr": 9.0, 
+        "byd": 9.8
+    },
+    {
+        "name": "Kissing Lucifer",
+        "artist": "ETIA.", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 10.4
+    },
+    {
+        "name": "La'qryma of the Wasteland",
+        "artist": "DJ Noriken", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.1, 
+        "byd": 9.9
+    },
+    {
+        "name": "LAMIA",
+        "artist": "BlackY", 
+        "pst": 5.0,
+        "prs": 8.3,
+        "ftr": 10.9
+    },
+    {
+        "name": "Lapis",
+        "artist": "SHIKI", 
+        "pst": 2.0,
+        "prs": 6.0,
+        "ftr": 9.4
+    },
+    {
+        "name": "Last",
+        "artist": "onoken", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 9.0,
+        "byd": 9.6,
+        "bydname": "Last | Eternity",
+        "byd2": 9.7,
+        "bydname2": "Last | Moment"
+    },
+    {
+        "name": "Last Celebration",
+        "artist": "Laur vs CK", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 10.5
+    },
+    {
+        "name": "lastendconductor",
+        "artist": "zts", 
+        "pst": 3.5,
+        "prs": 7.0,
+        "ftr": 9.4
+    },
+    {
+        "name": "Lawless Point",
+        "artist": "La prière", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 8.9
+    },
+    {
+        "name": "Lazy Addiction",
+        "artist": "sky_delta", 
+        "pst": 2.5,
+        "prs": 6.0,
+        "ftr": 9.6
+    },
+    {
+        "name": "Let you DIVE! (nitro rmx)",
+        "artist": "nitro (lowiro)", 
+        "pst": 3.0,
+        "prs": 6.5,
+        "ftr": 9.4
+    },
+    {
+        "name": "Let's Rock (Arcaea mix)",
+        "artist": "ikaruga_nex vs FALCHiON", 
+        "pst": 3.0,
+        "prs": 7.0,
+        "ftr": 9.7
+    },
+    {
+        "name": "Lethaeus",
+        "artist": "Silentroom", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.7
+    },
+    {
+        "name": "Libertas",
+        "artist": "Zekk", 
+        "pst": 3.5,
+        "prs": 5.5,
+        "ftr": 9.2
+    },
+    {
+        "name": "Life is PIANO",
+        "artist": "Junk", 
+        "pst": 3.5,
+        "prs": 5.5,
+        "ftr": 9.1
+    },
+    {
+        "name": "Lightning Screw",
+        "artist": "HiTECH NINJA", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 10.5
+    },
+    {
+        "name": "Lights of Muse",
+        "artist": "Ayatsugu_Otowa", 
+        "pst": 2.5,
+        "prs": 5.5,
+        "ftr": 8.7
+    },
+    {
+        "name": "Linear Accelerator",
+        "artist": "THE SHAFT", 
+        "pst": 2.5,
+        "prs": 6.5,
+        "ftr": 9.8
+    },
+    {
+        "name": "Live Fast Die Young",
+        "artist": "anubasu-anubasu", 
+        "pst": 4.5,
+        "prs": 8.1,
+        "ftr": 10.6
+    },
+    {
+        "name": "Löschen",
+        "artist": "BlackY feat. Risa Yuzuki", 
+        "pst": 3.5,
+        "prs": 7.0,
+        "ftr": 10.2
+    },
+    {
+        "name": "Lost Civilization",
+        "artist": "Laur vs CK", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 9.2, 
+        "byd": 9.8
+    },
+    {
+        "name": "Lost Desire",
+        "artist": "Powerless feat. Sennzai", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 9.8
+    },
+    {
+        "name": "Lost Emotion feat. nomico",
+        "artist": "Masayoshi Minoshima(ALR)", 
+        "pst": 3.5,
+        "prs": 7.0,
+        "ftr": 9.3
+    },
+    {
+        "name": "Lost in the Abyss",
+        "artist": "FELT", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.7
+    },
+    {
+        "name": "Loveless Dress",
+        "artist": "かねこちはる", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.6
+    },
+    {
+        "name": "Lucid Traveler",
+        "artist": "Akira Complex vs 3R2", 
+        "pst": 4.5,
+        "prs": 8.3,
+        "ftr": 10.4
+    },
+    {
+        "name": "Lucifer",
+        "artist": "chitose", 
+        "pst": 3.5,
+        "prs": 5.5,
+        "ftr": 8.2
+    },
+    {
+        "name": "Lumia",
+        "artist": "sky_delta", 
+        "pst": 2.5,
+        "prs": 5.5,
+        "ftr": 8.4, 
+        "byd": 9.5
+    },
+    {
+        "name": "LunarOrbit -believe in the Espebranch road-",
+        "artist": "Apo11o program ft. 大瀬良あい", 
+        "pst": 3.5,
+        "prs": 6.0,
+        "ftr": 9.6
+    },
+    {
+        "name": "Macrocosmic Modulation",
+        "artist": "JAKAZiD", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 9.8
+    },
+    {
+        "name": "Magnolia",
+        "artist": "M2U Vocal by Guriri", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 10.2
+    },
+    {
+        "name": "MAHOROBA",
+        "artist": "Zekk", 
+        "pst": 3.0,
+        "prs": 6.5,
+        "ftr": 9.5
+    },
+    {
+        "name": "Malicious Mischance",
+        "artist": "s-don", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 10.2
+    },
+    {
+        "name": "Manic Jeer",
+        "artist": "ルゼ", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 10.6
+    },
+    {
+        "name": "MANTIS (Arcaea Ultra-Bloodrush VIP)",
+        "artist": "Akira Complex feat. kiraku", 
+        "pst": 3.0,
+        "prs": 5.5,
+        "ftr": 9.3
+    },
+    {
+        "name": "MAXRAGE",
+        "artist": "EBIMAYO", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.9
+    },
+    {
+        "name": "Maze No.9",
+        "artist": "アリスシャッハと魔法の楽団", 
+        "pst": 3.0,
+        "prs": 3.5,
+        "ftr": 8.9
+    },
+    {
+        "name":"Mazy Metroplex",
+        "artist": "aran", 
+        "pst": 3.0,
+        "prs": 7.5,
+        "ftr": 9.7
+    },
+    {
+        "name":"Medusa",
+        "artist": "HiTECH NINJA", 
+        "pst": 4.5,
+        "prs": 7.0,
+        "ftr": 10.2
+    },
+    {
+        "name":"Memory Forest",
+        "artist": "ETIA.", 
+        "pst": 3.5,
+        "prs": 6.0,
+        "ftr": 9.8
+    },
+    {
+        "name":"memoryfactory.lzh",
+        "artist": "Frums", 
+        "pst": 2.5,
+        "prs": 5.5,
+        "ftr": 8.9
+    },
+    {
+        "name":"MERLIN",
+        "artist": "REDALiCE", 
+        "pst": 3.0,
+        "prs": 5.5,
+        "ftr": 8.9, 
+        "byd": 9.4
+    },
+    {
+        "name":"Metallic Punisher",
+        "artist": "INNOCENT NOIZE", 
+        "pst": 3.0,
+        "prs": 7.0,
+        "ftr": 10.3
+    },
+    {
+        "name":"Mirzam",
+        "artist": "Aoi vs. siqlo", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 10.0
+    },
+    {
+        "name":"Misdeed -la bonté de Dieu et l'origine du mal-",
+        "artist": "光吉猛修 vs 穴山大輔", 
+        "pst": 5.5,
+        "prs": 8.5,
+        "ftr": 10.9
+    },
+    {
+        "name":"Modelista",
+        "artist": "HiTECH NINJA", 
+        "pst": 3.5,
+        "prs": 7.5,
+        "ftr": 10.0
+    },
+    {
+        "name":"Monochrome Princess",
+        "artist": "polysha", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 9.7
+    },
+    {
+        "name":"Moonheart",
+        "artist": "翡乃イスカ", 
+        "pst": 2.5,
+        "prs": 5.5,
+        "ftr": 8.4,
+        "byd": 9.7
+    },
+    {
+        "name":"Moonlight of Sand Castle",
+        "artist": "旅人E", 
+        "pst": 1.5,
+        "prs": 5.0,
+        "ftr": 7.5
+    },
+    {
+        "name":"NEO WINGS",
+        "artist": "SOUND HOLIC feat. Nana Takahashi", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 10.2
+    },
+    {
+        "name":"New York Back Raise",
+        "artist": "saaa + kei_iwata + stuv + わかどり", 
+        "pst": 4.5,
+        "prs": 7.0,
+        "ftr": 9.9
+    },
+    {
+        "name":"next to you",
+        "artist": "uma feat. 橘花音", 
+        "pst": 4.5,
+        "prs": 7.0,
+        "ftr": 8.8, 
+        "byd": 9.6
+    },
+    {
+        "name":"Nhelv",
+        "artist": "Silentroom", 
+        "pst": 3.0,
+        "prs": 6.5,
+        "ftr": 9.9
+    },
+    {
+        "name":"Nirv lucE",
+        "artist": "しーけー", 
+        "pst": 2.5,
+        "prs": 7.0,
+        "ftr": 10.3
+    },
+    {
+        "name":"NULCTRL",
+        "artist": "Silentroom", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 9.5
+    },
+    {
+        "name": "NULL APOPHENIA",
+        "artist": "N²", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 10.6
+    },
+    {
+        "name": "nέo κósmo",
+        "artist": "ak+q × Street", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 9.7
+    },
+    {
+        "name": "Oblivia",
+        "artist": "Saiph", 
+        "pst": 3.5,
+        "prs": 5.0,
+        "ftr": 8.3
+    },
+    {
+        "name": "OMAKENO Stroke",
+        "artist": "t+pazolite", 
+        "pst": 3.0,
+        "prs": 6.5,
+        "ftr": 9.5, 
+        "byd": 10.2
+    },
+    {
+        "name": "One Last Drive",
+        "artist": "REDSHiFT", 
+        "pst": 2.5,
+        "prs": 5.5,
+        "ftr": 8.2
+    },
+    {
+        "name": "Oracle",
+        "artist": "TQ☆", 
+        "pst": 3.0,
+        "prs": 5.5,
+        "ftr": 9.3
+    },
+    {
+        "name": "Oshama Scramble!",
+        "artist": "t+pazolite", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 10.0
+    },
+    {
+        "name": "ouroboros -twin stroke of the end-",
+        "artist": "Cranky VS MASAKI", 
+        "pst": 4.5,
+        "prs": 7.0,
+        "ftr": 10.7
+    },
+    {
+        "name": "Overwhelm",
+        "artist": "xi", 
+        "pst": 5.0,
+        "prs": 8.5,
+        "ftr": 10.6
+    },
+    {
+        "name": "Paper Witch",
+        "artist": "Yu-dachi", 
+        "pst": 2.0,
+        "prs": 5.0,
+        "ftr": 8.7
+    },
+    {
+        "name": "Paradise",
+        "artist": "Sound Souler", 
+        "pst": 1.0,
+        "prs": 4.0,
+        "ftr": 7.5
+    },
+    {
+        "name": "Particle Arts",
+        "artist": "Virtual Self", 
+        "pst": 3.5,
+        "prs": 6.0,
+        "ftr": 8.8
+    },
+    {
+        "name": "Party Vinyl",
+        "artist": "モリモリあつし", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 9.4, 
+        "byd": 10.1
+    },
+    {
+        "name": "Pentiment",
+        "artist": "Nothing But Requiem with Museo", 
+        "pst": 6.0,
+        "prs": 8.4,
+        "ftr": 10.3, 
+        "byd": 11.4
+    },
+    {
+        "name": "Phantasia",
+        "artist": "Yunosuke", 
+        "pst": 4.0,
+        "prs": 5.5,
+        "ftr": 9.2
+    },
+    {
+        "name": "PICO-Pico-Translation!",
+        "artist": "t+pazolite,ななひら,Cranky,Pico*", 
+        "pst": 2.0,
+        "prs": 6.0,
+        "ftr": 9.3
+    },
+    {
+        "name": "PRAGMATISM",
+        "artist": "Laur", 
+        "pst": 4.5,
+        "prs": 8.6,
+        "ftr": 10.1,
+        "byd": 11.0,
+        "bydname": "PRAGMATISM -RESURRECTION-"
+    },
+    {
+        "name": "PRIMITIVE LIGHTS",
+        "artist": "TAG", 
+        "pst": 5.5,
+        "prs": 8.5,
+        "ftr": 10.7
+    },
+    {
+        "name": "Prism",
+        "artist": "bermei.inazawa ft. Chata", 
+        "pst": 2.0,
+        "prs": 5.0,
+        "ftr": 8.0
+    },
+    {
+        "name": "Protoflicker",
+        "artist": "Silentroom", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 9.8
+    },
+    {
+        "name": "PUPA",
+        "artist": "モリモリあつし", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 10.4
+    },
+    {
+        "name": "Purgatorium",
+        "artist": "お月さま交響曲", 
+        "pst": 2.5,
+        "prs": 6.0,
+        "ftr": 8.4, 
+        "byd": 9.6
+    },
+    {
+        "name": "Purple Verse",
+        "artist": "Hommarju", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 9.6
+    },
+    {
+        "name": "qualia -ideaesthesia-",
+        "artist": "nitro", 
+        "pst": 4.5,
+        "prs": 7.0,
+        "ftr": 9.1, 
+        "byd": 9.7
+    },
+    {
+        "name": "Quon (DJ Noriken)",
+        "artist": "DJ Noriken", 
+        "pst": 2.5,
+        "prs": 5.5,
+        "ftr": 8.7, 
+        "byd": 10.2
+    },
+    {
+        "name": "Quon (Feryquitous)",
+        "artist": "Feryquitous", 
+        "pst": 4.0,
+        "prs": 6.5,
+        "ftr": 9.6
+    },
+    {
+        "name": "Rabbit In The Black Room",
+        "artist": "Rabbit House", 
+        "pst": 2.5,
+        "prs": 5.5,
+        "ftr": 8.4
+    },
+    {
+        "name": "Raven's Pride",
+        "artist": "みーに feat. はらもりよしな", 
+        "pst": 3.0,
+        "prs": 6.5,
+        "ftr": 9.4
+    },
+    {
+        "name": "REconstruction",
+        "artist": "Ryazan", 
+        "pst": 2.5,
+        "prs": 6.0,
+        "ftr": 8.4
+    },
+    {
+        "name": "Red and Blue",
+        "artist": "Silentroom", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 9.4,
+        "byd": 10.0,
+        "bydartist": "fn(ArcaeaSoundTeam)",
+        "bydname": "Red and Blue and Green"
+    },
+    {
+        "name": "Redolent Shape",
+        "artist": "Sanaas", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 10.2
+    },
+    {
+        "name": "Redraw the Colorless World",
+        "artist": "MisomyL", 
+        "pst": 4.0,
+        "prs": 6.5,
+        "ftr": 9.2
+    },
+    {
+        "name": "Reinvent",
+        "artist": "Sound Souler", 
+        "pst": 2.5,
+        "prs": 6.5,
+        "ftr": 8.5
+    },
+    {
+        "name": "REKKA RESONANCE",
+        "artist": "REDALiCE vs Kobaryo", 
+        "pst": 5.0,
+        "prs": 8.3,
+        "ftr": 10.7
+    },
+    {
+        "name": "Relentless",
+        "artist": "Akira Complex", 
+        "pst": 4.5,
+        "prs": 6.5,
+        "ftr": 8.0
+    },
+    {
+        "name": "ReviXy",
+        "artist": "ikaruga_nex", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 9.0
+    },
+    {
+        "name": "RGB",
+        "artist": "MEMODEMO X AQUASINE", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 9.7
+    },
+    {
+        "name": "Ringed Genesis",
+        "artist": "Edelritter", 
+        "pst": 5.5,
+        "prs": 8.4,
+        "ftr": 10.8
+    },
+    {
+        "name": "Rise",
+        "artist": "Combatplayer", 
+        "pst": 2.5,
+        "prs": 4.0,
+        "ftr": 7.5
+    },
+    {
+        "name": "Rise of the World",
+        "artist": "cosMo@暴走P", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 10.4
+    },
+    {
+        "name": "Romance Wars",
+        "artist": "U-ske (feat. lueur)", 
+        "pst": 1.0,
+        "prs": 4.0,
+        "ftr": 7.5
+    },
+    {
+        "name": "Rugie",
+        "artist": "Feryquitous feat. Sennzai", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 9.2
+    },
+    {
+        "name": "SACRIFICE feat. ayame",
+        "artist": "Masayoshi Minoshima(ALR)", 
+        "pst": 3.5,
+        "prs": 7.5,
+        "ftr": 9.7
+    },
+    {
+        "name": "SAIKYO STRONGER",
+        "artist": "REDALiCE vs USAO", 
+        "pst": 5.5,
+        "prs": 9.4,
+        "ftr": 11.0
+    },
+    {
+        "name": "Sakura Fubuki",
+        "artist": "Street", 
+        "pst": 3.5,
+        "prs": 5.5,
+        "ftr": 9.3
+    },
+    {
+        "name": "san skia",
+        "artist": "ユアミトス", 
+        "pst": 3.5,
+        "prs": 6.0,
+        "ftr": 8.3
+    },
+    {
+        "name": "Sayonara Hatsukoi",
+        "artist": "REDSHiFT", 
+        "pst": 1.5,
+        "prs": 4.5,
+        "ftr": 7.0
+    },
+    {
+        "name": "Scarlet Cage",
+        "artist": "Daisuke Kurosawa", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 9.8
+    },
+    {
+        "name": "Scarlet Lance",
+        "artist": "MASAKI (ZUNTATA)", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 10.1
+    },
+    {
+        "name": "Seclusion",
+        "artist": "Laur feat. Sennzai", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 10.6
+    },
+    {
+        "name": "Senkyou",
+        "artist": "MYTK", 
+        "pst": 3.0, 
+        "prs": 5.5,
+        "ftr": 8.7
+    },
+    {
+        "name": "Shades of Light in a Transcendent Realm",
+        "artist": "ak+q", 
+        "pst": 3.0, 
+        "prs": 6.0,
+        "ftr": 8.3, 
+        "byd": 9.0
+    },
+    {
+        "name": "Sheriruth",
+        "artist": "Team Grimoire", 
+        "pst": 5.5, 
+        "prs": 7.5,
+        "ftr": 10.1
+    },
+    {
+        "name": "Sheriruth (Laur Remix)",
+        "artist": "Laur", 
+        "pst": 4.0, 
+        "prs": 7.5,
+        "ftr": 10.6
+    },
+    {
+        "name": "Silent Rush",
+        "artist": "Soleily", 
+        "pst": 2.5, 
+        "prs": 5.0,
+        "ftr": 8.6
+    },
+    {
+        "name": "Singularity",
+        "artist": "ETIA.", 
+        "pst": 4.5, 
+        "prs": 7.5,
+        "ftr": 10.7,
+        "byd": 10.4,
+        "bydname": "Singularity VVVIP",
+        "bydartist": "Arcaea Sound Team against ETIA."
+    },
+    {
+        "name": "Small Cloud Sugar Candy",
+        "artist": "テヅカ x Aoi feat. 桃雛なの", 
+        "pst": 3.0, 
+        "prs": 6.5,
+        "ftr": 9.1
+    },
+    {
+        "name": "Snow White",
+        "artist": "Puru", 
+        "pst": 2.5, 
+        "prs": 5.0,
+        "ftr": 8.4
+    },
+    {
+        "name": "Solitary Dream",
+        "artist": "ak+q feat. Sennzai", 
+        "pst": 4.0, 
+        "prs": 7.0,
+        "ftr": 8.8
+    },
+    {
+        "name": "SOUNDWiTCH",
+        "artist": "HATE", 
+        "pst": 3.5, 
+        "prs": 6.5,
+        "ftr": 9.9
+    },
+    {
+        "name": "Specta",
+        "artist": "Junk", 
+        "pst": 3.5, 
+        "prs": 6.5,
+        "ftr": 9.5
+    },
+    {
+        "name": "Spider's Thread",
+        "artist": "きくお×cosMo＠暴走P feat.影縫英", 
+        "pst": 4.5, 
+        "prs": 7.5,
+        "ftr": 10.8
+    },
+    {
+        "name": "STAGER (ALL STAGE CLEAR)",
+        "artist": "Ras", 
+        "pst": 3.0, 
+        "prs": 6.5,
+        "ftr": 9.5
+    },
+    {
+        "name": "Stasis",
+        "artist": "Maozon", 
+        "pst": 4.5, 
+        "prs": 7.0,
+        "ftr": 10.7
+    },
+    {
+        "name": "Strongholds",
+        "artist": "Yooh", 
+        "pst": 2.5, 
+        "prs": 5.0,
+        "ftr": 9.2
+    },
+    {
+        "name": "Sulfur",
+        "artist": "ぺのれり", 
+        "pst": 4.0, 
+        "prs": 6.0,
+        "ftr": 9.7
+    },
+    {
+        "name": "Summer Fireworks of Love",
+        "artist": "karatoPαnchii feat. はるの", 
+        "pst": 3.0, 
+        "prs": 6.5,
+        "ftr": 9.9
+    },
+    {
+        "name": "Suomi",
+        "artist": "Aire", 
+        "pst": 2.5, 
+        "prs": 5.0,
+        "ftr": 7.5
+    },
+    {
+        "name": "SUPERNOVA",
+        "artist": "BACO", 
+        "pst": 3.0, 
+        "prs": 6.0,
+        "ftr": 9.7
+    },
+    {
+        "name": "Surrender",
+        "artist": "void", 
+        "pst": 3.0, 
+        "prs": 6.5,
+        "ftr": 8.8
+    },
+    {
+        "name": "Syro",
+        "artist": "Mitsomoro", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.3
+    },
+    {
+        "name": "syūten",
+        "artist": "Apo11o\"COLLAPSAR\"program ft. 大瀬良あい", 
+        "pst": 2.0,
+        "prs": 5.0,
+        "ftr": 8.5
+    },
+    {
+        "name": "Tempestissimo",
+        "artist": "t+pazolite", 
+        "pst": 6.5,
+        "prs": 9.5,
+        "ftr": 10.7, 
+        "byd": 11.5
+    },
+    {
+        "name": "TEmPTaTiON",
+        "artist": "かねこちはる", 
+        "pst": 5.0,
+        "prs": 8.2,
+        "ftr": 10.9
+    },
+    {
+        "name": "Teriqma",
+        "artist": "owl*tree", 
+        "pst": 3.0,
+        "prs": 6.5,
+        "ftr": 9.4, 
+        "byd": 9.7
+    },
+    {
+        "name": "Testify",
+        "artist": "void (Mournfinale) feat. 星熊南巫", 
+        "pst": 7.0,
+        "prs": 9.4,
+        "ftr": 10.8, 
+        "byd": 12.0
+    },
+    {
+        "name": "The Message",
+        "artist": "Jun Kuroda", 
+        "pst": 3.0,
+        "prs": 6.5,
+        "ftr": 9.7
+    },
+    {
+        "name": "The Survivor (Game Edit)",
+        "artist": "Taishi", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.9
+    },
+    {
+        "name": "THE ULTIMACY",
+        "artist": "Massive New Krew vs aran", 
+        "pst": 3.0,
+        "prs": 7.0,
+        "ftr": 9.8
+    },
+    {
+        "name": "Tie me down gently",
+        "artist": "溝口ゆうま feat. 大瀬良あい", 
+        "pst": 3.0,
+        "prs": 5.5,
+        "ftr": 8.3
+    },
+    {
+        "name": "Tiferet",
+        "artist": "xi + Sta", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 10.4
+    },
+    {
+        "name": "To the Milky Way",
+        "artist": "黒魔", 
+        "pst": 5.0,
+        "prs": 8.7,
+        "ftr": 10.5
+    },
+    {
+        "name": "To: Alice Liddell",
+        "artist": "モリモリあつし", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 10.3
+    },
+    {
+        "name": "Trap Crow",
+        "artist": "Puru", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 9.9
+    },
+    {
+        "name": "trappola bewitching",
+        "artist": "gmtn.", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 10.0, 
+        "byd": 10.5
+    },
+    {
+        "name": "Trrricksters!!",
+        "artist": "s-don vs. 翡乃イスカ", 
+        "pst": 4.5,
+        "prs": 7.5,
+        "ftr": 10.1
+    },
+    {
+        "name": "Tsuki ni Murakumo, Hana ni Kaze",
+        "artist": "幽閉サテライト", 
+        "pst": 3.0,
+        "prs": 6.0,
+        "ftr": 8.4
+    },
+    {
+        "name": "Turbocharger",
+        "artist": "A/I", 
+        "pst": 2.5,
+        "prs": 5.5,
+        "ftr": 9.0
+    },
+    {
+        "name": "Ultimate taste",
+        "artist": "ぱらどっと", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.7
+    },
+    {
+        "name": "UNKNOWN LEVELS",
+        "artist": "Yuta Imai", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 10.6
+    },
+    {
+        "name": "Used to be",
+        "artist": "KIVΛ", 
+        "pst": 4.0,
+        "prs": 6.5,
+        "ftr": 9.2
+    },
+    {
+        "name": "Valhalla:0",
+        "artist": "Juggernaut.", 
+        "pst": 4.5,
+        "prs": 7.0,
+        "ftr": 10.4
+    },
+    {   
+        "name": "Vandalism",
+        "artist": "Ashrount", 
+        "pst": 3.5,
+        "prs": 6.0,
+        "ftr": 9.7
+    },
+    {
+        "name": "VECTOЯ",
+        "artist": "WHITEFISTS", 
+        "pst": 3.0,
+        "prs": 7.0,
+        "ftr": 9.4
+    },
+    {
+        "name": "Vexaria",
+        "artist": "ak+q", 
+        "pst": 2.5,
+        "prs": 5.0,
+        "ftr": 7.0, 
+        "byd": 8.8
+    },
+    {
+        "name": "Vicious Heroism",
+        "artist": "Kobaryo", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 10.0
+    },
+    {
+        "name": "Vindication",
+        "artist": "Laur", 
+        "pst": 4.0,
+        "prs": 6.5,
+        "ftr": 9.6
+    },
+    {
+        "name": "Vivid Theory",
+        "artist": "ak+q", 
+        "pst": 2.0,
+        "prs": 5.0,
+        "ftr": 8.8
+    },
+    {
+        "name": "Viyella's Tears",
+        "artist": "Laur", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 10.3
+    },
+    {
+        "name": "WAIT FOR DAWN",
+        "artist": "U-ske feat. 棗いつき", 
+        "pst": 2.5,
+        "prs": 6.0,
+        "ftr": 8.7
+    },
+    {
+        "name": "with U",
+        "artist": "t+pazolite & Massive New Krew feat. リリィ(CV:青木志貴)", 
+        "pst": 2.5,
+        "prs": 6.5,
+        "ftr": 9.4
+    },
+    {
+        "name": "World Ender",
+        "artist": "sasakure.UK × TJ.hangneil", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 9.9, 
+        "byd": 11.2
+    },
+    {
+        "name": "World Fragments III (radio edit)",
+        "artist": "xi", 
+        "pst": 3.5,
+        "prs": 7.0,
+        "ftr": 9.8
+    },
+    {
+        "name": "World Vanquisher",
+        "artist": "void (Mournfinale)", 
+        "pst": 2.5,
+        "prs": 5.5,
+        "ftr": 10.8
+    },
+    {
+        "name": "world.execute(me);",
+        "artist": "Mili", 
+        "pst": 3.5,
+        "prs": 5.0,
+        "ftr": 8.0
+    },
+    {
+        "name": "Xanatos",
+        "artist": "Tatsh", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 10.0
+    },
+    {
+        "name": "Xeraphinite",
+        "artist": "BlackY", 
+        "pst": 3.0,
+        "prs": 7.0,
+        "ftr": 9.8
+    },
+    {
+        "name": "Yosakura Fubuki",
+        "artist": "A.SAKA", 
+        "pst": 4.5,
+        "prs": 7.0,
+        "ftr": 9.4
+    },
+    {
+        "name": "Your voice so... feat. Such",
+        "artist": "PSYQUI", 
+        "pst": 3.5,
+        "prs": 6.5,
+        "ftr": 9.4
+    },
+    {
+        "name": "αterlβus",
+        "artist": "Aoi", 
+        "pst": 4.0,
+        "prs": 7.0,
+        "ftr": 10.2
+    },
+    {
+        "name": "γuarδina",
+        "artist": "Aoi", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 10.4
+    },
+    {
+        "name": "µ",
+        "artist": "Frums", 
+        "pst": 3.5,
+        "prs": 7.0,
+        "ftr": 9.7
+    },
+    {
+        "name": "ΟΔΥΣΣΕΙΑ",
+        "artist": "Sober Bear", 
+        "pst": 4.0,
+        "prs": 7.5,
+        "ftr": 9.5
+    },
+    {
+        "name": "ω4",
+        "artist": "穴山大輔 VS 光吉猛修 VS Kai", 
+        "pst": 3.5,
+        "prs": 7.5,
+        "ftr": 10.8
+    }
+    ]
+}
