@@ -14,35 +14,40 @@ html {
 }
 
 body {
-  background: linear-gradient(to right, rgb(238, 253, 253), rgb(224, 255, 255));
+  background-image: linear-gradient(0deg, rgba(185, 178, 255, 0.534), rgba(182, 228, 255, 0.664)), linear-gradient(90deg, rgba(120, 217, 255, 0.753), rgba(154, 161, 255, 0.808));
   width: 100vw;
+  height: 120vh;
   overflow-x: hidden;
 }
 
 .content {
-  width: 90rem;
-  margin: 3rem auto;
-  background-color: white;
-  border-radius: 6px;
-  -ms-box-shadow: 0 6px 9px 4px rgba(12, 71, 71, 0.3);
-  box-shadow: 0 6px 9px 4px rgba(12, 71, 71, 0.3);
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 3px;
 }
 
 /****************************************/
 /**************** HEADER ****************/
 /****************************************/
 header {
+  width: 100vw;
   border-radius: 6px 6px 0 0;
   padding: 1.8rem 2rem 2rem 2rem;
-  height: 10%;
   display: flex;
   align-items: center;
   align-content: space-evenly;
   gap: 4rem;
-  background-color: #e6fafa;
+}
+
+.sticky-header {
+  background-color: rgba(181, 235, 255, 0.5333333333);
+  -ms-box-shadow: 0 2px 6px 2px rgba(25, 81, 83, 0.3);
+  box-shadow: 0 2px 6px 2px rgba(25, 81, 83, 0.3);
 }
 
 .title {
+  padding-right: 3rem;
   padding-left: 2rem;
   letter-spacing: -1px;
 }
@@ -61,7 +66,7 @@ header {
 }
 
 .navigation {
-  margin-right: 3rem;
+  margin-right: 4%;
   margin-left: auto;
 }
 .navigation a:link,
@@ -113,35 +118,90 @@ header {
 /****************************************/
 /** Homepage **/
 main {
-  padding: 2rem 4rem;
+  padding: 0;
   display: flex;
   align-items: start;
   align-content: start;
   gap: 6rem;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 /** About page **/
-.about {
+.hero {
   width: 100%;
-  margin: 2rem 0;
+  height: 100%;
   display: flex;
   justify-content: left;
   gap: 2.4rem;
 }
 
 .picture {
-  height: 80%;
+  position: absolute;
+  background-image: linear-gradient(to right bottom, url("../img/me.jpg"), rgba(21, 22, 109, 0.25));
+  z-index: -1;
+  opacity: 0.1;
+  width: 100vw;
+  height: 100vh;
 }
-.picture img {
-  width: 28rem;
-  height: 24rem;
-  -o-object-position: 0% 75%;
-     object-position: 0% 75%;
-  border-radius: 6px;
-  -ms-box-shadow: 0 2px 3px 1px rgba(12, 71, 71, 0.3);
-  box-shadow: 0 2px 3px 1px rgba(12, 71, 71, 0.3);
-  -o-object-fit: cover;
-     object-fit: cover;
+
+.hello {
+  padding: 10rem 20rem;
+  font-size: 14rem;
+  font-weight: 700;
+  width: 100vw;
+  color: #1f1f2b;
+}
+
+.waving {
+  display: inline-block;
+}
+
+.waving:hover {
+  animation-name: wave-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.intro {
+  width: 60vw;
+  padding-top: 3rem;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.description {
+  margin: 4rem 12rem;
+}
+.description .big-text:not(:first-of-type) {
+  margin-top: 3rem;
 }
 
 /** Used for home page and game dev page for image banners + descriptions **/
@@ -215,7 +275,7 @@ main {
 
 .cv-text {
   font-size: 1.6rem;
-  color: #4d4d53;
+  color: #1f1f2b;
   list-style: square;
 }
 .cv-text li:first-of-type {
@@ -238,22 +298,7 @@ main {
 /**************** FOOTER ****************/
 /****************************************/
 footer {
-  margin: 0 4rem;
-  padding: 2rem 0;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  font-size: 1.6rem;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  border-top: 0.5rem solid #e6fafa;
-}
-
-.contact p {
-  color: #557e7e;
-}
-
-.contact p:first-of-type {
-  margin-bottom: 4px;
+  border-top: 0.5rem solid rgba(181, 235, 255, 0.5333333333);
 }
 
 /****************************************/
@@ -269,6 +314,8 @@ footer {
 }
 .dark header {
   background-color: #2f2c6d;
+  -ms-box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
 }
 .dark .title a:link,
 .dark .title a:visited {
@@ -288,6 +335,9 @@ footer {
 }
 .dark .icon-mobile-nav {
   color: #b8b0e4;
+}
+.dark .hello {
+  color: #e1e7f3;
 }
 .dark .game-title a:link,
 .dark .game-title a:visited {

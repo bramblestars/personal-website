@@ -1,11 +1,11 @@
-$background: linear-gradient(to right, rgb(238, 253, 253), rgba(224,255,255,1));
-$boxShadowColor: rgba(12, 71, 71, 0.3);
-$headerColor: #e6fafa;
+$background: linear-gradient(0deg, rgba(185, 178, 255, 0.534), rgba(182, 228, 255, 0.664)), linear-gradient(90deg, rgba(120, 217, 255, 0.753), rgba(154, 161, 255, 0.808));
+$boxShadowColor: rgba(25, 81, 83, 0.3);
+$headerColor: #b5ebff88;
 $titleColor: #33477E;
-$contentBoxColor: white;
+$contentBoxColor: rgba(255, 255, 255, 0.5);
 $gameTitleColor: #261d75;
 $gameTitleColorHover: #5347be;
-$textColor: #4d4d53;
+$textColor: #1f1f2b;
 $secondaryColor: #245959;
 $mediumColor: #557e7e;
 
@@ -44,17 +44,18 @@ html {
 }
 
 body {
-    background: $background;
+    background-image: $background;
     width: 100vw;
+    height: 120vh;
     overflow-x: hidden;
 }
 
 .content {
-    width: 90rem;
-    margin: 3rem auto;
-    background-color: $contentBoxColor;
-    border-radius: 6px;
-    @include box-shadow(0, 6px, 9px, 4px, $boxShadowColor);
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 3px;
+    
 }
 
 /****************************************/
@@ -62,17 +63,22 @@ body {
 /****************************************/
 
 header {
+    width: 100vw;
     border-radius: 6px 6px 0 0;
     padding: 1.8rem 2rem 2rem 2rem;
-    height: 10%;
     display: flex;
     align-items: center;
     align-content: space-evenly;
     gap: 4rem;
+}
+
+.sticky-header {
     background-color: $headerColor;
+    @include box-shadow(0, 2px, 6px, 2px, $boxShadowColor);
 }
 
 .title {
+    padding-right: 3rem;
     padding-left: 2rem;
     letter-spacing: -1px;
 
@@ -94,7 +100,7 @@ header {
 }
 
 .navigation {
-    margin-right: 3rem;
+    margin-right: 4%;
     margin-left: auto;
 
     a:link, 
@@ -154,34 +160,96 @@ header {
 
 /** Homepage **/
 main {
-    padding: 2rem 4rem;
+    padding: 0;
     display: flex;
     align-items: start;
     align-content: start;
     gap: 6rem;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 /** About page **/
 
-.about {
+.hero {
     width: 100%;
-    margin: 2rem 0;
+    height: 100%;
     display: flex;
     justify-content: left;
     gap: 2.4rem;
 }
 
 .picture {
-    height: 80%;
+    position: absolute;
+    background-image: linear-gradient(
+        to right bottom,
+        url("../img/me.jpg"),
+        rgba(21, 22, 109, 0.25)
+      );
+    z-index: -1;
+    opacity: 0.1;
+    width: 100vw;
+    height: 100vh;
+}
 
-    img {
-        width: 28rem;
-        height: 24rem;
-        object-position: 0% 75%;
+.hello {
+    padding: 10rem 20rem;
+    font-size: 14rem;
+    font-weight: 700;
+    width: 100vw;
+    color: $textColor;
+}
 
-        border-radius: 6px;
-        @include box-shadow(0, 2px, 3px, 1px, $boxShadowColor);
-        object-fit: cover;
+.waving {
+    display: inline-block;
+}
+
+.waving:hover {
+    animation-name: wave-animation;
+    animation-duration: 3.0s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    }
+    
+    @keyframes wave-animation {
+    0% {
+    transform: rotate( 0.0deg)
+    }
+    10% {
+    transform: rotate(14.0deg)
+    }
+    20% {
+    transform: rotate(-8.0deg)
+    }
+    30% {
+    transform: rotate(14.0deg)
+    }
+    40% {
+    transform: rotate(-4.0deg)
+    }
+    50% {
+    transform: rotate(10.0deg)
+    }
+    60% {
+    transform: rotate( 0.0deg)
+    }
+    100% {
+    transform: rotate( 0.0deg)
+    }
+}
+
+.intro {
+    width: 60vw;
+    padding-top: 3rem;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.description {
+    margin: 4rem 12rem;
+
+    .big-text:not(:first-of-type) {
+        margin-top: 3rem;
     }
 }
 
@@ -290,24 +358,9 @@ main {
 /****************************************/
 
 footer {
-    margin: 0 4rem;
-    padding: 2rem 0;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    font-size: 1.6rem;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-
     border-top: 0.5rem solid $headerColor;
 }
 
-.contact p {
-    color: $mediumColor;
-}
-
-.contact p:first-of-type {
-    margin-bottom: 4px;
-}
 
 /****************************************/
 /************* NIGHT THEME **************/
@@ -323,6 +376,7 @@ footer {
 
     header {
         background-color: $headerColorNight;
+        @include box-shadow(0, 2px, 6px, 2px, $boxShadowColorNight);
     }
 
     .title {
@@ -351,6 +405,10 @@ footer {
 
     .icon-mobile-nav {
         color: $secondaryColorNight;
+    }
+
+    .hello {
+        color: $textColorNight;
     }
 
     .game-title {

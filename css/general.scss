@@ -20,6 +20,13 @@ $sliderColorNight: #c4cfff;
 
 
 /**** for regular text ****/
+.big-text {
+    font-size: 6rem;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+    color: $text;
+}
+
 .text {
     font-weight: 400;
     font-size: 1.8rem;
@@ -99,7 +106,7 @@ $sliderColorNight: #c4cfff;
 }
 
 .slider {
-    background: rgba(204, 204, 204, 0.6);
+    background: rgba(47, 54, 145, 0.6);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -161,6 +168,10 @@ input:checked + .slider::before {
 
 /**** dark theme ***/
 .dark {
+    .big-text {
+        color: rgb(223, 245, 255);
+    }
+
     .page-title {
         color: $secondaryColorNight;
     }

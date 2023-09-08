@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Personal webpage & portfolio for Tracy Cui">
 
-    <title>Tracy Cui</title>
+    <title>Tracy Cui</title>  
     <link rel="icon" type="image/png" href="/img/favicon_kiwi.png">
 
     <!-- Stylesheets -->
-    <link href="css/style.css" rel="stylesheet"/>
     <link href="css/general.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
     <link href="css/queries.css" rel="stylesheet"/>
 
     <!-- Font Awesome -->
@@ -41,9 +41,10 @@
 
         <!-- Header bar containing links -->
         <header>
-            <h2 class="title"><a href="/" id="home">Tracy Cui</a></h2>
+            <h2 class="title"><a href="/" id="home" tabindex="0">Tracy Cui</a></h2>
             <nav class="navigation">
                 <ul class="nav-ul">
+                    <li><a href="/" id="about">about</a></li>
                     <li><a href="#" id="blog">blog</a></li>
                     <li><a href="#" id="gamedev">gamedev</a></li>
                     <li><a href="#" id="fun">fun</a></li>
@@ -71,29 +72,17 @@
 
         <!-- Main content -->
         <main>
-            <section class="about" id="about-section">
+            <section class="hero" id="hero-section">
                 <div class="picture">
                     <img src="img/me.jpg" />
                 </div>
-        
-                <div class="description">
-                    <p class="text"> 
-                        I am a software developer with a B.S. in 
-                        Discrete Math and Logic from Carnegie 
-                        Mellon University. 
-                    </p>
-                    <p class="text">
-                        I have a broad interest web development, 
-                        game development, combinatorics, and graph algorithms.
-                        I also enjoy digital art and animation in my free time, 
-                        as well as kayaking and video games.
-                    </p>
-                    <p class="text">
-                        Currently available for hire.
+                <div class="hello">
+                    Hello! <div class="waving">👋</div>
+                    <p class="intro">
+                        I'm Tracy, a software developer. I am passionate about building beautiful, accessible, and usable projects.
                     </p>
                 </div>
             </section>
-
             
 
             <section class="blog nodisp" id="blog-section">
@@ -351,16 +340,6 @@
                 <p>
                     ©2023 Tracy Cui
                 </p>
-                <p class="links">
-                    <a href="mailto:txxcui@gmail.com">
-                        txxcui@gmail.com
-                    </a>
-                </p>
-            </div>
-            <div class="links justify-end">
-                <a href="https://github.com/bramblestars" target="blank">
-                    github.com/bramblestars
-                </a>
             </div>
         </footer>
     </article>
