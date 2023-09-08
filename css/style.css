@@ -37,13 +37,19 @@ header {
   display: flex;
   align-items: center;
   align-content: space-evenly;
-  gap: 4rem;
+  gap: 4.8rem;
 }
 
-.sticky-header {
+.sticky-header header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: rgba(181, 235, 255, 0.5333333333);
   -ms-box-shadow: 0 2px 6px 2px rgba(25, 81, 83, 0.3);
   box-shadow: 0 2px 6px 2px rgba(25, 81, 83, 0.3);
+}
+.sticky-header main {
+  padding-top: 100vh;
 }
 
 .title {
@@ -68,6 +74,7 @@ header {
 .navigation {
   margin-right: 4%;
   margin-left: auto;
+  letter-spacing: 0.5;
 }
 .navigation a:link,
 .navigation a:visited {
@@ -137,10 +144,11 @@ main {
 }
 
 .picture {
-  position: absolute;
+  position: fixed;
   background-image: linear-gradient(to right bottom, url("../img/me.jpg"), rgba(21, 22, 109, 0.25));
   z-index: -1;
   opacity: 0.1;
+  top: 0;
   width: 100vw;
   height: 100vh;
 }
@@ -305,15 +313,14 @@ footer {
 /************* NIGHT THEME **************/
 /****************************************/
 .dark {
-  background: linear-gradient(to right, rgb(20, 20, 49), rgb(20, 13, 56));
+  background-image: linear-gradient(0deg, rgba(42, 14, 51, 0.534), rgba(13, 10, 41, 0.664)), linear-gradient(90deg, rgba(15, 26, 49, 0.753), rgba(34, 25, 77, 0.808));
 }
 .dark .content {
-  background-color: rgb(19, 19, 31);
   -ms-box-shadow: 0 6px 9px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0 6px 9px 4px rgba(0, 0, 0, 0.3);
 }
-.dark header {
-  background-color: #2f2c6d;
+.dark .sticky-header {
+  background-color: #252346;
   -ms-box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
 }
@@ -366,7 +373,7 @@ footer {
   color: #e1e7f3;
 }
 .dark footer {
-  border-top: 0.5rem solid #2f2c6d;
+  border-top: 0.5rem solid #252346;
 }
 .dark .contact p {
   color: #d4cff0;

@@ -9,9 +9,9 @@ $textColor: #1f1f2b;
 $secondaryColor: #245959;
 $mediumColor: #557e7e;
 
-$backgroundNight: linear-gradient(to right, rgb(20, 20, 49), rgb(20, 13, 56));
+$backgroundNight: linear-gradient(0deg, rgba(42, 14, 51, 0.534), rgba(13, 10, 41, 0.664)), linear-gradient(90deg, rgba(15, 26, 49, 0.753), rgba(34, 25, 77, 0.808));
 $boxShadowColorNight: rgba(0, 0, 0, 0.3);
-$headerColorNight: #2f2c6d;
+$headerColorNight: #252346;
 $contentBoxColorNight: rgb(19, 19, 31);
 $gameTitleColorNight: #8199da;
 $gameTitleColorHoverNight: #b2d0e2;
@@ -69,13 +69,23 @@ header {
     display: flex;
     align-items: center;
     align-content: space-evenly;
-    gap: 4rem;
+    gap: 4.8rem;
 }
 
 .sticky-header {
-    background-color: $headerColor;
-    @include box-shadow(0, 2px, 6px, 2px, $boxShadowColor);
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: $headerColor;
+        @include box-shadow(0, 2px, 6px, 2px, $boxShadowColor);
+    }
+
+    main {
+        padding-top: 100vh;
+    }
 }
+
 
 .title {
     padding-right: 3rem;
@@ -102,6 +112,7 @@ header {
 .navigation {
     margin-right: 4%;
     margin-left: auto;
+    letter-spacing: 0.5;
 
     a:link, 
     a:visited {
@@ -180,7 +191,7 @@ main {
 }
 
 .picture {
-    position: absolute;
+    position: fixed;
     background-image: linear-gradient(
         to right bottom,
         url("../img/me.jpg"),
@@ -188,6 +199,7 @@ main {
       );
     z-index: -1;
     opacity: 0.1;
+    top: 0;
     width: 100vw;
     height: 100vh;
 }
@@ -367,14 +379,13 @@ footer {
 /****************************************/
 
 .dark {
-    background: $backgroundNight;
+    background-image: $backgroundNight;
 
     .content {
-        background-color: $contentBoxColorNight;
         @include box-shadow(0, 6px, 9px, 4px, $boxShadowColorNight);
     }
 
-    header {
+    .sticky-header {
         background-color: $headerColorNight;
         @include box-shadow(0, 2px, 6px, 2px, $boxShadowColorNight);
     }
@@ -406,6 +417,7 @@ footer {
     .icon-mobile-nav {
         color: $secondaryColorNight;
     }
+
 
     .hello {
         color: $textColorNight;

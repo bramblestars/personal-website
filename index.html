@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" href="/img/favicon_kiwi.png">
 
     <!-- Stylesheets -->
+    
     <link href="css/general.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
     <link href="css/queries.css" rel="stylesheet"/>
@@ -40,24 +41,25 @@
     <article class="content">
 
         <!-- Header bar containing links -->
-        <header>
+        <header id="header">
             <h2 class="title"><a href="/" id="home" tabindex="0">Tracy Cui</a></h2>
-            <nav class="navigation">
+            <nav class="navigation" role="navigation">
                 <ul class="nav-ul">
                     <li><a href="/" id="about">about</a></li>
-                    <li><a href="#" id="blog">blog</a></li>
-                    <li><a href="#" id="gamedev">gamedev</a></li>
-                    <li><a href="#" id="fun">fun</a></li>
+                    <li><a href="#" id="gamedev">game dev</a></li>
+                    <li><a href="#" id="fun">web dev</a></li>
                     <li><a href="#" id="cv">cv</a></li>
                     <!-- Dark mode toggle switch -->
                     <li>
-                        <div class="theme-switch-wrapper">
+                        <div class="theme-switch-wrapper" 
+                             id="theme-toggle" tabindex="0" 
+                             onfocus="return setFocusThemeToggle()">
                             <span class="toggle-icon" id="toggle-icon">
                                 <i class="fas fa-sun"></i>
                                 <i class="fas fa-moon"></i>
                             </span>
                             <label class="theme-switch">
-                                <input type="checkbox">
+                                <input type="checkbox" id="theme-checkbox">
                                 <div class="slider round"></div>
                             </label>
                         </div>
@@ -84,10 +86,6 @@
                 </div>
             </section>
             
-
-            <section class="blog nodisp" id="blog-section">
-                <h2 class="page-title">Blog coming soon!</h2>
-            </section>
 
             <section class="gamedev nodisp" id="gamedev-section">
                 <h2 class="page-title">Game Development Projects</h2>
