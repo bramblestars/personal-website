@@ -8,6 +8,7 @@ const body = document.getElementById("body");
 const themeToggle = document.querySelector('input[type="checkbox"]');
 
 // sections on home page
+const heroSection = document.getElementById("hero");
 const aboutSection = document.getElementById("about-section");
 const gamedevSection = document.getElementById("gamedev-section");
 const funSection = document.getElementById("fun-section");
@@ -38,22 +39,45 @@ btnNavEl.addEventListener('click', function() {
 /***********************************************************/ 
 /********************* Sticky header ***********************/
 /***********************************************************/ 
-// When the user scrolls the page, execute myFunction
-window.onscroll = stickyHeader;
 
+let offset = $("#header").offset();
+let stickyTop = offset.top;
+let windowTop = $(window).scrollTop();
+$(window).scroll(function() {
+    windowTop = $(window).scrollTop();
+    if (windowTop > stickyTop) {
+        $("#header").css({
+            position: 'fixed',
+            top: 0
+        });
 
-// Get the offset position of the navbar
-const sticky = $(window).height();
+        $("#hero").css({
+            marginTop: "118px"
+        });
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function stickyHeader() {
-  if (window.scrollY > sticky) {
-    body.classList.add("sticky-header");
-  } else {
-    body.classList.remove("sticky-header");
-  }
-} 
+        if (!body.classList.contains("dark")) {
+            $("#header").css({
+                backgroundColor: "#b5ebffA8"
+            })
+        } else {
+            $("#header").css({
+                backgroundColor: "#252346A8"
+            })
+        }
 
+    }
+    else {
+        $("#header").css({
+            position: '',
+            top: '',
+            backgroundColor: ''
+        });
+
+        $("#hero").css({
+            marginTop: ""
+        });
+    }
+});
 /***********************************************************/ 
 /****************** Switch between pages *******************/
 /***********************************************************/ 

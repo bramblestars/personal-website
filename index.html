@@ -38,14 +38,15 @@
     ></script>
 </head>
 <body id="body">
-    <article class="content">
+    <article id="content" class="content">
 
         <!-- Header bar containing links -->
-        <header id="header">
+        <header id="header" class="header sticky">
+            <a id="skip-nav" class="skip-nav" tabindex="0" href="#main">Skip to main content</a>
             <h2 class="title"><a href="/" id="home" tabindex="0">Tracy Cui</a></h2>
             <nav class="navigation" role="navigation">
                 <ul class="nav-ul">
-                    <li><a href="/" id="about">about</a></li>
+                    <li><a href="#about" id="about">about</a></li>
                     <li><a href="#" id="gamedev">game dev</a></li>
                     <li><a href="#" id="fun">web dev</a></li>
                     <li><a href="#" id="cv">cv</a></li>
@@ -73,8 +74,8 @@
         </header>
 
         <!-- Main content -->
-        <main>
-            <section class="hero" id="hero-section">
+        <main id="main">
+            <section class="hero" id="hero">
                 <div class="picture">
                     <img src="img/me.jpg" />
                 </div>
@@ -83,11 +84,39 @@
                     <p class="intro">
                         I'm Tracy, a software developer. I am passionate about building beautiful, accessible, and usable projects.
                     </p>
+                    <p class="text">
+                        This site is still under construction, so expect to see more features soon!
+                    </p>
                 </div>
+                
+            </section>
+
+            <section class="about" id="about">
+
+                <h2 class="page-title">About me</h2>
+                <div class="about-picture">
+                    <img src="img/me1.jpg" />
+                </div>
+                <div class="about-description">
+                    <p class="text center">
+                        I graduated in 2021 from Carnegie Mellon University with a B.S. in 
+                        Discrete Math and Logic (basically theoretical computer science)!
+                        My favorite classes included Graph Theory and Combinatorics, and
+                        I also really enjoyed the practical computer science courses I took, including
+                        Computer Graphics, Data Structures and Algorithms, and Computer Systems.
+                    </p>
+                    <p class="text center">
+                        In my free time, I love digital art, kayaking, playing games, and making games. I'm 
+                        really proud of the fact that I create most of the assets for the 
+                        games I develop! You can check some of them out below. I'm currently 
+                        trying to get more familiar with Unreal Engine.
+                    </p>
+                </div>
+
             </section>
             
 
-            <section class="gamedev nodisp" id="gamedev-section">
+            <section class="gamedev" id="gamedev-section">
                 <h2 class="page-title">Game Development Projects</h2>
                 <ul class="fun-list">
                     <li class="fun-list-item">
@@ -107,7 +136,7 @@
                                 Icecapades
                             </a>
                         </h3>
-                        <p class="text">
+                        <p class="text game-description">
                             A 2D side-scroller with a penguin sliding and rolling and collecting snowflakes.
                         </p>
                     </li>
@@ -128,7 +157,7 @@
                                 Bumbling By
                             </a>
                         </h3>
-                        <p class="text">
+                        <p class="text game-description">
                             A 2D top-down game where you are a fat bee collecting pollen for your hive.
                         </p>
                     </li>
@@ -333,13 +362,6 @@
             
         </main>
 
-        <footer>
-            <div class="contact">
-                <p>
-                    ©2023 Tracy Cui
-                </p>
-            </div>
-        </footer>
     </article>
 
     <!-- Script -->

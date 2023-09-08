@@ -9,12 +9,11 @@ $sliderColor: #fff;
 $sliderColorNight: #c4cfff;
 
 .page-title {
-    font-size: 3.6rem;
+    font-size: 5.4rem;
     font-weight: 700;
     font-family: "Paytone One", sans-serif;
 
     text-align: center;
-    margin-bottom: 1.5rem;
     color: $secondaryColor;
 }
 
@@ -24,7 +23,7 @@ $sliderColorNight: #c4cfff;
     font-size: 6rem;
     letter-spacing: 0.6px;
     line-height: 1.5;
-    color: $text;
+    color: $textColor;
 }
 
 .text {
@@ -165,6 +164,25 @@ input:checked + .slider::before {
     }
 }
 
+/** Used for home page and game dev page for image banners + descriptions **/
+.fun {
+    width: 100%;
+}
+
+.fun-list {
+    margin: 4rem 2rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fun-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
 
 /**** dark theme ***/
 .dark {

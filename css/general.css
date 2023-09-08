@@ -14,32 +14,38 @@ html {
 }
 
 body {
+  background-image: linear-gradient(0deg, rgba(185, 178, 255, 0.534), rgba(182, 228, 255, 0.664)), linear-gradient(90deg, rgba(120, 217, 255, 0.753), rgba(154, 161, 255, 0.808));
+  background-repeat: no-repeat;
   width: 100vw;
+  height: 104rem;
   overflow-x: hidden;
-}
-
-.content {
-  width: 100vw;
-  height: auto;
-  margin: 0 auto;
-  border-radius: 3px;
-  display: grid;
-  grid-template-rows: 10rem 4fr 1fr;
 }
 
 /****************************************/
 /**************** HEADER ****************/
 /****************************************/
 header {
-  border-radius: 6px 6px 0 0;
+  height: 8rem;
+  width: 100vw;
   padding: 1.8rem 2rem 2rem 2rem;
   display: flex;
   align-items: center;
   align-content: space-evenly;
-  gap: 4rem;
+  gap: 4.8rem;
+}
+
+.sticky-header {
+  -ms-box-shadow: 0 2px 6px 2px rgba(25, 81, 83, 0.3);
+  box-shadow: 0 2px 6px 2px rgba(25, 81, 83, 0.3);
+}
+
+.skip-nav {
+  position: absolute;
+  opacity: 0;
 }
 
 .title {
+  padding-right: 3rem;
   padding-left: 2rem;
   letter-spacing: -1px;
 }
@@ -55,10 +61,11 @@ header {
 .title a:active,
 .title a:hover {
   color: #557e7e;
+  text-decoration: underline;
 }
 
 .navigation {
-  margin-right: 3rem;
+  margin-right: 4%;
   margin-left: auto;
   letter-spacing: 0.5;
 }
@@ -113,53 +120,129 @@ header {
 main {
   padding: 0;
   display: flex;
-  align-items: start;
+  flex-direction: column;
+  align-items: center;
   align-content: start;
-  gap: 6rem;
+  width: 100vw;
 }
 
-/** About page **/
-.about {
+/** Hero **/
+.hero {
   width: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: left;
-  gap: 2.4rem;
+  height: 83rem;
 }
 
 .picture {
-  height: 80%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.1;
+  top: 0;
+  width: 100vw;
+  height: 123rem;
+  overflow-y: hidden;
 }
 .picture img {
   width: 100%;
-  height: 100%;
-  -o-object-position: 25% 50%;
-     object-position: 25% 50%;
-  -ms-box-shadow: 0 2px 3px 1px rgba(25, 81, 83, 0.3);
-  box-shadow: 0 2px 3px 1px rgba(25, 81, 83, 0.3);
+  height: 103rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 75%;
+     object-position: 50% 75%;
+}
+
+.hello {
+  padding: 10rem 20rem;
+  font-size: 14rem;
+  font-weight: 700;
+  width: 100vw;
+  color: #1f1f2b;
+}
+
+.waving {
+  display: inline-block;
+}
+
+.waving:hover {
+  animation-name: wave-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.intro {
+  width: 60vw;
+  padding: 3rem 0;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.description {
+  margin: 4rem 12rem;
+}
+.description .big-text:not(:first-of-type) {
+  margin-top: 3rem;
+}
+
+/** About section **/
+.about {
+  margin-top: 9.2rem;
+  padding: 10rem 3rem;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr 4fr;
+  background-color: #ddedff;
+}
+.about .page-title {
+  grid-column: -1/1;
+  margin-bottom: 0.8rem;
+}
+.about .about-picture {
+  padding: 0 0 0 20rem;
+}
+.about .about-picture img {
+  width: 40rem;
+  height: 50rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-
-/** Used for home page and game dev page for image banners + descriptions **/
-.fun {
-  width: 100%;
+.about .about-description {
+  padding: 0 20rem 0 10rem;
 }
-
-.fun-list {
-  margin-top: 2rem;
-  list-style: none;
-}
-
-.fun-list-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1rem;
+.about .text {
+  font-size: 2.4rem;
 }
 
 /** Game Dev list **/
+.gamedev {
+  margin: 4rem 2rem;
+}
+
 .game-title a:link,
 .game-title a:visited {
   color: #261d75;
@@ -213,7 +296,7 @@ main {
 
 .cv-text {
   font-size: 1.6rem;
-  color: #4d4d53;
+  color: #1f1f2b;
   list-style: square;
 }
 .cv-text li:first-of-type {
@@ -235,28 +318,16 @@ main {
 /****************************************/
 /**************** FOOTER ****************/
 /****************************************/
-footer {
-  margin: 0 4rem;
-  padding: 2rem 0;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  font-size: 1.6rem;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  border-top: 0.5rem solid #b5ebff;
-}
-
-.contact p {
-  color: #557e7e;
-}
-
-.contact p:first-of-type {
-  margin-bottom: 4px;
-}
-
 /****************************************/
 /************* NIGHT THEME **************/
 /****************************************/
+.dark {
+  background-image: linear-gradient(0deg, rgba(42, 14, 51, 0.534), rgba(13, 10, 41, 0.664)), linear-gradient(90deg, rgba(15, 26, 49, 0.753), rgba(34, 25, 77, 0.808));
+}
+.dark .sticky-header {
+  -ms-box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
+}
 .dark .title a:link,
 .dark .title a:visited {
   color: #aebce2;
@@ -275,6 +346,12 @@ footer {
 }
 .dark .icon-mobile-nav {
   color: #b8b0e4;
+}
+.dark .hello {
+  color: #e1e7f3;
+}
+.dark .about {
+  background-color: #1b1835;
 }
 .dark .game-title a:link,
 .dark .game-title a:visited {
@@ -302,28 +379,24 @@ footer {
 .dark .cv-text {
   color: #e1e7f3;
 }
-.dark footer {
-  border-top: 0.5rem solid #2f2c6d;
-}
 .dark .contact p {
   color: #d4cff0;
 }
 
 .page-title {
-  font-size: 3.6rem;
+  font-size: 5.4rem;
   font-weight: 700;
   font-family: "Paytone One", sans-serif;
   text-align: center;
-  margin-bottom: 1.5rem;
   color: #245959;
 }
 
 /**** for regular text ****/
 .big-text {
-  font-size: 4rem;
+  font-size: 6rem;
   letter-spacing: 0.6px;
   line-height: 1.5;
-  color: #101011;
+  color: #1f1f2b;
 }
 
 .text {
@@ -331,7 +404,7 @@ footer {
   font-size: 1.8rem;
   letter-spacing: 0.5px;
   line-height: 1.5;
-  color: #4d4d53;
+  color: #1f1f2b;
   padding-bottom: 2rem;
 }
 
@@ -399,7 +472,7 @@ footer {
 }
 
 .slider {
-  background: rgba(120, 126, 214, 0.6);
+  background: rgba(47, 54, 145, 0.6);
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -449,11 +522,34 @@ input:checked + .slider::before {
 .toggle-icon .fa-moon {
   font-size: 1.5rem;
   margin-top: 0.55rem;
-  color: rgba(241, 247, 255, 0.904);
+  color: rgba(106, 165, 255, 0.7);
   margin-left: 3rem;
 }
 
+/** Used for home page and game dev page for image banners + descriptions **/
+.fun {
+  width: 100%;
+}
+
+.fun-list {
+  margin: 4rem 2rem;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.fun-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
 /**** dark theme ***/
+.dark .big-text {
+  color: rgb(223, 245, 255);
+}
 .dark .page-title {
   color: #b8b0e4;
 }

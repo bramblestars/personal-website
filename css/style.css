@@ -15,24 +15,18 @@ html {
 
 body {
   background-image: linear-gradient(0deg, rgba(185, 178, 255, 0.534), rgba(182, 228, 255, 0.664)), linear-gradient(90deg, rgba(120, 217, 255, 0.753), rgba(154, 161, 255, 0.808));
+  background-repeat: no-repeat;
   width: 100vw;
-  height: 120vh;
+  height: 104rem;
   overflow-x: hidden;
-}
-
-.content {
-  width: 100vw;
-  height: auto;
-  margin: 0 auto;
-  border-radius: 3px;
 }
 
 /****************************************/
 /**************** HEADER ****************/
 /****************************************/
 header {
+  height: 8rem;
   width: 100vw;
-  border-radius: 6px 6px 0 0;
   padding: 1.8rem 2rem 2rem 2rem;
   display: flex;
   align-items: center;
@@ -40,16 +34,14 @@ header {
   gap: 4.8rem;
 }
 
-.sticky-header header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgba(181, 235, 255, 0.5333333333);
+.sticky-header {
   -ms-box-shadow: 0 2px 6px 2px rgba(25, 81, 83, 0.3);
   box-shadow: 0 2px 6px 2px rgba(25, 81, 83, 0.3);
 }
-.sticky-header main {
-  padding-top: 100vh;
+
+.skip-nav {
+  position: absolute;
+  opacity: 0;
 }
 
 .title {
@@ -69,6 +61,7 @@ header {
 .title a:active,
 .title a:hover {
   color: #557e7e;
+  text-decoration: underline;
 }
 
 .navigation {
@@ -127,30 +120,34 @@ header {
 main {
   padding: 0;
   display: flex;
-  align-items: start;
+  flex-direction: column;
+  align-items: center;
   align-content: start;
-  gap: 6rem;
   width: 100vw;
-  overflow-x: hidden;
 }
 
-/** About page **/
+/** Hero **/
 .hero {
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: left;
-  gap: 2.4rem;
+  height: 83rem;
 }
 
 .picture {
-  position: fixed;
-  background-image: linear-gradient(to right bottom, url("../img/me.jpg"), rgba(21, 22, 109, 0.25));
+  position: absolute;
   z-index: -1;
   opacity: 0.1;
   top: 0;
   width: 100vw;
-  height: 100vh;
+  height: 123rem;
+  overflow-y: hidden;
+}
+.picture img {
+  width: 100%;
+  height: 103rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 75%;
+     object-position: 50% 75%;
 }
 
 .hello {
@@ -200,7 +197,7 @@ main {
 }
 .intro {
   width: 60vw;
-  padding-top: 3rem;
+  padding: 3rem 0;
   font-size: 4rem;
   font-weight: 400;
 }
@@ -212,24 +209,40 @@ main {
   margin-top: 3rem;
 }
 
-/** Used for home page and game dev page for image banners + descriptions **/
-.fun {
-  width: 100%;
+/** About section **/
+.about {
+  margin-top: 9.2rem;
+  padding: 10rem 3rem;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr 4fr;
+  background-color: #ddedff;
 }
-
-.fun-list {
-  margin-top: 2rem;
-  list-style: none;
+.about .page-title {
+  grid-column: -1/1;
+  margin-bottom: 0.8rem;
 }
-
-.fun-list-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1rem;
+.about .about-picture {
+  padding: 0 0 0 20rem;
+}
+.about .about-picture img {
+  width: 40rem;
+  height: 50rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about .about-description {
+  padding: 0 20rem 0 10rem;
+}
+.about .text {
+  font-size: 2.4rem;
 }
 
 /** Game Dev list **/
+.gamedev {
+  margin: 4rem 2rem;
+}
+
 .game-title a:link,
 .game-title a:visited {
   color: #261d75;
@@ -305,22 +318,13 @@ main {
 /****************************************/
 /**************** FOOTER ****************/
 /****************************************/
-footer {
-  border-top: 0.5rem solid rgba(181, 235, 255, 0.5333333333);
-}
-
 /****************************************/
 /************* NIGHT THEME **************/
 /****************************************/
 .dark {
   background-image: linear-gradient(0deg, rgba(42, 14, 51, 0.534), rgba(13, 10, 41, 0.664)), linear-gradient(90deg, rgba(15, 26, 49, 0.753), rgba(34, 25, 77, 0.808));
 }
-.dark .content {
-  -ms-box-shadow: 0 6px 9px 4px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 6px 9px 4px rgba(0, 0, 0, 0.3);
-}
 .dark .sticky-header {
-  background-color: #252346;
   -ms-box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
 }
@@ -345,6 +349,9 @@ footer {
 }
 .dark .hello {
   color: #e1e7f3;
+}
+.dark .about {
+  background-color: #1b1835;
 }
 .dark .game-title a:link,
 .dark .game-title a:visited {
@@ -371,9 +378,6 @@ footer {
 }
 .dark .cv-text {
   color: #e1e7f3;
-}
-.dark footer {
-  border-top: 0.5rem solid #252346;
 }
 .dark .contact p {
   color: #d4cff0;
