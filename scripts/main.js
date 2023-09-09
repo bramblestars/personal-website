@@ -104,9 +104,20 @@ function nightTheme(event) {
     if (body.classList.contains("dark")) {
         localStorage.setItem('theme', 'dark');
         themeToggle.checked = true;
+        if (windowTop > stickyTop) {
+            $("#header").css({
+                backgroundColor: "#252346A8"
+            })
+        }
+        
     } else {
         localStorage.setItem('theme', 'light');
         themeToggle.checked = false;
+        if (windowTop > stickyTop) {
+            $("#header").css({
+                backgroundColor: "#b5ebffA8"
+            })
+        }
     }
 }
 
