@@ -7,17 +7,6 @@ const body = document.getElementById("body");
 //toggle switch for dark theme
 const themeToggle = document.querySelector('input[type="checkbox"]');
 
-// sections on home page
-const heroSection = document.getElementById("hero");
-const aboutSection = document.getElementById("about-section");
-const gamedevSection = document.getElementById("gamedev-section");
-const funSection = document.getElementById("fun-section");
-const cvSection = document.getElementById("cv-section");
-
-const gamedevBtn = document.getElementById("gamedev");
-const funBtn = document.getElementById("fun");
-const cvBtn = document.getElementById("cv");
-
 // mobile navigation button
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const navEl = document.querySelector(".navigation");
@@ -79,35 +68,30 @@ $(window).scroll(function() {
     }
 });
 /***********************************************************/ 
-/****************** Switch between pages *******************/
+/***************** Scroll between sections *****************/
 /***********************************************************/ 
-let currentActivePage = aboutSection;
+$("#home").click(() => {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: 0
+    }, 750);
+})
 
-/**
- * Adds the nodisp class to the current active page and switches the current
- * active page to the new section as specified. Also exits the mobile menu if
- * that was active.
- * @param {any} section the HTML section element to switch to 
- */
-function switchToPage(section) {
-    currentActivePage.classList.add("nodisp");
-    section.classList.remove("nodisp");
-    currentActivePage = section;
-    currentActivePage.focus();
-    navEl.classList.remove('nav-open');
-}
-
+$("#about").click(() => {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#about-section").offset().top - 90
+    }, 750);
+})
 
 $("#gamedev").click(() => {
-    switchToPage(gamedevSection);
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#gamedev-section").offset().top - 90
+    }, 750);
 });
 
 $("#fun").click(() => {
-    switchToPage(funSection);
-});
-
-$("#cv").click(() => {
-    switchToPage(cvSection);
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#fun-section").offset().top - 90
+    }, 750);
 });
 
 /***********************************************************/ 

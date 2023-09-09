@@ -449,32 +449,7 @@ main {
         }
     }
 
-    .cv-pdf {
-        color: $secondaryColorNight;
-    }
-
-    .cv-pdf:hover {
-        color: $mediumColorNight;
-    }
-
-    .cv-part {
-        border-top: 4px dotted rgb(59, 58, 90);
-    }
-
-    .cv-part-title {
-        color: $titleColorNight;
-    }
-
-    .cv-item {
-        color: $secondaryColorNight;
-    }
-
-    .cv-text {
-        color: $textColorNight;
-    }
-
-
-    .contact p {
-        color: $mediumColorNight;
+    .fun {
+        background-color: $backgroundColorNight2;
     }
 }

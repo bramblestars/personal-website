@@ -364,24 +364,6 @@ main {
 .dark .game-title a:active {
   color: #b2d0e2;
 }
-.dark .cv-pdf {
-  color: #b8b0e4;
-}
-.dark .cv-pdf:hover {
-  color: #d4cff0;
-}
-.dark .cv-part {
-  border-top: 4px dotted rgb(59, 58, 90);
-}
-.dark .cv-part-title {
-  color: #aebce2;
-}
-.dark .cv-item {
-  color: #b8b0e4;
-}
-.dark .cv-text {
-  color: #e1e7f3;
-}
-.dark .contact p {
-  color: #d4cff0;
+.dark .fun {
+  background-color: #27254d;
 }/*# sourceMappingURL=style.css.map */
