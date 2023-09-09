@@ -211,6 +211,14 @@ input:checked + .slider::before {
         color: $mediumColorNight;
     }
 
+    .banner-img {
+        box-shadow: 0 1rem 1rem -1rem $boxShadowColorNight;
+    }
+    
+    .banner-img:hover {
+        box-shadow: 0 1.5rem 1rem -0.8rem $boxShadowColorNight;
+    }
+
     .fa-sun {
         margin-left: 0.55rem;
         color: $sunIconColorNight;

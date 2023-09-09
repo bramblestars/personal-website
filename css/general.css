@@ -215,7 +215,8 @@ main {
   padding: 10rem 3rem;
   display: grid;
   grid-template-columns: 2fr 3fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 10rem 4fr;
+  background: linear-gradient(#ddedff 10%, #ddedff 90%, white 100%);
 }
 .about .page-title {
   grid-column: -1/1;
@@ -238,7 +239,9 @@ main {
 }
 
 /** Game Dev list **/
-
+.gamedev {
+  padding: 4rem 2rem;
+}
 
 .game-title a:link,
 .game-title a:visited {
@@ -348,7 +351,10 @@ main {
   color: #e1e7f3;
 }
 .dark .about {
-  background-color: #1b1835;
+  background: linear-gradient(#1b1835 10%, #1b1835 90%, #27254d 100%);
+}
+.dark .gamedev {
+  background-color: #27254d;
 }
 .dark .game-title a:link,
 .dark .game-title a:visited {
@@ -358,26 +364,8 @@ main {
 .dark .game-title a:active {
   color: #b2d0e2;
 }
-.dark .cv-pdf {
-  color: #b8b0e4;
-}
-.dark .cv-pdf:hover {
-  color: #d4cff0;
-}
-.dark .cv-part {
-  border-top: 4px dotted rgb(59, 58, 90);
-}
-.dark .cv-part-title {
-  color: #aebce2;
-}
-.dark .cv-item {
-  color: #b8b0e4;
-}
-.dark .cv-text {
-  color: #e1e7f3;
-}
-.dark .contact p {
-  color: #d4cff0;
+.dark .fun {
+  background-color: #27254d;
 }
 
 .page-title {
@@ -562,6 +550,12 @@ input:checked + .slider::before {
 }
 .dark a:hover {
   color: #d4cff0;
+}
+.dark .banner-img {
+  box-shadow: 0 1rem 1rem -1rem rgba(0, 0, 0, 0.3);
+}
+.dark .banner-img:hover {
+  box-shadow: 0 1.5rem 1rem -0.8rem rgba(0, 0, 0, 0.3);
 }
 .dark .fa-sun {
   margin-left: 0.55rem;
