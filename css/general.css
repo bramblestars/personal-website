@@ -216,7 +216,6 @@ main {
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-template-rows: 1fr 4fr;
-  background-color: #ddedff;
 }
 .about .page-title {
   grid-column: -1/1;
@@ -239,9 +238,7 @@ main {
 }
 
 /** Game Dev list **/
-.gamedev {
-  margin: 4rem 2rem;
-}
+
 
 .game-title a:link,
 .game-title a:visited {

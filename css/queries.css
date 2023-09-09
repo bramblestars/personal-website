@@ -8,6 +8,22 @@
   main {
     gap: 4rem;
   }
+  .about {
+    margin-top: 0;
+    padding: 10rem 1rem;
+  }
+  .about .text {
+    font-size: 2.1rem;
+  }
+  .about .about-picture {
+    padding-left: 12rem;
+  }
+  .about .about-description {
+    padding-right: 12rem;
+  }
+  .fun .fun-list {
+    grid-template-columns: 1fr;
+  }
 }
 /*********************************************/
 /****** BELOW 780px (Vertical tablets) *******/
@@ -16,6 +32,7 @@
   .btn-mobile-nav {
     display: block;
     position: relative;
+    margin-right: 2rem;
     z-index: 10;
   }
   .nav-ul {
@@ -54,8 +71,30 @@
   .nav-open .icon-mobile-nav[name=menu-outline] {
     display: none;
   }
+  .hero {
+    width: 100%;
+  }
+  .hero .hello {
+    padding-left: 10rem;
+    width: 100vw;
+    font-size: 10rem;
+  }
   .about {
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .about .about-picture img {
+    width: 80%;
+    height: 30rem;
+    -o-object-position: 0 25%;
+       object-position: 0 25%;
+  }
+  .about .about-description {
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+  .gamedev .fun-list {
+    grid-template-columns: 1fr;
   }
 }
 /*********************************************/
@@ -65,19 +104,14 @@
   .about {
     flex-direction: column;
   }
-  .picture {
-    width: 100%;
-    height: auto;
+  .hero .hello .intro {
+    font-size: 3.2rem;
   }
-  .picture img {
-    width: 100%;
-    height: 20rem;
-    -o-object-position: 0% 60%;
-       object-position: 0% 60%;
-    border-radius: 6px;
-    box-shadow: 0 2px 3px 1px var(--box-shadow-color);
-    -o-object-fit: cover;
-       object-fit: cover;
+  .hero .hello .text {
+    padding-right: 14rem;
+  }
+  .about .about-description {
+    font-size: 1.2rem;
   }
   .banner-img {
     width: 80%;
@@ -93,20 +127,8 @@
   .page-title {
     font-size: 3.2rem;
   }
-  .picture {
-    width: 100%;
-  }
-  .picture img {
-    width: 100%;
-    height: 15rem;
-    -o-object-position: 0 60%;
-       object-position: 0 60%;
-  }
-  footer {
-    grid-template-columns: 1fr;
-  }
-  .contact p {
-    margin-bottom: 4px;
+  .hero .hello {
+    font-size: 7.2rem;
   }
 }
 /*********************************************/

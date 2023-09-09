@@ -1,5 +1,5 @@
 $background: linear-gradient(0deg, rgba(185, 178, 255, 0.534), rgba(182, 228, 255, 0.664)), linear-gradient(90deg, rgba(120, 217, 255, 0.753), rgba(154, 161, 255, 0.808));
-$backgroundColor: #ddedff;
+$backgroundColor:  linear-gradient(#ddedff 10%, #ddedff 90%, white 100%);
 $boxShadowColor: rgba(25, 81, 83, 0.3);
 $titleColor: #33477E;
 $contentBoxColor: rgba(255, 255, 255, 0.5);
@@ -10,7 +10,8 @@ $secondaryColor: #245959;
 $mediumColor: #557e7e;
 
 $backgroundNight: linear-gradient(0deg, rgba(42, 14, 51, 0.534), rgba(13, 10, 41, 0.664)), linear-gradient(90deg, rgba(15, 26, 49, 0.753), rgba(34, 25, 77, 0.808));
-$backgroundColorNight: #1b1835;
+$backgroundColorNight: linear-gradient(#1b1835 10%, #1b1835 90%, #27254d 100%);
+$backgroundColorNight2: #27254d;
 $boxShadowColorNight: rgba(0, 0, 0, 0.3);
 $contentBoxColorNight: rgb(19, 19, 31);
 $gameTitleColorNight: #8199da;
@@ -260,9 +261,9 @@ main {
     padding: 10rem 3rem;
     display: grid;
     grid-template-columns: 2fr 3fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 10rem 4fr;
     
-    background-color: $backgroundColor;
+    background: $backgroundColor;
     
     .page-title {
         grid-column: -1/1;
@@ -294,7 +295,7 @@ main {
 
 /** Game Dev list **/
 .gamedev {
-    margin: 4rem 2rem;
+    padding: 4rem 2rem;
 }
 
 .game-title {
@@ -429,7 +430,11 @@ main {
     }
 
     .about {
-        background-color: $backgroundColorNight;
+        background: $backgroundColorNight;
+    }
+
+    .gamedev {
+        background-color: $backgroundColorNight2;
     }
 
     .game-title {

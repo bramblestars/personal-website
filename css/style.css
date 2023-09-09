@@ -215,8 +215,8 @@ main {
   padding: 10rem 3rem;
   display: grid;
   grid-template-columns: 2fr 3fr;
-  grid-template-rows: 1fr 4fr;
-  background-color: #ddedff;
+  grid-template-rows: 10rem 4fr;
+  background: linear-gradient(#ddedff 10%, #ddedff 90%, white 100%);
 }
 .about .page-title {
   grid-column: -1/1;
@@ -240,7 +240,7 @@ main {
 
 /** Game Dev list **/
 .gamedev {
-  margin: 4rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .game-title a:link,
@@ -351,7 +351,10 @@ main {
   color: #e1e7f3;
 }
 .dark .about {
-  background-color: #1b1835;
+  background: linear-gradient(#1b1835 10%, #1b1835 90%, #27254d 100%);
+}
+.dark .gamedev {
+  background-color: #27254d;
 }
 .dark .game-title a:link,
 .dark .game-title a:visited {
