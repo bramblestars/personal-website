@@ -76,7 +76,7 @@ export class arcaeaCalculator {
     getTop30Avg() {
         let accum = 0;
         for (let i = 0; i < 30; i++) {
-            accum += ratingList[i].rating;
+            accum += this.#ratingList[i].rating;
         }
         return accum / 30;
     }
@@ -89,10 +89,10 @@ export class arcaeaCalculator {
     getHighestPttWithoutHiScore() {
         let accum = 0;
         for (let i = 0; i < 10; i++) {
-            accum += ratingList[i].rating;
+            accum += this.#ratingList[i].rating;
         }
     
-        return (top30Avg * 30 + accum) / 40;
+        return (this.getTop30Avg() * 30 + accum) / 40;
     }
     
     

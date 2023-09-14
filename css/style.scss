@@ -2,11 +2,13 @@ $background: linear-gradient(0deg, rgba(185, 178, 255, 0.534), rgba(182, 228, 25
 $backgroundColor:  linear-gradient(#ddedff 10%, #ddedff 90%, white 100%);
 $boxShadowColor: rgba(25, 81, 83, 0.3);
 $titleColor: #33477E;
+$contactBtnColor: rgb(242, 254, 255);
 $contentBoxColor: rgba(255, 255, 255, 0.5);
 $gameTitleColor: #261d75;
 $gameTitleColorHover: #5347be;
 $textColor: #1f1f2b;
 $secondaryColor: #245959;
+$lightColor: #deffff;
 $mediumColor: #557e7e;
 
 $backgroundNight: linear-gradient(0deg, rgba(42, 14, 51, 0.534), rgba(13, 10, 41, 0.664)), linear-gradient(90deg, rgba(15, 26, 49, 0.753), rgba(34, 25, 77, 0.808));
@@ -152,6 +154,53 @@ header {
 
 .icon-mobile-nav[name="close-outline"] {
     display: none;
+}
+
+/****************************************/
+/*************** CONTACT ****************/
+/****************************************/
+
+.contact {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    bottom: 3rem;
+    right: 3rem;
+
+    
+}
+
+.contact-btn {
+    width: 5.6rem;
+    height: 5.6rem;
+    background-color: $contactBtnColor;
+    border-radius: 50%;
+    border: none;
+
+    cursor: pointer;
+
+    @include box-shadow(3px, 3px, 3px, 1px, $boxShadowColor);
+
+    font-size: 3.2rem;
+    color: $titleColor;
+
+    transition: all 0.1s;
+
+    ion-icon {
+        pointer-events: none;
+    }
+}
+
+.contact-btn:hover {
+    color: $textColor;
+    background-color: $lightColor;
+}
+
+.contact-btn:active {
+    transform: translateY(2px);
+    @include box-shadow(1px, 1px, 1px, 1px, $boxShadowColor);
 }
 
 /****************************************/

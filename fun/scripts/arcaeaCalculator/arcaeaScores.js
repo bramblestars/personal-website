@@ -1,5 +1,4 @@
 import { arcaeaCalculator } from "./arcaeaCalculator.js";
-import all from "./songPacks.js";
 
 let songs = [];
 let myScores = [];
@@ -39,4 +38,6 @@ let calculator = new arcaeaCalculator(12.01, songs, myScores);
 calculator.calculateRatings();
 
 console.log(calculator.ratingList);
+console.log(calculator.getHighestPttWithoutHiScore());
+console.log(calculator.getTop30Avg());
 
