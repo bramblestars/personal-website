@@ -19,6 +19,7 @@ $contentBoxColorNight: rgb(19, 19, 31);
 $gameTitleColorNight: #8199da;
 $gameTitleColorHoverNight: #b2d0e2;
 $titleColorNight: #aebce2;
+$contactBtnColorNight: rgb(83, 68, 109);
 $textColorNight: #e1e7f3;
 $secondaryColorNight: #b8b0e4;
 $mediumColorNight: #d4cff0;
@@ -473,6 +474,11 @@ main {
         color: $secondaryColorNight;
     }
 
+    .contact-btn {
+        background-color: $contactBtnColorNight;
+
+        @include box-shadow(3px, 3px, 3px, 1px, $boxShadowColorNight);
+    }
 
     .hello {
         color: $textColorNight;
