@@ -34,10 +34,10 @@ async function parseJSON() {
         );
 }
 
-let calculator = new arcaeaCalculator(12.01, songs, myScores);
+let calculator = new arcaeaCalculator(12.03, songs, myScores);
 calculator.calculateRatings();
 
 console.log(calculator.ratingList);
-console.log(calculator.getHighestPttWithoutHiScore());
-console.log(calculator.getTop30Avg());
+console.log("highest without high score: " + calculator.getHighestPttWithoutHiScore());
+console.log("top 30 avg: " + calculator.getTop30Avg());
 
