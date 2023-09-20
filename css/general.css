@@ -114,6 +114,46 @@ header {
 }
 
 /****************************************/
+/*************** CONTACT ****************/
+/****************************************/
+.contact {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  bottom: 3rem;
+  right: 3rem;
+}
+
+.contact-btn {
+  width: 5.6rem;
+  height: 5.6rem;
+  background-color: rgb(242, 254, 255);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  -ms-box-shadow: 3px 3px 3px 1px rgba(25, 81, 83, 0.3);
+  box-shadow: 3px 3px 3px 1px rgba(25, 81, 83, 0.3);
+  font-size: 3.2rem;
+  color: #33477E;
+  transition: all 0.1s;
+}
+.contact-btn ion-icon {
+  pointer-events: none;
+}
+
+.contact-btn:hover {
+  color: #1f1f2b;
+  background-color: #deffff;
+}
+
+.contact-btn:active {
+  transform: translateY(2px);
+  -ms-box-shadow: 1px 1px 1px 1px rgba(25, 81, 83, 0.3);
+  box-shadow: 1px 1px 1px 1px rgba(25, 81, 83, 0.3);
+}
+
+/****************************************/
 /***************** BODY *****************/
 /****************************************/
 /** Homepage **/
@@ -135,7 +175,7 @@ main {
 .picture {
   position: absolute;
   z-index: -1;
-  opacity: 0.1;
+  opacity: 0.02;
   top: 0;
   width: 100vw;
   height: 123rem;
@@ -346,6 +386,11 @@ main {
 }
 .dark .icon-mobile-nav {
   color: #b8b0e4;
+}
+.dark .contact-btn {
+  background-color: rgb(83, 68, 109);
+  -ms-box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
 }
 .dark .hello {
   color: #e1e7f3;

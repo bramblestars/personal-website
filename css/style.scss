@@ -229,7 +229,7 @@ main {
 .picture {
     position: absolute;
     z-index: -1;
-    opacity: 0.1;
+    opacity: 0.05;
     top: 0;
     width: 100vw;
     height: 123rem;
@@ -486,6 +486,10 @@ main {
 
     .about {
         background: $backgroundColorNight;
+    }
+
+    .picture {
+        opacity: 0.02;
     }
 
     .gamedev {

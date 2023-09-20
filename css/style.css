@@ -175,7 +175,7 @@ main {
 .picture {
   position: absolute;
   z-index: -1;
-  opacity: 0.1;
+  opacity: 0.05;
   top: 0;
   width: 100vw;
   height: 123rem;
@@ -397,6 +397,9 @@ main {
 }
 .dark .about {
   background: linear-gradient(#1b1835 10%, #1b1835 90%, #27254d 100%);
+}
+.dark .picture {
+  opacity: 0.02;
 }
 .dark .gamedev {
   background-color: #27254d;
